@@ -1,0 +1,1148 @@
+[Sunday, May 10, 2026 at 12:17:41 PM EDT] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: ERROR]
+
+TypeError: Cannot read properties of undefined (reading 'toJSON')
+    at /home/container/events/ready.js:18:22
+    at Array.map (<anonymous>)
+    at Object.execute (/home/container/events/ready.js:17:61)
+    at Client.<anonymous> (/home/container/index.js:123:48)
+    at Object.onceWrapper (node:events:622:26)
+    at Client.emit (node:events:507:28)
+    at Client.emit (node:domain:489:12)
+    at WebSocketManager.triggerClientReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:401:17)
+    at WebSocketManager.checkShardsReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:368:10)
+    at WebSocketShard.<anonymous> (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:198:16)
+
+
+[Error Context] -> [Ready Event Error]: an error occurred during initialization[Sunday, May 10, 2026 at 12:19:49 PM EDT] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: ERROR]
+
+TypeError: Cannot read properties of undefined (reading 'toJSON')
+    at /home/container/events/ready.js:18:22
+    at Array.map (<anonymous>)
+    at Object.execute (/home/container/events/ready.js:17:61)
+    at Client.<anonymous> (/home/container/index.js:123:48)
+    at Object.onceWrapper (node:events:622:26)
+    at Client.emit (node:events:507:28)
+    at Client.emit (node:domain:489:12)
+    at WebSocketManager.triggerClientReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:401:17)
+    at WebSocketManager.checkShardsReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:368:10)
+    at WebSocketShard.<anonymous> (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:198:16)
+
+
+[Error Context] -> [Ready Event Error]: an error occurred during initialization[Sunday, May 10, 2026 at 12:39:14 PM EDT] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: ERROR]
+
+TypeError: Cannot read properties of undefined (reading 'toJSON')
+    at /home/container/events/ready.js:18:22
+    at Array.map (<anonymous>)
+    at Object.execute (/home/container/events/ready.js:17:61)
+    at Client.<anonymous> (/home/container/index.js:123:48)
+    at Object.onceWrapper (node:events:622:26)
+    at Client.emit (node:events:507:28)
+    at Client.emit (node:domain:489:12)
+    at WebSocketManager.triggerClientReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:401:17)
+    at WebSocketManager.checkShardsReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:368:10)
+    at WebSocketShard.<anonymous> (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:198:16)
+
+
+[Error Context] -> [Ready Event Error]: an error occurred during initialization[Sunday, May 10, 2026 at 12:54:34 PM EDT] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: unhandledRejection]
+
+/home/container/cmd_status.js:1
+const { status } = require(‘minecraft-server-util’);
+                           
+
+SyntaxError: Invalid or unexpected token
+    at wrapSafe (node:internal/modules/cjs/loader:1666:18)
+    at Module._compile (node:internal/modules/cjs/loader:1708:20)
+    at Object..js (node:internal/modules/cjs/loader:1899:10)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1491:12)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (/home/container/index.js:152:1)
+
+[Sunday, May 10, 2026 at 12:58:02 PM EDT] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: unhandledRejection]
+
+/home/container/cmd_status.js:1
+const { status } = require(‘minecraft-server-util’);
+                           
+
+SyntaxError: Invalid or unexpected token
+    at wrapSafe (node:internal/modules/cjs/loader:1666:18)
+    at Module._compile (node:internal/modules/cjs/loader:1708:20)
+    at Object..js (node:internal/modules/cjs/loader:1899:10)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1491:12)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (/home/container/index.js:152:1)
+
+[Sunday, May 10, 2026 at 1:02:36 PM EDT] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: unhandledRejection]
+
+/home/container/cmd_status.js:1
+const { status } = require(‘minecraft-server-util’);
+                           
+
+SyntaxError: Invalid or unexpected token
+    at wrapSafe (node:internal/modules/cjs/loader:1666:18)
+    at Module._compile (node:internal/modules/cjs/loader:1708:20)
+    at Object..js (node:internal/modules/cjs/loader:1899:10)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1491:12)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (/home/container/index.js:152:1)
+
+[Sunday, May 10, 2026 at 1:08:15 PM EDT] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: unhandledRejection]
+
+/home/container/cmd_status.js:1
+const { status } = require(‘minecraft-server-util’);
+                           
+
+SyntaxError: Invalid or unexpected token
+    at wrapSafe (node:internal/modules/cjs/loader:1666:18)
+    at Module._compile (node:internal/modules/cjs/loader:1708:20)
+    at Object..js (node:internal/modules/cjs/loader:1899:10)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+    at Function._load (node:internal/modules/cjs/loader:1286:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1491:12)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (/home/container/index.js:152:1)
+
+[Sunday, May 10, 2026 at 1:11:37 PM EDT] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: ERROR]
+
+TypeError: Cannot read properties of undefined (reading 'toJSON')
+    at /home/container/events/ready.js:18:22
+    at Array.map (<anonymous>)
+    at Object.execute (/home/container/events/ready.js:17:61)
+    at Client.<anonymous> (/home/container/index.js:123:48)
+    at Object.onceWrapper (node:events:622:26)
+    at Client.emit (node:events:507:28)
+    at Client.emit (node:domain:489:12)
+    at WebSocketManager.triggerClientReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:401:17)
+    at WebSocketManager.checkShardsReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:368:10)
+    at WebSocketShard.<anonymous> (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:198:16)
+
+
+[Error Context] -> [Ready Event Error]: an error occurred during initialization[Sunday, May 10, 2026 at 1:13:14 PM EDT] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: ERROR]
+
+TypeError: Cannot read properties of undefined (reading 'toJSON')
+    at /home/container/events/ready.js:18:22
+    at Array.map (<anonymous>)
+    at Object.execute (/home/container/events/ready.js:17:61)
+    at Client.<anonymous> (/home/container/index.js:123:48)
+    at Object.onceWrapper (node:events:622:26)
+    at Client.emit (node:events:507:28)
+    at Client.emit (node:domain:489:12)
+    at WebSocketManager.triggerClientReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:401:17)
+    at WebSocketManager.checkShardsReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:368:10)
+    at WebSocketShard.<anonymous> (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:198:16)
+
+
+[Error Context] -> [Ready Event Error]: an error occurred during initialization[Sunday, May 10, 2026 at 11:59:51 PM EDT] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: ERROR]
+
+TypeError: Cannot read properties of undefined (reading 'toJSON')
+    at /home/container/events/ready.js:18:22
+    at Array.map (<anonymous>)
+    at Object.execute (/home/container/events/ready.js:17:61)
+    at Client.<anonymous> (/home/container/index.js:123:48)
+    at Object.onceWrapper (node:events:622:26)
+    at Client.emit (node:events:507:28)
+    at Client.emit (node:domain:489:12)
+    at WebSocketManager.triggerClientReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:401:17)
+    at WebSocketManager.checkShardsReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:368:10)
+    at WebSocketShard.<anonymous> (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:198:16)
+
+
+[Error Context] -> [Ready Event Error]: an error occurred during initialization[Monday, May 11, 2026 at 12:01:03 AM EDT] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: ERROR]
+
+TypeError: Cannot read properties of undefined (reading 'toJSON')
+    at /home/container/events/ready.js:18:22
+    at Array.map (<anonymous>)
+    at Object.execute (/home/container/events/ready.js:17:61)
+    at Client.<anonymous> (/home/container/index.js:123:48)
+    at Object.onceWrapper (node:events:622:26)
+    at Client.emit (node:events:507:28)
+    at Client.emit (node:domain:489:12)
+    at WebSocketManager.triggerClientReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:401:17)
+    at WebSocketManager.checkShardsReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:368:10)
+    at WebSocketShard.<anonymous> (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:198:16)
+
+
+[Error Context] -> [Ready Event Error]: an error occurred during initialization[Monday, May 11, 2026 at 10:01:31 AM EDT] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: ERROR]
+
+TypeError: Cannot read properties of undefined (reading 'toJSON')
+    at /home/container/events/ready.js:18:22
+    at Array.map (<anonymous>)
+    at Object.execute (/home/container/events/ready.js:17:61)
+    at Client.<anonymous> (/home/container/index.js:123:48)
+    at Object.onceWrapper (node:events:622:26)
+    at Client.emit (node:events:507:28)
+    at Client.emit (node:domain:489:12)
+    at WebSocketManager.triggerClientReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:401:17)
+    at WebSocketManager.checkShardsReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:368:10)
+    at WebSocketShard.<anonymous> (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:198:16)
+
+
+[Error Context] -> [Ready Event Error]: an error occurred during initialization[Tuesday, May 12, 2026 at 12:04:56 AM EDT] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: ERROR]
+
+TypeError: Cannot read properties of undefined (reading 'toJSON')
+    at /home/container/events/ready.js:18:22
+    at Array.map (<anonymous>)
+    at Object.execute (/home/container/events/ready.js:17:61)
+    at Client.<anonymous> (/home/container/index.js:123:48)
+    at Object.onceWrapper (node:events:622:26)
+    at Client.emit (node:events:507:28)
+    at Client.emit (node:domain:489:12)
+    at WebSocketManager.triggerClientReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:401:17)
+    at WebSocketManager.checkShardsReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:368:10)
+    at WebSocketShard.<anonymous> (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:198:16)
+
+
+[Error Context] -> [Ready Event Error]: an error occurred during initialization[Tuesday, May 12, 2026 at 12:04:56 AM EDT] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: ERROR]
+
+TypeError: Cannot read properties of undefined (reading 'name')
+    at Object.execute (/home/container/events/interactionCreate.js:155:39)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+
+[Tuesday, May 12, 2026 at 12:04:56 AM EDT] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: ERROR]
+
+TypeError: Cannot read properties of undefined (reading 'name')
+    at Object.execute (/home/container/events/interactionCreate.js:155:39)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+
+[Tuesday, May 12, 2026 at 12:39:39 PM EDT] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: ERROR]
+
+TypeError: Cannot read properties of undefined (reading 'toJSON')
+    at /home/container/events/ready.js:18:22
+    at Array.map (<anonymous>)
+    at Object.execute (/home/container/events/ready.js:17:61)
+    at Client.<anonymous> (/home/container/index.js:123:48)
+    at Object.onceWrapper (node:events:622:26)
+    at Client.emit (node:events:507:28)
+    at Client.emit (node:domain:489:12)
+    at WebSocketManager.triggerClientReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:401:17)
+    at WebSocketManager.checkShardsReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:368:10)
+    at WebSocketShard.<anonymous> (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:198:16)
+
+
+[Error Context] -> [Ready Event Error]: an error occurred during initialization[Tuesday, May 12, 2026 at 1:12:01 PM EDT] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: ERROR]
+
+TypeError: Cannot read properties of undefined (reading 'toJSON')
+    at /home/container/events/ready.js:18:22
+    at Array.map (<anonymous>)
+    at Object.execute (/home/container/events/ready.js:17:61)
+    at Client.<anonymous> (/home/container/index.js:123:48)
+    at Object.onceWrapper (node:events:622:26)
+    at Client.emit (node:events:507:28)
+    at Client.emit (node:domain:489:12)
+    at WebSocketManager.triggerClientReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:401:17)
+    at WebSocketManager.checkShardsReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:368:10)
+    at WebSocketShard.<anonymous> (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:198:16)
+
+
+[Error Context] -> [Ready Event Error]: an error occurred during initialization[Tuesday, May 12, 2026 at 1:16:39 PM EDT] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: ERROR]
+
+TypeError: Cannot read properties of undefined (reading 'toJSON')
+    at /home/container/events/ready.js:18:22
+    at Array.map (<anonymous>)
+    at Object.execute (/home/container/events/ready.js:17:61)
+    at Client.<anonymous> (/home/container/index.js:123:48)
+    at Object.onceWrapper (node:events:622:26)
+    at Client.emit (node:events:507:28)
+    at Client.emit (node:domain:489:12)
+    at WebSocketManager.triggerClientReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:401:17)
+    at WebSocketManager.checkShardsReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:368:10)
+    at WebSocketShard.<anonymous> (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:198:16)
+
+
+[Error Context] -> [Ready Event Error]: an error occurred during initialization[Tuesday, May 12, 2026 at 10:53:05 PM EDT] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: ERROR]
+
+TypeError: Cannot read properties of undefined (reading 'toJSON')
+    at /home/container/events/ready.js:18:22
+    at Array.map (<anonymous>)
+    at Object.execute (/home/container/events/ready.js:17:61)
+    at Client.<anonymous> (/home/container/index.js:123:48)
+    at Object.onceWrapper (node:events:622:26)
+    at Client.emit (node:events:507:28)
+    at Client.emit (node:domain:489:12)
+    at WebSocketManager.triggerClientReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:401:17)
+    at WebSocketManager.checkShardsReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:368:10)
+    at WebSocketShard.<anonymous> (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:198:16)
+
+
+[Error Context] -> [Ready Event Error]: an error occurred during initialization[Tuesday, May 12, 2026 at 10:57:40 PM EDT] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: ERROR]
+
+TypeError: Cannot read properties of undefined (reading 'toJSON')
+    at /home/container/events/ready.js:18:22
+    at Array.map (<anonymous>)
+    at Object.execute (/home/container/events/ready.js:17:61)
+    at Client.<anonymous> (/home/container/index.js:123:48)
+    at Object.onceWrapper (node:events:622:26)
+    at Client.emit (node:events:507:28)
+    at Client.emit (node:domain:489:12)
+    at WebSocketManager.triggerClientReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:401:17)
+    at WebSocketManager.checkShardsReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:368:10)
+    at WebSocketShard.<anonymous> (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:198:16)
+
+
+[Error Context] -> [Ready Event Error]: an error occurred during initialization[Tuesday, May 12, 2026 at 11:07:58 PM EDT] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: ERROR]
+
+TypeError: Cannot read properties of undefined (reading 'toJSON')
+    at /home/container/events/ready.js:18:22
+    at Array.map (<anonymous>)
+    at Object.execute (/home/container/events/ready.js:17:61)
+    at Client.<anonymous> (/home/container/index.js:123:48)
+    at Object.onceWrapper (node:events:622:26)
+    at Client.emit (node:events:507:28)
+    at Client.emit (node:domain:489:12)
+    at WebSocketManager.triggerClientReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:401:17)
+    at WebSocketManager.checkShardsReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:368:10)
+    at WebSocketShard.<anonymous> (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:198:16)
+
+
+[Error Context] -> [Ready Event Error]: an error occurred during initialization[Wednesday, May 13, 2026 at 9:36:15 AM EDT] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: ERROR]
+
+TypeError: Cannot read properties of undefined (reading 'toJSON')
+    at /home/container/events/ready.js:18:22
+    at Array.map (<anonymous>)
+    at Object.execute (/home/container/events/ready.js:17:61)
+    at Client.<anonymous> (/home/container/index.js:123:48)
+    at Object.onceWrapper (node:events:622:26)
+    at Client.emit (node:events:507:28)
+    at Client.emit (node:domain:489:12)
+    at WebSocketManager.triggerClientReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:401:17)
+    at WebSocketManager.checkShardsReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:368:10)
+    at WebSocketShard.<anonymous> (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:198:16)
+
+
+[Error Context] -> [Ready Event Error]: an error occurred during initialization[Thursday, May 14, 2026 at 6:40:50 AM EDT] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: ERROR]
+
+TypeError: Cannot read properties of undefined (reading 'toJSON')
+    at /home/container/events/ready.js:18:22
+    at Array.map (<anonymous>)
+    at Object.execute (/home/container/events/ready.js:17:61)
+    at Client.<anonymous> (/home/container/index.js:123:48)
+    at Object.onceWrapper (node:events:622:26)
+    at Client.emit (node:events:507:28)
+    at Client.emit (node:domain:489:12)
+    at WebSocketManager.triggerClientReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:401:17)
+    at WebSocketManager.checkShardsReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:368:10)
+    at WebSocketShard.<anonymous> (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:198:16)
+
+
+[Error Context] -> [Ready Event Error]: an error occurred during initialization[Thursday, May 14, 2026 at 10:21:50 AM EDT] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: ERROR]
+
+TypeError: Cannot read properties of undefined (reading 'toJSON')
+    at /home/container/events/ready.js:18:22
+    at Array.map (<anonymous>)
+    at Object.execute (/home/container/events/ready.js:17:61)
+    at Client.<anonymous> (/home/container/index.js:123:48)
+    at Object.onceWrapper (node:events:622:26)
+    at Client.emit (node:events:507:28)
+    at Client.emit (node:domain:489:12)
+    at WebSocketManager.triggerClientReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:401:17)
+    at WebSocketManager.checkShardsReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:368:10)
+    at WebSocketShard.<anonymous> (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:198:16)
+
+
+[Error Context] -> [Ready Event Error]: an error occurred during initialization[Thursday, May 14, 2026 at 10:21:50 AM EDT] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: ERROR]
+
+TypeError: Cannot read properties of null (reading 'bannable')
+    at softban (/home/container/events/autoMod.js:212:15)
+    at Object.execute (/home/container/events/autoMod.js:243:30)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+
+[Thursday, May 14, 2026 at 10:21:50 AM EDT] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: ERROR]
+
+TypeError: Cannot read properties of null (reading 'bannable')
+    at softban (/home/container/events/autoMod.js:212:15)
+    at Object.execute (/home/container/events/autoMod.js:243:30)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+
+[Thursday, May 14, 2026 at 10:21:50 AM EDT] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: ERROR]
+
+TypeError: Cannot read properties of null (reading 'bannable')
+    at softban (/home/container/events/autoMod.js:212:15)
+    at Object.execute (/home/container/events/autoMod.js:243:30)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+
+[Thursday, May 14, 2026 at 10:21:50 AM EDT] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: ERROR]
+
+TypeError: Cannot read properties of null (reading 'bannable')
+    at softban (/home/container/events/autoMod.js:212:15)
+    at Object.execute (/home/container/events/autoMod.js:243:30)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+
+[Thursday, May 14, 2026 at 10:21:50 AM EDT] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: ERROR]
+
+TypeError: Cannot read properties of null (reading 'bannable')
+    at softban (/home/container/events/autoMod.js:212:15)
+    at Object.execute (/home/container/events/autoMod.js:243:30)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+
+[Friday, May 15, 2026 at 10:52:01 AM EDT] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: ERROR]
+
+TypeError: Cannot read properties of undefined (reading 'toJSON')
+    at /home/container/events/ready.js:18:22
+    at Array.map (<anonymous>)
+    at Object.execute (/home/container/events/ready.js:17:61)
+    at Client.<anonymous> (/home/container/index.js:123:48)
+    at Object.onceWrapper (node:events:622:26)
+    at Client.emit (node:events:507:28)
+    at Client.emit (node:domain:489:12)
+    at WebSocketManager.triggerClientReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:401:17)
+    at WebSocketManager.checkShardsReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:368:10)
+    at WebSocketShard.<anonymous> (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:198:16)
+
+
+[Error Context] -> [Ready Event Error]: an error occurred during initialization[Friday, May 15, 2026 at 10:56:08 AM EDT] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: ERROR]
+
+TypeError: Cannot read properties of undefined (reading 'toJSON')
+    at /home/container/events/ready.js:18:22
+    at Array.map (<anonymous>)
+    at Object.execute (/home/container/events/ready.js:17:61)
+    at Client.<anonymous> (/home/container/index.js:123:48)
+    at Object.onceWrapper (node:events:622:26)
+    at Client.emit (node:events:507:28)
+    at Client.emit (node:domain:489:12)
+    at WebSocketManager.triggerClientReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:401:17)
+    at WebSocketManager.checkShardsReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:368:10)
+    at WebSocketShard.<anonymous> (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:198:16)
+
+
+[Error Context] -> [Ready Event Error]: an error occurred during initialization[Saturday, May 16, 2026 at 12:44:17 AM EDT] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: ERROR]
+
+TypeError: Cannot read properties of undefined (reading 'toJSON')
+    at /home/container/events/ready.js:18:22
+    at Array.map (<anonymous>)
+    at Object.execute (/home/container/events/ready.js:17:61)
+    at Client.<anonymous> (/home/container/index.js:123:48)
+    at Object.onceWrapper (node:events:622:26)
+    at Client.emit (node:events:507:28)
+    at Client.emit (node:domain:489:12)
+    at WebSocketManager.triggerClientReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:401:17)
+    at WebSocketManager.checkShardsReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:368:10)
+    at WebSocketShard.<anonymous> (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:198:16)
+
+
+[Error Context] -> [Ready Event Error]: an error occurred during initialization[Saturday, May 16, 2026 at 12:44:17 AM EDT] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: uncaughtException]
+
+Error: Opening handshake has timed out
+    at ClientRequest.<anonymous> (/home/container/node_modules/ws/lib/websocket.js:873:7)
+    at ClientRequest.emit (node:events:507:28)
+    at ClientRequest.emit (node:domain:489:12)
+    at TLSSocket.emitRequestTimeout (node:_http_client:863:9)
+    at Object.onceWrapper (node:events:621:28)
+    at TLSSocket.emit (node:events:507:28)
+    at TLSSocket.emit (node:domain:489:12)
+    at TLSSocket.Socket._onTimeout (node:net:609:8)
+    at listOnTimeout (node:internal/timers:608:17)
+    at processTimers (node:internal/timers:543:7)
+
+[Sunday, May 17, 2026 at 9:04:15 AM EDT] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: ERROR]
+
+TypeError: Cannot read properties of undefined (reading 'toJSON')
+    at /home/container/events/ready.js:18:22
+    at Array.map (<anonymous>)
+    at Object.execute (/home/container/events/ready.js:17:61)
+    at Client.<anonymous> (/home/container/index.js:123:48)
+    at Object.onceWrapper (node:events:622:26)
+    at Client.emit (node:events:507:28)
+    at Client.emit (node:domain:489:12)
+    at WebSocketManager.triggerClientReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:401:17)
+    at WebSocketManager.checkShardsReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:368:10)
+    at WebSocketShard.<anonymous> (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:198:16)
+
+
+[Error Context] -> [Ready Event Error]: an error occurred during initialization[Sunday, May 17, 2026 at 9:12:22 AM EDT] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: ERROR]
+
+TypeError: Cannot read properties of undefined (reading 'toJSON')
+    at /home/container/events/ready.js:18:22
+    at Array.map (<anonymous>)
+    at Object.execute (/home/container/events/ready.js:17:61)
+    at Client.<anonymous> (/home/container/index.js:123:48)
+    at Object.onceWrapper (node:events:622:26)
+    at Client.emit (node:events:507:28)
+    at Client.emit (node:domain:489:12)
+    at WebSocketManager.triggerClientReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:401:17)
+    at WebSocketManager.checkShardsReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:368:10)
+    at WebSocketShard.<anonymous> (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:198:16)
+
+
+[Error Context] -> [Ready Event Error]: an error occurred during initialization[Sunday, May 17, 2026 at 9:21:55 AM EDT] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: ERROR]
+
+TypeError: Cannot read properties of undefined (reading 'toJSON')
+    at /home/container/events/ready.js:18:22
+    at Array.map (<anonymous>)
+    at Object.execute (/home/container/events/ready.js:17:61)
+    at Client.<anonymous> (/home/container/index.js:123:48)
+    at Object.onceWrapper (node:events:622:26)
+    at Client.emit (node:events:507:28)
+    at Client.emit (node:domain:489:12)
+    at WebSocketManager.triggerClientReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:401:17)
+    at WebSocketManager.checkShardsReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:368:10)
+    at WebSocketShard.<anonymous> (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:198:16)
+
+
+[Error Context] -> [Ready Event Error]: an error occurred during initialization[Sunday, May 17, 2026 at 10:18:00 AM EDT] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: ERROR]
+
+TypeError: Cannot read properties of undefined (reading 'toJSON')
+    at /home/container/events/ready.js:18:22
+    at Array.map (<anonymous>)
+    at Object.execute (/home/container/events/ready.js:17:61)
+    at Client.<anonymous> (/home/container/index.js:123:48)
+    at Object.onceWrapper (node:events:622:26)
+    at Client.emit (node:events:507:28)
+    at Client.emit (node:domain:489:12)
+    at WebSocketManager.triggerClientReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:401:17)
+    at WebSocketManager.checkShardsReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:368:10)
+    at WebSocketShard.<anonymous> (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:198:16)
+
+
+[Error Context] -> [Ready Event Error]: an error occurred during initialization[Sunday, May 17, 2026 at 10:20:36 AM EDT] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: ERROR]
+
+TypeError: Cannot read properties of undefined (reading 'toJSON')
+    at /home/container/events/ready.js:18:22
+    at Array.map (<anonymous>)
+    at Object.execute (/home/container/events/ready.js:17:61)
+    at Client.<anonymous> (/home/container/index.js:123:48)
+    at Object.onceWrapper (node:events:622:26)
+    at Client.emit (node:events:507:28)
+    at Client.emit (node:domain:489:12)
+    at WebSocketManager.triggerClientReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:401:17)
+    at WebSocketManager.checkShardsReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:368:10)
+    at WebSocketShard.<anonymous> (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:198:16)
+
+
+[Error Context] -> [Ready Event Error]: an error occurred during initialization[Sunday, May 17, 2026 at 10:28:35 AM EDT] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: ERROR]
+
+TypeError: Cannot read properties of undefined (reading 'toJSON')
+    at /home/container/events/ready.js:18:22
+    at Array.map (<anonymous>)
+    at Object.execute (/home/container/events/ready.js:17:61)
+    at Client.<anonymous> (/home/container/index.js:123:48)
+    at Object.onceWrapper (node:events:622:26)
+    at Client.emit (node:events:507:28)
+    at Client.emit (node:domain:489:12)
+    at WebSocketManager.triggerClientReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:401:17)
+    at WebSocketManager.checkShardsReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:368:10)
+    at WebSocketShard.<anonymous> (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:198:16)
+
+
+[Error Context] -> [Ready Event Error]: an error occurred during initialization[Sunday, May 17, 2026 at 10:30:06 AM EDT] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: ERROR]
+
+TypeError: Cannot read properties of undefined (reading 'toJSON')
+    at /home/container/events/ready.js:18:22
+    at Array.map (<anonymous>)
+    at Object.execute (/home/container/events/ready.js:17:61)
+    at Client.<anonymous> (/home/container/index.js:123:48)
+    at Object.onceWrapper (node:events:622:26)
+    at Client.emit (node:events:507:28)
+    at Client.emit (node:domain:489:12)
+    at WebSocketManager.triggerClientReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:401:17)
+    at WebSocketManager.checkShardsReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:368:10)
+    at WebSocketShard.<anonymous> (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:198:16)
+
+
+[Error Context] -> [Ready Event Error]: an error occurred during initialization[Sunday, May 17, 2026 at 11:05:10 AM EDT] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: ERROR]
+
+TypeError: Cannot read properties of undefined (reading 'toJSON')
+    at /home/container/events/ready.js:18:22
+    at Array.map (<anonymous>)
+    at Object.execute (/home/container/events/ready.js:17:61)
+    at Client.<anonymous> (/home/container/index.js:123:48)
+    at Object.onceWrapper (node:events:622:26)
+    at Client.emit (node:events:507:28)
+    at Client.emit (node:domain:489:12)
+    at WebSocketManager.triggerClientReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:401:17)
+    at WebSocketManager.checkShardsReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:368:10)
+    at WebSocketShard.<anonymous> (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:198:16)
+
+
+[Error Context] -> [Ready Event Error]: an error occurred during initialization[Sunday, May 17, 2026 at 11:08:35 AM EDT] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: ERROR]
+
+TypeError: Cannot read properties of undefined (reading 'toJSON')
+    at /home/container/events/ready.js:18:22
+    at Array.map (<anonymous>)
+    at Object.execute (/home/container/events/ready.js:17:61)
+    at Client.<anonymous> (/home/container/index.js:123:48)
+    at Object.onceWrapper (node:events:622:26)
+    at Client.emit (node:events:507:28)
+    at Client.emit (node:domain:489:12)
+    at WebSocketManager.triggerClientReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:401:17)
+    at WebSocketManager.checkShardsReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:368:10)
+    at WebSocketShard.<anonymous> (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:198:16)
+
+
+[Error Context] -> [Ready Event Error]: an error occurred during initialization[Monday, May 18, 2026 at 8:50:34 PM GMT+7] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: ERROR]
+
+TypeError: Cannot read properties of undefined (reading 'toJSON')
+    at /home/container/events/ready.js:18:22
+    at Array.map (<anonymous>)
+    at Object.execute (/home/container/events/ready.js:17:61)
+    at Client.<anonymous> (/home/container/index.js:123:48)
+    at Object.onceWrapper (node:events:622:26)
+    at Client.emit (node:events:507:28)
+    at Client.emit (node:domain:489:12)
+    at WebSocketManager.triggerClientReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:401:17)
+    at WebSocketManager.checkShardsReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:368:10)
+    at WebSocketShard.<anonymous> (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:198:16)
+
+
+[Error Context] -> [Ready Event Error]: an error occurred during initialization[Monday, May 18, 2026 at 9:52:40 PM GMT+7] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: ERROR]
+
+TypeError: Cannot read properties of undefined (reading 'toJSON')
+    at /home/container/events/ready.js:18:22
+    at Array.map (<anonymous>)
+    at Object.execute (/home/container/events/ready.js:17:61)
+    at Client.<anonymous> (/home/container/index.js:123:48)
+    at Object.onceWrapper (node:events:622:26)
+    at Client.emit (node:events:507:28)
+    at Client.emit (node:domain:489:12)
+    at WebSocketManager.triggerClientReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:401:17)
+    at WebSocketManager.checkShardsReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:368:10)
+    at WebSocketShard.<anonymous> (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:198:16)
+
+
+[Error Context] -> [Ready Event Error]: an error occurred during initialization[Monday, May 18, 2026 at 9:52:40 PM GMT+7] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: ERROR]
+
+TypeError: Cannot read properties of undefined (reading 'name')
+    at Object.execute (/home/container/events/interactionCreate.js:155:39)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+
+[Wednesday, May 20, 2026 at 7:48:26 AM GMT+7] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: ERROR]
+
+TypeError: Cannot read properties of undefined (reading 'toJSON')
+    at /home/container/events/ready.js:18:22
+    at Array.map (<anonymous>)
+    at Object.execute (/home/container/events/ready.js:17:61)
+    at Client.<anonymous> (/home/container/index.js:123:48)
+    at Object.onceWrapper (node:events:622:26)
+    at Client.emit (node:events:507:28)
+    at Client.emit (node:domain:489:12)
+    at WebSocketManager.triggerClientReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:401:17)
+    at WebSocketManager.checkShardsReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:368:10)
+    at WebSocketShard.<anonymous> (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:198:16)
+
+
+[Error Context] -> [Ready Event Error]: an error occurred during initialization[Wednesday, May 20, 2026 at 7:50:29 AM GMT+7] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: ERROR]
+
+TypeError: Cannot read properties of undefined (reading 'toJSON')
+    at /home/container/events/ready.js:18:22
+    at Array.map (<anonymous>)
+    at Object.execute (/home/container/events/ready.js:17:61)
+    at Client.<anonymous> (/home/container/index.js:123:48)
+    at Object.onceWrapper (node:events:622:26)
+    at Client.emit (node:events:507:28)
+    at Client.emit (node:domain:489:12)
+    at WebSocketManager.triggerClientReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:401:17)
+    at WebSocketManager.checkShardsReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:368:10)
+    at WebSocketShard.<anonymous> (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:198:16)
+
+
+[Error Context] -> [Ready Event Error]: an error occurred during initialization[Saturday, May 23, 2026 at 11:59:50 PM GMT+7] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: ERROR]
+
+TypeError: Cannot read properties of undefined (reading 'toJSON')
+    at /home/container/events/ready.js:18:22
+    at Array.map (<anonymous>)
+    at Object.execute (/home/container/events/ready.js:17:61)
+    at Client.<anonymous> (/home/container/index.js:123:48)
+    at Object.onceWrapper (node:events:622:26)
+    at Client.emit (node:events:507:28)
+    at Client.emit (node:domain:489:12)
+    at WebSocketManager.triggerClientReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:401:17)
+    at WebSocketManager.checkShardsReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:368:10)
+    at WebSocketShard.<anonymous> (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:198:16)
+
+
+[Error Context] -> [Ready Event Error]: an error occurred during initialization[Sunday, May 24, 2026 at 5:22:50 PM GMT+7] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: ERROR]
+
+TypeError: Cannot read properties of undefined (reading 'toJSON')
+    at /home/container/events/ready.js:18:22
+    at Array.map (<anonymous>)
+    at Object.execute (/home/container/events/ready.js:17:61)
+    at Client.<anonymous> (/home/container/index.js:123:48)
+    at Object.onceWrapper (node:events:622:26)
+    at Client.emit (node:events:507:28)
+    at Client.emit (node:domain:489:12)
+    at WebSocketManager.triggerClientReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:401:17)
+    at WebSocketManager.checkShardsReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:368:10)
+    at WebSocketShard.<anonymous> (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:198:16)
+
+
+[Error Context] -> [Ready Event Error]: an error occurred during initialization[Sunday, May 24, 2026 at 9:18:22 PM GMT+7] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: ERROR]
+
+TypeError: Cannot read properties of undefined (reading 'toJSON')
+    at /home/container/events/ready.js:18:22
+    at Array.map (<anonymous>)
+    at Object.execute (/home/container/events/ready.js:17:61)
+    at Client.<anonymous> (/home/container/index.js:123:48)
+    at Object.onceWrapper (node:events:622:26)
+    at Client.emit (node:events:507:28)
+    at Client.emit (node:domain:489:12)
+    at WebSocketManager.triggerClientReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:401:17)
+    at WebSocketManager.checkShardsReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:368:10)
+    at WebSocketShard.<anonymous> (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:198:16)
+
+
+[Error Context] -> [Ready Event Error]: an error occurred during initialization[Monday, May 25, 2026 at 3:38:53 PM GMT+7] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: ERROR]
+
+TypeError: Cannot read properties of undefined (reading 'toJSON')
+    at /home/container/events/ready.js:18:22
+    at Array.map (<anonymous>)
+    at Object.execute (/home/container/events/ready.js:17:61)
+    at Client.<anonymous> (/home/container/index.js:123:48)
+    at Object.onceWrapper (node:events:622:26)
+    at Client.emit (node:events:507:28)
+    at Client.emit (node:domain:489:12)
+    at WebSocketManager.triggerClientReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:401:17)
+    at WebSocketManager.checkShardsReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:368:10)
+    at WebSocketShard.<anonymous> (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:198:16)
+
+
+[Error Context] -> [Ready Event Error]: an error occurred during initialization[Tuesday, May 26, 2026 at 3:03:58 AM GMT+7] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: ERROR]
+
+TypeError: Cannot read properties of undefined (reading 'toJSON')
+    at /home/container/events/ready.js:18:22
+    at Array.map (<anonymous>)
+    at Object.execute (/home/container/events/ready.js:17:61)
+    at Client.<anonymous> (/home/container/index.js:123:48)
+    at Object.onceWrapper (node:events:622:26)
+    at Client.emit (node:events:507:28)
+    at Client.emit (node:domain:489:12)
+    at WebSocketManager.triggerClientReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:401:17)
+    at WebSocketManager.checkShardsReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:368:10)
+    at WebSocketShard.<anonymous> (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:198:16)
+
+
+[Error Context] -> [Ready Event Error]: an error occurred during initialization[Tuesday, May 26, 2026 at 3:59:00 AM GMT+7] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: ERROR]
+
+TypeError: Cannot read properties of undefined (reading 'toJSON')
+    at /home/container/events/ready.js:18:22
+    at Array.map (<anonymous>)
+    at Object.execute (/home/container/events/ready.js:17:61)
+    at Client.<anonymous> (/home/container/index.js:123:48)
+    at Object.onceWrapper (node:events:622:26)
+    at Client.emit (node:events:507:28)
+    at Client.emit (node:domain:489:12)
+    at WebSocketManager.triggerClientReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:401:17)
+    at WebSocketManager.checkShardsReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:368:10)
+    at WebSocketShard.<anonymous> (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:198:16)
+
+
+[Error Context] -> [Ready Event Error]: an error occurred during initialization[Tuesday, May 26, 2026 at 7:35:31 PM GMT+7] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: ERROR]
+
+TypeError: Cannot read properties of undefined (reading 'toJSON')
+    at /home/container/events/ready.js:18:22
+    at Array.map (<anonymous>)
+    at Object.execute (/home/container/events/ready.js:17:61)
+    at Client.<anonymous> (/home/container/index.js:123:48)
+    at Object.onceWrapper (node:events:622:26)
+    at Client.emit (node:events:507:28)
+    at Client.emit (node:domain:489:12)
+    at WebSocketManager.triggerClientReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:401:17)
+    at WebSocketManager.checkShardsReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:368:10)
+    at WebSocketShard.<anonymous> (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:198:16)
+
+
+[Error Context] -> [Ready Event Error]: an error occurred during initialization[Wednesday, May 27, 2026 at 8:54:25 AM GMT+7] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: ERROR]
+
+TypeError: Cannot read properties of undefined (reading 'toJSON')
+    at /home/container/events/ready.js:18:22
+    at Array.map (<anonymous>)
+    at Object.execute (/home/container/events/ready.js:17:61)
+    at Client.<anonymous> (/home/container/index.js:123:48)
+    at Object.onceWrapper (node:events:622:26)
+    at Client.emit (node:events:507:28)
+    at Client.emit (node:domain:489:12)
+    at WebSocketManager.triggerClientReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:401:17)
+    at WebSocketManager.checkShardsReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:368:10)
+    at WebSocketShard.<anonymous> (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:198:16)
+
+
+[Error Context] -> [Ready Event Error]: an error occurred during initialization[Wednesday, May 27, 2026 at 8:58:33 AM GMT+7] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: ERROR]
+
+TypeError: Cannot read properties of undefined (reading 'toJSON')
+    at /home/container/events/ready.js:18:22
+    at Array.map (<anonymous>)
+    at Object.execute (/home/container/events/ready.js:17:61)
+    at Client.<anonymous> (/home/container/index.js:123:48)
+    at Object.onceWrapper (node:events:622:26)
+    at Client.emit (node:events:507:28)
+    at Client.emit (node:domain:489:12)
+    at WebSocketManager.triggerClientReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:401:17)
+    at WebSocketManager.checkShardsReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:368:10)
+    at WebSocketShard.<anonymous> (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:198:16)
+
+
+[Error Context] -> [Ready Event Error]: an error occurred during initialization[Wednesday, May 27, 2026 at 9:49:53 AM GMT+7] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: ERROR]
+
+TypeError: Cannot read properties of undefined (reading 'toJSON')
+    at /home/container/events/ready.js:18:22
+    at Array.map (<anonymous>)
+    at Object.execute (/home/container/events/ready.js:17:61)
+    at Client.<anonymous> (/home/container/index.js:123:48)
+    at Object.onceWrapper (node:events:622:26)
+    at Client.emit (node:events:507:28)
+    at Client.emit (node:domain:489:12)
+    at WebSocketManager.triggerClientReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:401:17)
+    at WebSocketManager.checkShardsReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:368:10)
+    at WebSocketShard.<anonymous> (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:198:16)
+
+
+[Error Context] -> [Ready Event Error]: an error occurred during initialization[Friday, May 29, 2026 at 7:46:32 AM GMT+7] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: ERROR]
+
+TypeError: Cannot read properties of undefined (reading 'toJSON')
+    at /home/container/events/ready.js:18:22
+    at Array.map (<anonymous>)
+    at Object.execute (/home/container/events/ready.js:17:61)
+    at Client.<anonymous> (/home/container/index.js:123:48)
+    at Object.onceWrapper (node:events:622:26)
+    at Client.emit (node:events:507:28)
+    at Client.emit (node:domain:489:12)
+    at WebSocketManager.triggerClientReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:401:17)
+    at WebSocketManager.checkShardsReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:368:10)
+    at WebSocketShard.<anonymous> (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:198:16)
+
+
+[Error Context] -> [Ready Event Error]: an error occurred during initialization[Friday, May 29, 2026 at 7:46:32 AM GMT+7] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: unhandledRejection]
+
+DiscordAPIError[50035]: Invalid Form Body
+message_reference[MESSAGE_REFERENCE_UNKNOWN_MESSAGE]: Unknown message
+    at handleErrors (/home/container/node_modules/@discordjs/rest/src/lib/handlers/Shared.ts:148:10)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async SequentialHandler.runRequest (/home/container/node_modules/@discordjs/rest/src/lib/handlers/SequentialHandler.ts:417:20)
+    at async SequentialHandler.queueRequest (/home/container/node_modules/@discordjs/rest/src/lib/handlers/SequentialHandler.ts:169:11)
+    at async _REST.request (/home/container/node_modules/@discordjs/rest/src/lib/REST.ts:210:20)
+    at async TextChannel.send (/home/container/node_modules/discord.js/src/structures/interfaces/TextBasedChannel.js:195:15)
+
+[Saturday, May 30, 2026 at 10:20:00 PM GMT+7] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: ERROR]
+
+TypeError: Cannot read properties of undefined (reading 'toJSON')
+    at /home/container/events/ready.js:18:22
+    at Array.map (<anonymous>)
+    at Object.execute (/home/container/events/ready.js:17:61)
+    at Client.<anonymous> (/home/container/index.js:123:48)
+    at Object.onceWrapper (node:events:622:26)
+    at Client.emit (node:events:507:28)
+    at Client.emit (node:domain:489:12)
+    at WebSocketManager.triggerClientReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:401:17)
+    at WebSocketManager.checkShardsReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:368:10)
+    at WebSocketShard.<anonymous> (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:198:16)
+
+
+[Error Context] -> [Ready Event Error]: an error occurred during initialization[Saturday, May 30, 2026 at 10:20:00 PM GMT+7] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: ERROR]
+
+TypeError: Cannot read properties of undefined (reading 'name')
+    at Object.execute (/home/container/events/interactionCreate.js:155:39)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+
+[Saturday, May 30, 2026 at 10:20:00 PM GMT+7] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: ERROR]
+
+TypeError: Cannot read properties of undefined (reading 'name')
+    at Object.execute (/home/container/events/interactionCreate.js:155:39)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+
+[Sunday, May 31, 2026 at 3:11:09 PM GMT+7] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: ERROR]
+
+TypeError: Cannot read properties of undefined (reading 'toJSON')
+    at /home/container/events/ready.js:18:22
+    at Array.map (<anonymous>)
+    at Object.execute (/home/container/events/ready.js:17:61)
+    at Client.<anonymous> (/home/container/index.js:123:48)
+    at Object.onceWrapper (node:events:622:26)
+    at Client.emit (node:events:507:28)
+    at Client.emit (node:domain:489:12)
+    at WebSocketManager.triggerClientReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:401:17)
+    at WebSocketManager.checkShardsReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:368:10)
+    at WebSocketShard.<anonymous> (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:198:16)
+
+
+[Error Context] -> [Ready Event Error]: an error occurred during initialization[Sunday, May 31, 2026 at 4:10:05 PM GMT+7] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: ERROR]
+
+TypeError: Cannot read properties of undefined (reading 'toJSON')
+    at /home/container/events/ready.js:18:22
+    at Array.map (<anonymous>)
+    at Object.execute (/home/container/events/ready.js:17:61)
+    at Client.<anonymous> (/home/container/index.js:123:48)
+    at Object.onceWrapper (node:events:622:26)
+    at Client.emit (node:events:507:28)
+    at Client.emit (node:domain:489:12)
+    at WebSocketManager.triggerClientReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:401:17)
+    at WebSocketManager.checkShardsReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:368:10)
+    at WebSocketShard.<anonymous> (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:198:16)
+
+
+[Error Context] -> [Ready Event Error]: an error occurred during initialization[Sunday, May 31, 2026 at 9:46:41 PM GMT+7] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: ERROR]
+
+TypeError: Cannot read properties of undefined (reading 'toJSON')
+    at /home/container/events/ready.js:18:22
+    at Array.map (<anonymous>)
+    at Object.execute (/home/container/events/ready.js:17:61)
+    at Client.<anonymous> (/home/container/index.js:123:48)
+    at Object.onceWrapper (node:events:622:26)
+    at Client.emit (node:events:507:28)
+    at Client.emit (node:domain:489:12)
+    at WebSocketManager.triggerClientReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:401:17)
+    at WebSocketManager.checkShardsReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:368:10)
+    at WebSocketShard.<anonymous> (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:198:16)
+
+
+[Error Context] -> [Ready Event Error]: an error occurred during initialization[Sunday, May 31, 2026 at 10:55:00 PM GMT+7] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: ERROR]
+
+TypeError: Cannot read properties of undefined (reading 'toJSON')
+    at /home/container/events/ready.js:18:22
+    at Array.map (<anonymous>)
+    at Object.execute (/home/container/events/ready.js:17:61)
+    at Client.<anonymous> (/home/container/index.js:123:48)
+    at Object.onceWrapper (node:events:622:26)
+    at Client.emit (node:events:507:28)
+    at Client.emit (node:domain:489:12)
+    at WebSocketManager.triggerClientReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:401:17)
+    at WebSocketManager.checkShardsReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:368:10)
+    at WebSocketShard.<anonymous> (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:198:16)
+
+
+[Error Context] -> [Ready Event Error]: an error occurred during initialization[Sunday, May 31, 2026 at 10:55:00 PM GMT+7] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: ERROR]
+
+DiscordAPIError[50035]: Invalid Form Body
+message_reference[MESSAGE_REFERENCE_UNKNOWN_MESSAGE]: Unknown message
+    at handleErrors (/home/container/node_modules/@discordjs/rest/src/lib/handlers/Shared.ts:148:10)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async SequentialHandler.runRequest (/home/container/node_modules/@discordjs/rest/src/lib/handlers/SequentialHandler.ts:417:20)
+    at async SequentialHandler.queueRequest (/home/container/node_modules/@discordjs/rest/src/lib/handlers/SequentialHandler.ts:169:11)
+    at async _REST.request (/home/container/node_modules/@discordjs/rest/src/lib/REST.ts:210:20)
+    at async TextChannel.send (/home/container/node_modules/discord.js/src/structures/interfaces/TextBasedChannel.js:195:15)
+    at async Client.<anonymous> (/home/container/cmd_status.js:14:28)
+
+[Sunday, May 31, 2026 at 10:55:00 PM GMT+7] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: unhandledRejection]
+
+DiscordAPIError[50035]: Invalid Form Body
+message_reference[MESSAGE_REFERENCE_UNKNOWN_MESSAGE]: Unknown message
+    at handleErrors (/home/container/node_modules/@discordjs/rest/src/lib/handlers/Shared.ts:148:10)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async SequentialHandler.runRequest (/home/container/node_modules/@discordjs/rest/src/lib/handlers/SequentialHandler.ts:417:20)
+    at async SequentialHandler.queueRequest (/home/container/node_modules/@discordjs/rest/src/lib/handlers/SequentialHandler.ts:169:11)
+    at async _REST.request (/home/container/node_modules/@discordjs/rest/src/lib/REST.ts:210:20)
+    at async TextChannel.send (/home/container/node_modules/discord.js/src/structures/interfaces/TextBasedChannel.js:195:15)
+
+[Sunday, May 31, 2026 at 10:55:00 PM GMT+7] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: ERROR]
+
+TypeError: Cannot read properties of undefined (reading 'name')
+    at Object.execute (/home/container/events/interactionCreate.js:155:39)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+
+[Sunday, May 31, 2026 at 10:55:00 PM GMT+7] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: ERROR]
+
+TypeError: Cannot read properties of undefined (reading 'name')
+    at Object.execute (/home/container/events/interactionCreate.js:155:39)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+
+[Tuesday, June 2, 2026 at 8:02:22 AM GMT+7] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: ERROR]
+
+TypeError: Cannot read properties of undefined (reading 'toJSON')
+    at /home/container/events/ready.js:18:22
+    at Array.map (<anonymous>)
+    at Object.execute (/home/container/events/ready.js:17:61)
+    at Client.<anonymous> (/home/container/index.js:123:48)
+    at Object.onceWrapper (node:events:622:26)
+    at Client.emit (node:events:507:28)
+    at Client.emit (node:domain:489:12)
+    at WebSocketManager.triggerClientReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:401:17)
+    at WebSocketManager.checkShardsReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:368:10)
+    at WebSocketShard.<anonymous> (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:198:16)
+
+
+[Error Context] -> [Ready Event Error]: an error occurred during initialization[Tuesday, June 2, 2026 at 8:02:22 AM GMT+7] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: ERROR]
+
+TypeError: Cannot read properties of undefined (reading 'name')
+    at Object.execute (/home/container/events/interactionCreate.js:155:39)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+
+[Tuesday, June 2, 2026 at 8:02:22 AM GMT+7] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: ERROR]
+
+TypeError: Cannot read properties of undefined (reading 'name')
+    at Object.execute (/home/container/events/interactionCreate.js:155:39)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+
+[Tuesday, June 2, 2026 at 8:02:22 AM GMT+7] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: ERROR]
+
+TypeError: Cannot read properties of undefined (reading 'name')
+    at Object.execute (/home/container/events/interactionCreate.js:155:39)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+
+[Tuesday, June 2, 2026 at 8:02:22 AM GMT+7] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: ERROR]
+
+TypeError: Cannot read properties of undefined (reading 'name')
+    at Object.execute (/home/container/events/interactionCreate.js:155:39)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+
+[Tuesday, June 2, 2026 at 8:02:22 AM GMT+7] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: ERROR]
+
+TypeError: Cannot read properties of undefined (reading 'name')
+    at Object.execute (/home/container/events/interactionCreate.js:155:39)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+
+[Tuesday, June 2, 2026 at 8:02:22 AM GMT+7] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: ERROR]
+
+TypeError: Cannot read properties of undefined (reading 'name')
+    at Object.execute (/home/container/events/interactionCreate.js:155:39)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+
+[Tuesday, June 2, 2026 at 8:02:22 AM GMT+7] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: ERROR]
+
+TypeError: Cannot read properties of undefined (reading 'name')
+    at Object.execute (/home/container/events/interactionCreate.js:155:39)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+
+[Tuesday, June 2, 2026 at 8:02:22 AM GMT+7] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: ERROR]
+
+TypeError: Cannot read properties of undefined (reading 'name')
+    at Object.execute (/home/container/events/interactionCreate.js:155:39)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+
+[Tuesday, June 2, 2026 at 8:02:22 AM GMT+7] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: ERROR]
+
+TypeError: Cannot read properties of undefined (reading 'name')
+    at Object.execute (/home/container/events/interactionCreate.js:155:39)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+
+[Tuesday, June 2, 2026 at 8:02:22 AM GMT+7] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: ERROR]
+
+TypeError: Cannot read properties of undefined (reading 'name')
+    at Object.execute (/home/container/events/interactionCreate.js:155:39)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+
+[Tuesday, June 2, 2026 at 8:02:22 AM GMT+7] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: ERROR]
+
+TypeError: Cannot read properties of undefined (reading 'name')
+    at Object.execute (/home/container/events/interactionCreate.js:155:39)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+
+[Tuesday, June 2, 2026 at 8:02:22 AM GMT+7] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: ERROR]
+
+TypeError: Cannot read properties of undefined (reading 'name')
+    at Object.execute (/home/container/events/interactionCreate.js:155:39)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+
+[Tuesday, June 2, 2026 at 8:02:22 AM GMT+7] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: ERROR]
+
+TypeError: Cannot read properties of undefined (reading 'name')
+    at Object.execute (/home/container/events/interactionCreate.js:155:39)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+
+[Tuesday, June 2, 2026 at 8:02:22 AM GMT+7] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: ERROR]
+
+TypeError: Cannot read properties of undefined (reading 'name')
+    at Object.execute (/home/container/events/interactionCreate.js:155:39)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+
+[Tuesday, June 2, 2026 at 8:02:22 AM GMT+7] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: ERROR]
+
+TypeError: Cannot read properties of undefined (reading 'name')
+    at Object.execute (/home/container/events/interactionCreate.js:155:39)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+
+[Tuesday, June 2, 2026 at 8:02:22 AM GMT+7] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: ERROR]
+
+TypeError: Cannot read properties of undefined (reading 'name')
+    at Object.execute (/home/container/events/interactionCreate.js:155:39)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+
+[Tuesday, June 2, 2026 at 8:02:22 AM GMT+7] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: ERROR]
+
+TypeError: Cannot read properties of undefined (reading 'name')
+    at Object.execute (/home/container/events/interactionCreate.js:155:39)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+
+[Tuesday, June 2, 2026 at 8:02:22 AM GMT+7] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: ERROR]
+
+TypeError: Cannot read properties of undefined (reading 'name')
+    at Object.execute (/home/container/events/interactionCreate.js:155:39)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+
+[Tuesday, June 2, 2026 at 8:02:22 AM GMT+7] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: ERROR]
+
+DiscordAPIError[50035]: Invalid Form Body
+message_reference[MESSAGE_REFERENCE_UNKNOWN_MESSAGE]: Unknown message
+    at handleErrors (/home/container/node_modules/@discordjs/rest/src/lib/handlers/Shared.ts:148:10)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async SequentialHandler.runRequest (/home/container/node_modules/@discordjs/rest/src/lib/handlers/SequentialHandler.ts:417:20)
+    at async SequentialHandler.queueRequest (/home/container/node_modules/@discordjs/rest/src/lib/handlers/SequentialHandler.ts:169:11)
+    at async _REST.request (/home/container/node_modules/@discordjs/rest/src/lib/REST.ts:210:20)
+    at async TextChannel.send (/home/container/node_modules/discord.js/src/structures/interfaces/TextBasedChannel.js:195:15)
+    at async Client.<anonymous> (/home/container/cmd_status.js:14:28)
+
+[Friday, June 5, 2026 at 9:16:53 PM GMT+7] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: ERROR]
+
+TypeError: Cannot read properties of undefined (reading 'toJSON')
+    at /home/container/events/ready.js:18:22
+    at Array.map (<anonymous>)
+    at Object.execute (/home/container/events/ready.js:17:61)
+    at Client.<anonymous> (/home/container/index.js:123:48)
+    at Object.onceWrapper (node:events:622:26)
+    at Client.emit (node:events:507:28)
+    at Client.emit (node:domain:489:12)
+    at WebSocketManager.triggerClientReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:401:17)
+    at WebSocketManager.checkShardsReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:368:10)
+    at WebSocketShard.<anonymous> (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:198:16)
+
+
+[Error Context] -> [Ready Event Error]: an error occurred during initialization[Friday, June 5, 2026 at 10:58:44 PM GMT+7] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: ERROR]
+
+TypeError: Cannot read properties of undefined (reading 'toJSON')
+    at /home/container/events/ready.js:18:22
+    at Array.map (<anonymous>)
+    at Object.execute (/home/container/events/ready.js:17:61)
+    at Client.<anonymous> (/home/container/index.js:123:48)
+    at Object.onceWrapper (node:events:622:26)
+    at Client.emit (node:events:507:28)
+    at Client.emit (node:domain:489:12)
+    at WebSocketManager.triggerClientReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:401:17)
+    at WebSocketManager.checkShardsReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:368:10)
+    at WebSocketShard.<anonymous> (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:198:16)
+
+
+[Error Context] -> [Ready Event Error]: an error occurred during initialization[Friday, June 5, 2026 at 10:58:44 PM GMT+7] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: ERROR]
+
+DiscordAPIError[50035]: Invalid Form Body
+message_reference[MESSAGE_REFERENCE_UNKNOWN_MESSAGE]: Unknown message
+    at handleErrors (/home/container/node_modules/@discordjs/rest/src/lib/handlers/Shared.ts:148:10)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async SequentialHandler.runRequest (/home/container/node_modules/@discordjs/rest/src/lib/handlers/SequentialHandler.ts:417:20)
+    at async SequentialHandler.queueRequest (/home/container/node_modules/@discordjs/rest/src/lib/handlers/SequentialHandler.ts:169:11)
+    at async _REST.request (/home/container/node_modules/@discordjs/rest/src/lib/REST.ts:210:20)
+    at async TextChannel.send (/home/container/node_modules/discord.js/src/structures/interfaces/TextBasedChannel.js:195:15)
+    at async Client.<anonymous> (/home/container/cmd_status.js:14:28)
+
+[Friday, June 5, 2026 at 10:58:44 PM GMT+7] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: ERROR]
+
+TypeError: Cannot read properties of null (reading 'bannable')
+    at softban (/home/container/events/autoMod.js:212:15)
+    at Object.execute (/home/container/events/autoMod.js:243:30)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+
+[Wednesday, June 10, 2026 at 9:08:57 AM GMT+7] -> [Bot v5.0.0] [Node.JS v23.11.1] [Type: ERROR]
+
+TypeError: Cannot read properties of undefined (reading 'toJSON')
+    at /home/container/events/ready.js:18:22
+    at Array.map (<anonymous>)
+    at Object.execute (/home/container/events/ready.js:17:61)
+    at Client.<anonymous> (/home/container/index.js:123:48)
+    at Object.onceWrapper (node:events:622:26)
+    at Client.emit (node:events:507:28)
+    at Client.emit (node:domain:489:12)
+    at WebSocketManager.triggerClientReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:401:17)
+    at WebSocketManager.checkShardsReady (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:368:10)
+    at WebSocketShard.<anonymous> (/home/container/node_modules/discord.js/src/client/websocket/WebSocketManager.js:198:16)
+
+
+[Error Context] -> [Ready Event Error]: an error occurred during initialization[Wednesday, June 10, 2026 at 9:10:53 AM GMT+7] [Bot v5.0.0] [NodeJS v23.11.1] [LOG] The ticket bot is now ready! Logged in as Stela Network#8147. Startup time was 2.70 seconds. A total of 107 commands were registered.
+
