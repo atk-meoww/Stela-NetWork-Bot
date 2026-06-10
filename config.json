@@ -1,0 +1,104 @@
+{
+  "token": "",
+  "prefix": "!",
+  "ownerID": "1265194361004752970",
+  "clientID": "1449427114486005811",
+  "guildID": "1445789758902108180",
+  "adminIDs": [
+    "1265194361004752970",
+    "1150416546330595498",
+    "1264908798003253314",
+    "1065158679604756531"
+  ],
+  "colors": {
+    "primary": "#7B2FBE",
+    "secondary": "#4169E1",
+    "success": "#00D26A",
+    "error": "#FF4757",
+    "warning": "#FFA502",
+    "gold": "#FFD700"
+  },
+  "minecraftServer": {
+    "host": "stelamc.xyz",
+    "port": 25565,
+    "hostBackup": "stelasmp.online",
+    "portBackup": 25565
+  },
+  "webURL": "https://meomeow2108.github.io/Web-Stela",
+  "welcomeChannelId": "1445923350827372626",
+  "goodbyeChannelId": "1445791197204451444",
+  "statusChannelId": "1457278897681862793",
+  "rulesChannelId": "1445795066814664785",
+  "xpPerMessage": {
+    "min": 5,
+    "max": 15
+  },
+  "xpCooldown": 60000,
+  "ranks": {
+    "STELA": 50000,
+    "STELA+": 70000,
+    "STELA++": 120000,
+    "SUPERSTELA+": 150000,
+    "SUPERSTELA++": 200000,
+    "KINGSTELA++": 250000,
+    "CUSTOM": 500000
+  },
+  "keys": {
+    "Amethyst": 20000,
+    "Gold": 10000,
+    "Prime": 10000,
+    "Crimson": 20000
+  },
+  "flyXP": 100000,
+  "autoModLogChannelId": "1480768742215651409",
+  "autoModIgnoreRoles": [
+    "1468288305287135470",
+    "1476276913550135316",
+    "1445797855037227131",
+    "1460294329200541706"
+  ],
+  "staffRoleId": "1449063420430127326",
+  "boostChannelId": "1458471748889743371",
+  "boostRoleId": "1445802294783246429",
+  "boostMilestoneRoles": {
+    "5": "",
+    "10": "",
+    "20": ""
+  },
+  "boostReward": {
+    "money": 5000,
+    "xp": 500
+  },
+  "raidLogChannelId": "1480770423242362910",
+  "adminRoleId": "1445799132727087297",
+  "starboardChannelId": "1480771306160128000",
+  "starboardThreshold": 3,
+  "suggestionChannelId": "1445919573542047764",
+  "birthdayChannelId": "1480771779780939877",
+  "statsChannels": {
+    "members": "1480772305402593392",
+    "bots": "1480772368061173841",
+    "boosters": "1480772430145519656",
+    "channels": "1480772520713125983"
+  },
+  "dashboardPort": 3000,
+  "dashboardPassword": "StelaOnTop",
+  "dashboardModIDs": [],
+  "weeklyEventChannelId": "1481312258343698604",
+  "modIDs": [
+    1169646637845581800
+  ],
+  "logChannelId": "1445920178855612550",
+  "lotteryChannelId": "1481312959606034574",
+  "ticketPanelImage": "https://media.discordapp.net/attachments/1445794116834300148/1483809021541482618/ChatGPT_Image_23_16_41_3_thg_12_2025.png?ex=69cfb6d6&is=69ce6556&hm=2e5d03192b8161633808f1b6230c5457386756e963b219f31d6b38931dcdac1d&=&format=webp&quality=lossless&width=971&height=971",
+  "footer": "Stela Network",
+  "staffRoleIds": [
+    "1445799132727087297",
+    "1449063420430127326",
+    "1506217824002248746",
+    "1445792934657003732",
+    "1494887440261972022",
+    "1445797855037227131"
+  ],
+  "profanityChannelId": "1497407011866808380"
+}
