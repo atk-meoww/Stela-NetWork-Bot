@@ -1,0 +1,63 @@
+{
+  "name": "stela-studio",
+  "private": true,
+  "version": "5.0.0",
+  "description": "Stela Network — by atk_meow",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon --watch . --ext js,json --ignore database/ index.js",
+    "deploy": "node deployCommands.js",
+    "deploy:guild": "node deployCommands.js guild",
+    "dashboard": "node dashboard/server.js",
+    "test": "node --test tests/**/*.test.js",
+    "migrate": "node scripts/migrate.js apply",
+    "migrate:check": "node scripts/migrate.js check",
+    "migrate:status": "node scripts/migrate.js status",
+    "backup:db": "node scripts/backup.js",
+    "restore:db": "node scripts/restore.js",
+    "backup:drill": "node scripts/restore-drill.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "node",
+    "javascript",
+    "discord",
+    "tickets"
+  ],
+  "author": "atk_meow",
+  "license": "MIT",
+  "dependencies": {
+    "@discordjs/rest": "^2.6.1",
+    "@discordjs/voice": "^0.17.0",
+    "@discordjs/opus": "^0.9.0",
+    "axios": "^1.15.2",
+    "better-sqlite3": "11.5.0",
+    "discord-html-transcripts": "^3.2.0",
+    "discord.js": "^14.25.0",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "minecraft-server-util": "^5.3.0",
+    "moment-timezone": "^0.6.0",
+    "node-cron": "^4.2.1",
+    "pg": "^8.11.3",
+    "play-dl": "^1.9.7",
+    "quick.db": "^9.1.7",
+    "sodium-native": "^4.0.4",
+    "winston": "^3.19.0",
+    "winston-daily-rotate-file": "^5.0.0",
+    "yaml": "^2.8.1",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.3.1",
+    "@eslint/js": "^9.39.1",
+    "eslint": "^9.39.1",
+    "eslint-config-prettier": "^10.1.8",
+    "globals": "^16.5.0",
+    "nodemon": "^3.1.0",
+    "prettier": "^3.6.2"
+  }
+}

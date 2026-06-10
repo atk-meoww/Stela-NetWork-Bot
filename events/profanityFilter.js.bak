@@ -1,0 +1,104 @@
+'use strict';
+const { EmbedBuilder } = require('discord.js');
+const config = require('../config.json');
+
+// ── Normalize helper ──────────────────────────────────────────────────────────
+function normalizeStr(text) {
+  return text.toLowerCase()
+    .replace(/[àáạảãâầấậẩẫăằắặẳẵ]/g,'a').replace(/[èéẹẻẽêềếệểễ]/g,'e')
+    .replace(/[ìíịỉĩ]/g,'i').replace(/[òóọỏõôồốộổỗơờớợởỡ]/g,'o')
+    .replace(/[ùúụủũưừứựửữ]/g,'u').replace(/[ỳýỵỷỹ]/g,'y').replace(/đ/g,'d');
+}
+
+function escapeRe(s) { return s.replace(/[-[\]{}()*+?.,\\^$|#\s]/g,'\\$&'); }
+
+// ── Từ tục tiếng Việt (check text GỐC có dấu — tránh false positive) ─────────
+const BAD_VN = [
+  'đụ','đéo','địt','cặc','lồn','buồi','đĩ',
+  'đmm','đcm','dmm','dcm','vl','vcl','vkl','đệt','đét',
+  'địt mẹ','địt cha','đéo mẹ','đéo cha','mẹ kiếp','đụ má',
+  'mẹ mày','cha mày','bà mày','óc chó','thằng chó','con chó',
+  'khốn nạn','má mày','bố mày',
+];
+
+// ── Từ tục tiếng Anh (check normalized ASCII) ─────────────────────────────────
+const BAD_EN = [
+  'fuck','shit','bitch','asshole','bastard','cunt',
+  'cock','pussy','whore','slut','motherfucker','nigga','nigger',
+  'faggot','stfu',
+];
+
+// Build regex patterns (cho phép ký tự ngắt giữa: d.u → du, f-u-c-k → fuck)
+const SEP = '[\\s\\*\\.\\-_]*';
+const vnPat = BAD_VN.map(w => w.split('').map(c=>'['+escapeRe(c)+']').join(SEP)).join('|');
+const enPat = BAD_EN.map(w => w.split('').map(c=>'['+escapeRe(c)+']').join(SEP)).join('|');
+const vnRegex = new RegExp('('+vnPat+')', 'gi');
+const enRegex = new RegExp('('+enPat+')', 'gi');
+
+function hasProfanity(text) {
+  if (!text) return false;
+  vnRegex.lastIndex = 0;
+  if (vnRegex.test(text)) return true;
+  enRegex.lastIndex = 0;
+  const r = enRegex.test(normalizeStr(text));
+  enRegex.lastIndex = 0;
+  return r;
+}
+
+// ── Allowed channel (cập nhật qua setAllowedChannel) ─────────────────────────
+// Đọc từ config khi khởi động, cập nhật runtime qua setAllowedChannel()
+let allowedChannelId = config.profanityChannelId || '';
+
+module.exports = {
+  name: 'messageCreate',
+
+  // Export để setswear.js gọi runtime update
+  setAllowedChannel(id) { allowedChannelId = id || ''; },
+  getAllowedChannel()   { return allowedChannelId; },
+
+  async execute(message, client) {
+    if (!message.guild || message.author?.bot) return;
+    if (!message.content?.trim()) return;
+
+    // Kênh được phép → bỏ qua hoàn toàn
+    if (allowedChannelId && message.channel.id === allowedChannelId) return;
+
+    // Không có từ tục → bỏ qua
+    if (!hasProfanity(message.content)) return;
+
+    // Xóa tin nhắn
+    await message.delete().catch(() => {});
+
+    // Cảnh báo 5 giây rồi tự xóa
+    const warn = await message.channel.send({
+      embeds: [new EmbedBuilder()
+        .setColor(0xFF4757)
+        .setDescription(
+          `⚠️ ${message.author} **không được dùng từ tục tĩu** ở đây!\n` +
+          (allowedChannelId
+            ? `💬 Vào <#${allowedChannelId}> nếu muốn nói thoải mái hơn.`
+            : `🔇 Server này không cho phép ngôn ngữ thô tục.`)
+        )
+        .setFooter({ text: config.footer || 'Stela Network' })
+      ]
+    }).catch(() => null);
+
+    if (warn) setTimeout(() => warn.delete().catch(() => {}), 5000);
+
+    // Ghi log
+    const logChId = config.logChannelId || config.autoModLogChannelId;
+    if (logChId) {
+      const logCh = message.guild?.channels?.cache?.get(logChId);
+      logCh?.send({ embeds: [new EmbedBuilder()
+        .setColor(0xFF8C00)
+        .setTitle('🔇 Từ tục bị xóa')
+        .addFields(
+          { name: '👤 User',     value: `${message.author} \`${message.author?.id}\``, inline: true },
+          { name: '📢 Kênh',    value: `${message.channel}`, inline: true },
+          { name: '📝 Nội dung', value: `||${message.content.slice(0,300)}||`, inline: false }
+        )
+        .setFooter({ text: config.footer || 'Stela Network' }).setTimestamp()
+      ]}).catch(() => {});
+    }
+  }
+};

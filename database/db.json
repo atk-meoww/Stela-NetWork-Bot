@@ -1,0 +1,7608 @@
+{
+  "users": {
+    "1150416546330595498": {
+      "xp": 27545,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 27545,
+      "msgCount": 1812,
+      "quests": {
+        "date": "2026-6-10",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1275122881331986502": {
+      "xp": 1017,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 1017,
+      "msgCount": 40,
+      "quests": {
+        "date": "2026-6-1",
+        "progress": {
+          "chat30": 1
+        },
+        "claimed": []
+      }
+    },
+    "1265194361004752970": {
+      "xp": 34847,
+      "level": 1,
+      "money": 60000002240,
+      "totalXP": 34847,
+      "msgCount": 2105,
+      "quests": {
+        "date": "2026-6-10",
+        "progress": {
+          "chat10": 10
+        },
+        "claimed": []
+      },
+      "lastDaily": 1780468671166,
+      "streak": 1,
+      "lastRob": 1780244333521,
+      "totalSpent": 750
+    },
+    "1389968189940568084": {
+      "xp": 10812,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 10812,
+      "msgCount": 638,
+      "quests": {
+        "date": "2026-6-7",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1280388397797736499": {
+      "xp": 95,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 95,
+      "msgCount": 7,
+      "quests": {
+        "date": "2026-6-4",
+        "progress": {
+          "chat30": 1
+        },
+        "claimed": []
+      }
+    },
+    "1399732550468894771": {
+      "xp": 232,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 232,
+      "msgCount": 17,
+      "quests": {
+        "date": "2026-6-5",
+        "progress": {
+          "chat10": 3
+        },
+        "claimed": []
+      }
+    },
+    "1381512932042608640": {
+      "xp": 1390,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 1390,
+      "msgCount": 126,
+      "quests": {
+        "date": "2026-6-3",
+        "progress": {
+          "chat30": 1
+        },
+        "claimed": []
+      }
+    },
+    "1500043843889008661": {
+      "xp": 87,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 87,
+      "msgCount": 8,
+      "quests": {
+        "date": "2026-5-24",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1491640667804274869": {
+      "xp": 7838,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 7838,
+      "msgCount": 517,
+      "quests": {
+        "date": "2026-6-8",
+        "progress": {
+          "chat10": 10
+        },
+        "claimed": []
+      }
+    },
+    "1490384142020645088": {
+      "xp": 2308,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 2308,
+      "msgCount": 187,
+      "quests": {
+        "date": "2026-6-7",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1443420320404078667": {
+      "xp": 4529,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 4529,
+      "msgCount": 196,
+      "quests": {
+        "date": "2026-6-10",
+        "progress": {
+          "chat30": 8
+        },
+        "claimed": []
+      }
+    },
+    "729298451099287563": {
+      "xp": 311,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 311,
+      "msgCount": 20,
+      "quests": {
+        "date": "2026-6-7",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1264908798003253314": {
+      "xp": 4773,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 4773,
+      "msgCount": 355,
+      "quests": {
+        "date": "2026-6-7",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "948550637744963675": {
+      "xp": 370,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 370,
+      "msgCount": 35,
+      "quests": {
+        "date": "2026-6-2",
+        "progress": {
+          "chat30": 2
+        },
+        "claimed": []
+      }
+    },
+    "1488051080825667645": {
+      "xp": 345,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 345,
+      "msgCount": 28,
+      "quests": {
+        "date": "2026-5-24",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1308799500369924120": {
+      "xp": 4969,
+      "level": 1,
+      "money": 1500,
+      "totalXP": 4969,
+      "msgCount": 187,
+      "quests": {
+        "date": "2026-6-8",
+        "progress": {
+          "chat30": 2
+        },
+        "claimed": []
+      },
+      "lastDaily": 1778577741138,
+      "streak": 1
+    },
+    "947327330609692743": {
+      "xp": 87,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 87,
+      "msgCount": 8,
+      "quests": {
+        "date": "2026-5-31",
+        "progress": {
+          "chat30": 1
+        },
+        "claimed": []
+      }
+    },
+    "1494914874591936533": {
+      "xp": 347,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 347,
+      "msgCount": 37,
+      "quests": {
+        "date": "2026-5-19",
+        "progress": {
+          "chat30": 15,
+          "chat10": 10
+        },
+        "claimed": []
+      }
+    },
+    "1302772385707065354": {
+      "xp": 1084,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 1084,
+      "msgCount": 77,
+      "quests": {
+        "date": "2026-6-6",
+        "progress": {
+          "chat10": 6
+        },
+        "claimed": []
+      }
+    },
+    "1492149990087196915": {
+      "xp": 73,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 73,
+      "msgCount": 7,
+      "quests": {
+        "date": "2026-5-13",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1065158679604756531": {
+      "xp": 10936,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 10936,
+      "msgCount": 585,
+      "quests": {
+        "date": "2026-6-10",
+        "progress": {
+          "chat10": 4
+        },
+        "claimed": []
+      }
+    },
+    "1318522901384794185": {
+      "xp": 10,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 10,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-11",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1223951209237319761": {
+      "xp": 5178,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 5178,
+      "msgCount": 343,
+      "quests": {
+        "date": "2026-6-7",
+        "progress": {
+          "chat30": 30
+        },
+        "claimed": []
+      }
+    },
+    "1299226788815179803": {
+      "xp": 2392,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 2392,
+      "msgCount": 129,
+      "quests": {
+        "date": "2026-6-10",
+        "progress": {
+          "chat30": 1
+        },
+        "claimed": []
+      }
+    },
+    "1204447180731973712": {
+      "xp": 64,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 64,
+      "msgCount": 6,
+      "quests": {
+        "date": "2026-5-13",
+        "progress": {
+          "chat10": 2
+        },
+        "claimed": []
+      }
+    },
+    "1456192416125157485": {
+      "xp": 4112,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 4112,
+      "msgCount": 209,
+      "quests": {
+        "date": "2026-6-8",
+        "progress": {
+          "chat30": 5
+        },
+        "claimed": []
+      }
+    },
+    "1385083494895587449": {
+      "xp": 12404,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 12404,
+      "msgCount": 776,
+      "quests": {
+        "date": "2026-6-10",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1287009715100061710": {
+      "xp": 765,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 765,
+      "msgCount": 71,
+      "quests": {
+        "date": "2026-6-7",
+        "progress": {
+          "chat10": 1
+        },
+        "claimed": []
+      }
+    },
+    "1280521280990478347": {
+      "xp": 202,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 202,
+      "msgCount": 20,
+      "quests": {
+        "date": "2026-5-16",
+        "progress": {
+          "chat10": 7
+        },
+        "claimed": []
+      }
+    },
+    "1298287022577946655": {
+      "xp": 37,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 37,
+      "msgCount": 4,
+      "quests": {
+        "date": "2026-5-31",
+        "progress": {
+          "chat30": 1
+        },
+        "claimed": []
+      }
+    },
+    "1153214975540744292": {
+      "xp": 823,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 823,
+      "msgCount": 52,
+      "quests": {
+        "date": "2026-6-7",
+        "progress": {
+          "chat30": 6
+        },
+        "claimed": []
+      }
+    },
+    "1086498901546254436": {
+      "xp": 924,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 924,
+      "msgCount": 71,
+      "quests": {
+        "date": "2026-5-31",
+        "progress": {
+          "chat10": 2
+        },
+        "claimed": []
+      }
+    },
+    "1492180395372843159": {
+      "xp": 54,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 54,
+      "msgCount": 5,
+      "quests": {
+        "date": "2026-5-14",
+        "progress": {
+          "chat10": 1,
+          "chat30": 1
+        },
+        "claimed": []
+      }
+    },
+    "1196001840458899500": {
+      "xp": 999,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 999,
+      "msgCount": 53,
+      "quests": {
+        "date": "2026-6-2",
+        "progress": {
+          "chat30": 1
+        },
+        "claimed": []
+      }
+    },
+    "1275479495301927047": {
+      "xp": 40,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 40,
+      "msgCount": 5,
+      "quests": {
+        "date": "2026-5-24",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1414460843948642344": {
+      "xp": 585,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 585,
+      "msgCount": 35,
+      "quests": {
+        "date": "2026-6-6",
+        "progress": {
+          "chat10": 1
+        },
+        "claimed": []
+      }
+    },
+    "795189319643955242": {
+      "xp": 3031,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 3031,
+      "msgCount": 274,
+      "quests": {
+        "date": "2026-5-24",
+        "progress": {
+          "chat30": 1
+        },
+        "claimed": []
+      }
+    },
+    "1472204742280085577": {
+      "xp": 54,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 54,
+      "msgCount": 5,
+      "quests": {
+        "date": "2026-6-6",
+        "progress": {
+          "chat30": 1,
+          "chat10": 1
+        },
+        "claimed": []
+      }
+    },
+    "1278026985284571178": {
+      "xp": 2083,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 2083,
+      "msgCount": 110,
+      "quests": {
+        "date": "2026-6-6",
+        "progress": {
+          "chat30": 30
+        },
+        "claimed": []
+      }
+    },
+    "1363492044659621908": {
+      "xp": 322,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 322,
+      "msgCount": 29,
+      "quests": {
+        "date": "2026-6-5",
+        "progress": {
+          "chat30": 3
+        },
+        "claimed": []
+      }
+    },
+    "1480881214461050962": {
+      "xp": 434,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 434,
+      "msgCount": 29,
+      "quests": {
+        "date": "2026-5-24",
+        "progress": {
+          "chat30": 3
+        },
+        "claimed": []
+      }
+    },
+    "1502327218213228775": {
+      "xp": 194,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 194,
+      "msgCount": 19,
+      "quests": {
+        "date": "2026-5-14",
+        "progress": {
+          "chat30": 7,
+          "chat10": 7
+        },
+        "claimed": []
+      }
+    },
+    "1482360398890926121": {
+      "xp": 399,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 399,
+      "msgCount": 37,
+      "quests": {
+        "date": "2026-5-26",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1502639815324078121": {
+      "xp": 3898,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 3898,
+      "msgCount": 210,
+      "quests": {
+        "date": "2026-6-7",
+        "progress": {
+          "chat10": 7
+        },
+        "claimed": []
+      }
+    },
+    "1419127318038708224": {
+      "xp": 608,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 608,
+      "msgCount": 52,
+      "quests": {
+        "date": "2026-6-10",
+        "progress": {
+          "chat10": 2
+        },
+        "claimed": []
+      }
+    },
+    "1443548700856287283": {
+      "xp": 388,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 388,
+      "msgCount": 37,
+      "quests": {
+        "date": "2026-6-2",
+        "progress": {
+          "chat10": 2
+        },
+        "claimed": []
+      }
+    },
+    "1497794109065396335": {
+      "xp": 87,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 87,
+      "msgCount": 9,
+      "quests": {
+        "date": "2026-5-12",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1382268137789194283": {
+      "xp": 13,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 13,
+      "msgCount": 2,
+      "quests": {
+        "date": "2026-5-11",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1460086633931215110": {
+      "xp": 311,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 311,
+      "msgCount": 19,
+      "quests": {
+        "date": "2026-6-5",
+        "progress": {
+          "chat30": 2
+        },
+        "claimed": []
+      }
+    },
+    "1122083584665194549": {
+      "xp": 1028,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 1028,
+      "msgCount": 52,
+      "quests": {
+        "date": "2026-5-25",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1489484371261128895": {
+      "xp": 5954,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 5954,
+      "msgCount": 360,
+      "quests": {
+        "date": "2026-6-7",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1497942443415306372": {
+      "xp": 70,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 70,
+      "msgCount": 6,
+      "quests": {
+        "date": "2026-5-11",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1482690425981501480": {
+      "xp": 2894,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 2894,
+      "msgCount": 174,
+      "quests": {
+        "date": "2026-6-8",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1485853670703632384": {
+      "xp": 1230,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 1230,
+      "msgCount": 103,
+      "quests": {
+        "date": "2026-6-6",
+        "progress": {
+          "chat30": 8
+        },
+        "claimed": []
+      }
+    },
+    "1335164680015974400": {
+      "xp": 120,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 120,
+      "msgCount": 9,
+      "quests": {
+        "date": "2026-5-29",
+        "progress": {
+          "chat30": 2,
+          "chat10": 2
+        },
+        "claimed": []
+      }
+    },
+    "1176162957793706100": {
+      "xp": 1669,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 1669,
+      "msgCount": 116,
+      "quests": {
+        "date": "2026-6-10",
+        "progress": {
+          "chat10": 3
+        },
+        "claimed": []
+      }
+    },
+    "1498306468175417456": {
+      "xp": 107,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 107,
+      "msgCount": 11,
+      "quests": {
+        "date": "2026-5-11",
+        "progress": {
+          "chat10": 10
+        },
+        "claimed": []
+      }
+    },
+    "1408157025728204800": {
+      "xp": 238,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 238,
+      "msgCount": 22,
+      "quests": {
+        "date": "2026-5-15",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1160543264353566730": {
+      "xp": 947,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 947,
+      "msgCount": 65,
+      "quests": {
+        "date": "2026-6-7",
+        "progress": {
+          "chat10": 10,
+          "chat30": 11
+        },
+        "claimed": []
+      }
+    },
+    "1477653383740653609": {
+      "xp": 110,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 110,
+      "msgCount": 12,
+      "quests": {
+        "date": "2026-5-24",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1412357241486708788": {
+      "xp": 1634,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 1634,
+      "msgCount": 72,
+      "quests": {
+        "date": "2026-6-8",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1273860116403327048": {
+      "xp": 13,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 13,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-11",
+        "progress": {
+          "chat10": 1
+        },
+        "claimed": []
+      }
+    },
+    "1492096686590525450": {
+      "xp": 1493,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 1493,
+      "msgCount": 71,
+      "quests": {
+        "date": "2026-6-7",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1368588954147881010": {
+      "xp": 2442,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 2442,
+      "msgCount": 135,
+      "quests": {
+        "date": "2026-6-6",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1502872677218648246": {
+      "xp": 1757,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 1757,
+      "msgCount": 120,
+      "quests": {
+        "date": "2026-6-7",
+        "progress": {
+          "chat30": 5
+        },
+        "claimed": []
+      }
+    },
+    "1306589972773732355": {
+      "xp": 8531,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 8531,
+      "msgCount": 416,
+      "quests": {
+        "date": "2026-6-8",
+        "progress": {
+          "chat30": 2
+        },
+        "claimed": []
+      }
+    },
+    "1456639642874150999": {
+      "xp": 318,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 318,
+      "msgCount": 31,
+      "quests": {
+        "date": "2026-5-16",
+        "progress": {
+          "chat10": 10
+        },
+        "claimed": []
+      }
+    },
+    "1499774341452136509": {
+      "xp": 571,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 571,
+      "msgCount": 48,
+      "quests": {
+        "date": "2026-5-29",
+        "progress": {
+          "chat10": 2
+        },
+        "claimed": []
+      }
+    },
+    "1499392325791514655": {
+      "xp": 261,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 261,
+      "msgCount": 24,
+      "quests": {
+        "date": "2026-5-23",
+        "progress": {
+          "chat30": 2
+        },
+        "claimed": []
+      }
+    },
+    "1500668799911989550": {
+      "xp": 1053,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 1053,
+      "msgCount": 70,
+      "quests": {
+        "date": "2026-6-7",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1432189997334790144": {
+      "xp": 4254,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 4254,
+      "msgCount": 252,
+      "quests": {
+        "date": "2026-6-8",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1049245021053923359": {
+      "xp": 339,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 339,
+      "msgCount": 31,
+      "quests": {
+        "date": "2026-5-19",
+        "progress": {
+          "chat30": 1
+        },
+        "claimed": []
+      }
+    },
+    "1386884691382239256": {
+      "xp": 1843,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 1843,
+      "msgCount": 86,
+      "quests": {
+        "date": "2026-6-7",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1168339306134393004": {
+      "xp": 747,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 747,
+      "msgCount": 46,
+      "quests": {
+        "date": "2026-6-7",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1412965720391811253": {
+      "xp": 476,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 476,
+      "msgCount": 32,
+      "quests": {
+        "date": "2026-6-10",
+        "progress": {
+          "chat30": 1
+        },
+        "claimed": []
+      }
+    },
+    "1384299257095389255": {
+      "xp": 456,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 456,
+      "msgCount": 40,
+      "quests": {
+        "date": "2026-5-20",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1395756853056503912": {
+      "xp": 17,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 17,
+      "msgCount": 3,
+      "quests": {
+        "date": "2026-5-12",
+        "progress": {
+          "chat30": 3,
+          "chat10": 3
+        },
+        "claimed": []
+      }
+    },
+    "1411938892810293339": {
+      "xp": 8,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 8,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-12",
+        "progress": {
+          "chat10": 1
+        },
+        "claimed": []
+      }
+    },
+    "1496617341956522046": {
+      "xp": 15,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 15,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-12",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1263977439281938452": {
+      "xp": 38,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 38,
+      "msgCount": 4,
+      "quests": {
+        "date": "2026-5-12",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1467156650510127339": {
+      "xp": 96,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 96,
+      "msgCount": 8,
+      "quests": {
+        "date": "2026-5-23",
+        "progress": {
+          "chat30": 1
+        },
+        "claimed": []
+      }
+    },
+    "1496733720651235358": {
+      "xp": 15,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 15,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-12",
+        "progress": {
+          "chat10": 1
+        },
+        "claimed": []
+      }
+    },
+    "1019510642861948948": {
+      "xp": 52,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 52,
+      "msgCount": 5,
+      "quests": {
+        "date": "2026-5-13",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1130740893478027325": {
+      "xp": 507,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 507,
+      "msgCount": 19,
+      "quests": {
+        "date": "2026-5-23",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1471133122694484203": {
+      "xp": 1223,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 1223,
+      "msgCount": 62,
+      "quests": {
+        "date": "2026-6-7",
+        "progress": {
+          "chat10": 10
+        },
+        "claimed": []
+      }
+    },
+    "1437076956070936586": {
+      "xp": 3111,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 3111,
+      "msgCount": 192,
+      "quests": {
+        "date": "2026-6-8",
+        "progress": {
+          "chat10": 1
+        },
+        "claimed": []
+      }
+    },
+    "1324640190471606374": {
+      "xp": 125,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 125,
+      "msgCount": 7,
+      "quests": {
+        "date": "2026-5-22",
+        "progress": {
+          "chat30": 4
+        },
+        "claimed": []
+      }
+    },
+    "1243565733741461589": {
+      "xp": 64,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 64,
+      "msgCount": 4,
+      "quests": {
+        "date": "2026-5-29",
+        "progress": {
+          "chat10": 2
+        },
+        "claimed": []
+      }
+    },
+    "1109335963655749732": {
+      "xp": 246,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 246,
+      "msgCount": 20,
+      "quests": {
+        "date": "2026-6-5",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1190992391633633390": {
+      "xp": 621,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 621,
+      "msgCount": 59,
+      "quests": {
+        "date": "2026-5-15",
+        "progress": {
+          "chat30": 2
+        },
+        "claimed": []
+      }
+    },
+    "1322833830221975562": {
+      "xp": 12,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 12,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-12",
+        "progress": {
+          "chat10": 1
+        },
+        "claimed": []
+      }
+    },
+    "1020240701163839509": {
+      "xp": 473,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 473,
+      "msgCount": 34,
+      "quests": {
+        "date": "2026-6-7",
+        "progress": {
+          "chat30": 2,
+          "chat10": 2
+        },
+        "claimed": []
+      }
+    },
+    "1503714491437809829": {
+      "xp": 79,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 79,
+      "msgCount": 7,
+      "quests": {
+        "date": "2026-5-14",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "896977148827545641": {
+      "xp": 133,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 133,
+      "msgCount": 9,
+      "quests": {
+        "date": "2026-6-6",
+        "progress": {
+          "chat30": 1
+        },
+        "claimed": []
+      }
+    },
+    "1462762186295218309": {
+      "xp": 29585,
+      "level": 1,
+      "money": 0,
+      "totalXP": 29585,
+      "msgCount": 1611,
+      "quests": {
+        "date": "2026-6-8",
+        "progress": {},
+        "claimed": []
+      },
+      "lastDaily": 1780244008770,
+      "streak": 1,
+      "vipExpiry": 1780849262474,
+      "streakShield": 1
+    },
+    "1456442248865517743": {
+      "xp": 37,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 37,
+      "msgCount": 5,
+      "quests": {
+        "date": "2026-6-5",
+        "progress": {
+          "chat30": 1
+        },
+        "claimed": []
+      }
+    },
+    "1142291620352503808": {
+      "xp": 12,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 12,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-12",
+        "progress": {
+          "chat10": 1
+        },
+        "claimed": []
+      }
+    },
+    "1382174106958561300": {
+      "xp": 13,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 13,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-12",
+        "progress": {
+          "chat10": 1
+        },
+        "claimed": []
+      }
+    },
+    "1499175930877448222": {
+      "xp": 451,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 451,
+      "msgCount": 43,
+      "quests": {
+        "date": "2026-5-29",
+        "progress": {
+          "chat10": 1
+        },
+        "claimed": []
+      }
+    },
+    "1457026378581938236": {
+      "xp": 662,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 662,
+      "msgCount": 45,
+      "quests": {
+        "date": "2026-6-8",
+        "progress": {
+          "chat10": 4,
+          "chat30": 4
+        },
+        "claimed": []
+      }
+    },
+    "1415709308947271774": {
+      "xp": 246,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 246,
+      "msgCount": 21,
+      "quests": {
+        "date": "2026-5-23",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1476471639104553010": {
+      "xp": 404,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 404,
+      "msgCount": 33,
+      "quests": {
+        "date": "2026-5-31",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1381517554081861664": {
+      "xp": 620,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 620,
+      "msgCount": 56,
+      "quests": {
+        "date": "2026-6-2",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1386934319569829978": {
+      "xp": 140,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 140,
+      "msgCount": 15,
+      "quests": {
+        "date": "2026-5-18",
+        "progress": {
+          "chat30": 1
+        },
+        "claimed": []
+      }
+    },
+    "1346097302779072602": {
+      "xp": 13,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 13,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-13",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "964887114024091698": {
+      "xp": 18,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 18,
+      "msgCount": 2,
+      "quests": {
+        "date": "2026-5-13",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1416681490170908761": {
+      "xp": 445,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 445,
+      "msgCount": 43,
+      "quests": {
+        "date": "2026-6-2",
+        "progress": {
+          "chat30": 4
+        },
+        "claimed": []
+      }
+    },
+    "1435850124361469972": {
+      "xp": 167,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 167,
+      "msgCount": 11,
+      "quests": {
+        "date": "2026-6-1",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1019249159716478996": {
+      "xp": 5,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 5,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-13",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1459163047133446218": {
+      "xp": 1383,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 1383,
+      "msgCount": 54,
+      "quests": {
+        "date": "2026-6-7",
+        "progress": {
+          "chat30": 11,
+          "chat10": 10
+        },
+        "claimed": []
+      }
+    },
+    "1489594980271132814": {
+      "xp": 791,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 791,
+      "msgCount": 60,
+      "quests": {
+        "date": "2026-6-7",
+        "progress": {
+          "chat30": 4
+        },
+        "claimed": []
+      }
+    },
+    "1416112105223880889": {
+      "xp": 32,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 32,
+      "msgCount": 3,
+      "quests": {
+        "date": "2026-5-13",
+        "progress": {
+          "chat10": 3
+        },
+        "claimed": []
+      }
+    },
+    "1489640547869266171": {
+      "xp": 11,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 11,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-13",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1491294423315779585": {
+      "xp": 7,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 7,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-13",
+        "progress": {
+          "chat10": 1
+        },
+        "claimed": []
+      }
+    },
+    "1423000727281864798": {
+      "xp": 162,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 162,
+      "msgCount": 12,
+      "quests": {
+        "date": "2026-6-7",
+        "progress": {
+          "chat10": 2
+        },
+        "claimed": []
+      }
+    },
+    "1301645557848084573": {
+      "xp": 63,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 63,
+      "msgCount": 6,
+      "quests": {
+        "date": "2026-5-13",
+        "progress": {
+          "chat10": 6
+        },
+        "claimed": []
+      }
+    },
+    "1497530591740952596": {
+      "xp": 891,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 891,
+      "msgCount": 87,
+      "quests": {
+        "date": "2026-6-7",
+        "progress": {
+          "chat10": 2
+        },
+        "claimed": []
+      }
+    },
+    "1245368017445982301": {
+      "xp": 422,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 422,
+      "msgCount": 40,
+      "quests": {
+        "date": "2026-6-2",
+        "progress": {
+          "chat30": 1,
+          "chat10": 1
+        },
+        "claimed": []
+      }
+    },
+    "1169646637845581896": {
+      "xp": 1543,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 1543,
+      "msgCount": 94,
+      "quests": {
+        "date": "2026-6-8",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1023111041456033833": {
+      "xp": 49,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 49,
+      "msgCount": 4,
+      "quests": {
+        "date": "2026-5-18",
+        "progress": {
+          "chat10": 2
+        },
+        "claimed": []
+      }
+    },
+    "1482720983294148739": {
+      "xp": 295,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 295,
+      "msgCount": 22,
+      "quests": {
+        "date": "2026-5-23",
+        "progress": {
+          "chat10": 5
+        },
+        "claimed": []
+      }
+    },
+    "1239790638447333416": {
+      "xp": 5,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 5,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-13",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1417836355249111162": {
+      "xp": 21,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 21,
+      "msgCount": 2,
+      "quests": {
+        "date": "2026-5-13",
+        "progress": {
+          "chat10": 2
+        },
+        "claimed": []
+      }
+    },
+    "1245055021813465149": {
+      "xp": 100,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 100,
+      "msgCount": 10,
+      "quests": {
+        "date": "2026-5-30",
+        "progress": {
+          "chat10": 5
+        },
+        "claimed": []
+      }
+    },
+    "677200052468318218": {
+      "xp": 588,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 588,
+      "msgCount": 58,
+      "quests": {
+        "date": "2026-5-24",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1250747175747715105": {
+      "xp": 106,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 106,
+      "msgCount": 11,
+      "quests": {
+        "date": "2026-5-24",
+        "progress": {
+          "chat30": 5,
+          "chat10": 5
+        },
+        "claimed": []
+      }
+    },
+    "1396725325706297364": {
+      "xp": 46,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 46,
+      "msgCount": 5,
+      "quests": {
+        "date": "2026-5-24",
+        "progress": {
+          "chat30": 1
+        },
+        "claimed": []
+      }
+    },
+    "1309429533836972073": {
+      "xp": 12,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 12,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-13",
+        "progress": {
+          "chat30": 1
+        },
+        "claimed": []
+      }
+    },
+    "1469617365544337482": {
+      "xp": 160,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 160,
+      "msgCount": 13,
+      "quests": {
+        "date": "2026-6-7",
+        "progress": {
+          "chat10": 4
+        },
+        "claimed": []
+      }
+    },
+    "1424261059975450806": {
+      "xp": 22,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 22,
+      "msgCount": 2,
+      "quests": {
+        "date": "2026-5-14",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1481627950104182896": {
+      "xp": 8,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 8,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-14",
+        "progress": {
+          "chat10": 1
+        },
+        "claimed": []
+      }
+    },
+    "1380948665044176936": {
+      "xp": 7,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 7,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-14",
+        "progress": {
+          "chat10": 1
+        },
+        "claimed": []
+      }
+    },
+    "1176465413408829530": {
+      "xp": 620,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 620,
+      "msgCount": 27,
+      "quests": {
+        "date": "2026-6-8",
+        "progress": {
+          "chat30": 2
+        },
+        "claimed": []
+      }
+    },
+    "1404775532960415885": {
+      "xp": 3021,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 3021,
+      "msgCount": 134,
+      "quests": {
+        "date": "2026-6-8",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1416700260725555301": {
+      "xp": 237,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 237,
+      "msgCount": 24,
+      "quests": {
+        "date": "2026-5-15",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1124871401355092040": {
+      "xp": 745,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 745,
+      "msgCount": 44,
+      "quests": {
+        "date": "2026-6-7",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1449228865984528557": {
+      "xp": 5,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 5,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-14",
+        "progress": {
+          "chat30": 1
+        },
+        "claimed": []
+      }
+    },
+    "1111658013816799252": {
+      "xp": 128,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 128,
+      "msgCount": 11,
+      "quests": {
+        "date": "2026-5-21",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1501784948917665936": {
+      "xp": 131,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 131,
+      "msgCount": 13,
+      "quests": {
+        "date": "2026-5-14",
+        "progress": {
+          "chat10": 10
+        },
+        "claimed": []
+      }
+    },
+    "1425141161076592730": {
+      "xp": 11,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 11,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-14",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "982232744354533416": {
+      "xp": 15,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 15,
+      "msgCount": 2,
+      "quests": {
+        "date": "2026-5-25",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1317078118246387769": {
+      "xp": 257,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 257,
+      "msgCount": 12,
+      "quests": {
+        "date": "2026-6-7",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1384096308318572554": {
+      "xp": 74,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 74,
+      "msgCount": 8,
+      "quests": {
+        "date": "2026-5-14",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1453703520355225642": {
+      "xp": 19,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 19,
+      "msgCount": 2,
+      "quests": {
+        "date": "2026-5-14",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1153289504677957634": {
+      "xp": 1383,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 1383,
+      "msgCount": 55,
+      "quests": {
+        "date": "2026-6-7",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1082309046452887633": {
+      "xp": 20,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 20,
+      "msgCount": 2,
+      "quests": {
+        "date": "2026-6-5",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1168521677257310299": {
+      "xp": 14,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 14,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-14",
+        "progress": {
+          "chat30": 1
+        },
+        "claimed": []
+      }
+    },
+    "1384911443341606953": {
+      "xp": 85,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 85,
+      "msgCount": 8,
+      "quests": {
+        "date": "2026-5-18",
+        "progress": {
+          "chat10": 1
+        },
+        "claimed": []
+      }
+    },
+    "911874222337450025": {
+      "xp": 183,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 183,
+      "msgCount": 18,
+      "quests": {
+        "date": "2026-5-14",
+        "progress": {
+          "chat30": 18
+        },
+        "claimed": []
+      }
+    },
+    "1471667843316846602": {
+      "xp": 2148,
+      "level": 1,
+      "money": 6000,
+      "totalXP": 2148,
+      "msgCount": 105,
+      "quests": {
+        "date": "2026-6-3",
+        "progress": {},
+        "claimed": []
+      },
+      "totalEarned": 5000
+    },
+    "1503270915591635014": {
+      "xp": 13,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 13,
+      "msgCount": 2,
+      "quests": {
+        "date": "2026-5-14",
+        "progress": {
+          "chat10": 2
+        },
+        "claimed": []
+      }
+    },
+    "1367301384269070437": {
+      "xp": 2256,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 2256,
+      "msgCount": 145,
+      "quests": {
+        "date": "2026-6-7",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1274750334513709209": {
+      "xp": 8,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 8,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-14",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1498346457135321230": {
+      "xp": 8,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 8,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-14",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1501192702929408000": {
+      "xp": 8,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 8,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-14",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1498177290985672715": {
+      "xp": 7,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 7,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-14",
+        "progress": {
+          "chat10": 1
+        },
+        "claimed": []
+      }
+    },
+    "1498700940088180856": {
+      "xp": 10,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 10,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-14",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1498702801201533050": {
+      "xp": 6,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 6,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-14",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1501192077973782648": {
+      "xp": 5,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 5,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-14",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1501187851516383413": {
+      "xp": 11,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 11,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-14",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1498703213006950420": {
+      "xp": 12,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 12,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-14",
+        "progress": {
+          "chat10": 1
+        },
+        "claimed": []
+      }
+    },
+    "1501170503292026941": {
+      "xp": 8,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 8,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-14",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1498171687261437952": {
+      "xp": 15,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 15,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-14",
+        "progress": {
+          "chat10": 1
+        },
+        "claimed": []
+      }
+    },
+    "1501173160739868743": {
+      "xp": 15,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 15,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-14",
+        "progress": {
+          "chat30": 1
+        },
+        "claimed": []
+      }
+    },
+    "1498720927104368643": {
+      "xp": 13,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 13,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-14",
+        "progress": {
+          "chat30": 1
+        },
+        "claimed": []
+      }
+    },
+    "1498701236432539839": {
+      "xp": 11,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 11,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-14",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1498179469284999250": {
+      "xp": 5,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 5,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-14",
+        "progress": {
+          "chat10": 1
+        },
+        "claimed": []
+      }
+    },
+    "1495056336709222521": {
+      "xp": 9,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 9,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-14",
+        "progress": {
+          "chat30": 1
+        },
+        "claimed": []
+      }
+    },
+    "1449300272223354913": {
+      "xp": 12,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 12,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-14",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1470998740256030848": {
+      "xp": 12,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 12,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-14",
+        "progress": {
+          "chat10": 1
+        },
+        "claimed": []
+      }
+    },
+    "1347607356648718339": {
+      "xp": 22,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 22,
+      "msgCount": 2,
+      "quests": {
+        "date": "2026-5-14",
+        "progress": {
+          "chat10": 2
+        },
+        "claimed": []
+      }
+    },
+    "903497023209234433": {
+      "xp": 13,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 13,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-14",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1412658634386837514": {
+      "xp": 39,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 39,
+      "msgCount": 3,
+      "quests": {
+        "date": "2026-5-16",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1454315952295514274": {
+      "xp": 9,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 9,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-14",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1350698848779112478": {
+      "xp": 132,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 132,
+      "msgCount": 8,
+      "quests": {
+        "date": "2026-5-24",
+        "progress": {
+          "chat30": 3,
+          "chat10": 3
+        },
+        "claimed": []
+      }
+    },
+    "1000461042259857408": {
+      "xp": 13,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 13,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-14",
+        "progress": {
+          "chat10": 1
+        },
+        "claimed": []
+      }
+    },
+    "1384776348844691503": {
+      "xp": 12,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 12,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-14",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1454839334845939772": {
+      "xp": 199,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 199,
+      "msgCount": 10,
+      "quests": {
+        "date": "2026-5-20",
+        "progress": {
+          "chat10": 4,
+          "chat30": 4
+        },
+        "claimed": []
+      }
+    },
+    "946778923323256863": {
+      "xp": 8,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 8,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-14",
+        "progress": {
+          "chat30": 1,
+          "chat10": 1
+        },
+        "claimed": []
+      }
+    },
+    "1089167905075232869": {
+      "xp": 6,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 6,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-14",
+        "progress": {
+          "chat30": 1
+        },
+        "claimed": []
+      }
+    },
+    "1423626084707995718": {
+      "xp": 9,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 9,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-14",
+        "progress": {
+          "chat10": 1
+        },
+        "claimed": []
+      }
+    },
+    "1321051992898011207": {
+      "xp": 14,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 14,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-14",
+        "progress": {
+          "chat10": 1
+        },
+        "claimed": []
+      }
+    },
+    "1359957964169023649": {
+      "xp": 13,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 13,
+      "msgCount": 2,
+      "quests": {
+        "date": "2026-5-31",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1307637395625349170": {
+      "xp": 565,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 565,
+      "msgCount": 38,
+      "quests": {
+        "date": "2026-6-7",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1411727143418724452": {
+      "xp": 10,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 10,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-15",
+        "progress": {
+          "chat10": 1
+        },
+        "claimed": []
+      }
+    },
+    "929009760529956904": {
+      "xp": 38,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 38,
+      "msgCount": 3,
+      "quests": {
+        "date": "2026-5-30",
+        "progress": {
+          "chat30": 1
+        },
+        "claimed": []
+      }
+    },
+    "1284381855667326976": {
+      "xp": 1658,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 1658,
+      "msgCount": 74,
+      "quests": {
+        "date": "2026-5-23",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1388339858556321794": {
+      "xp": 149,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 149,
+      "msgCount": 11,
+      "quests": {
+        "date": "2026-5-23",
+        "progress": {
+          "chat30": 3
+        },
+        "claimed": []
+      }
+    },
+    "1132955898113953823": {
+      "xp": 6,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 6,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-15",
+        "progress": {
+          "chat30": 1
+        },
+        "claimed": []
+      }
+    },
+    "1504450827958485122": {
+      "xp": 144,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 144,
+      "msgCount": 9,
+      "quests": {
+        "date": "2026-5-23",
+        "progress": {
+          "chat30": 2
+        },
+        "claimed": []
+      }
+    },
+    "1061239182275649597": {
+      "xp": 14,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 14,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-15",
+        "progress": {
+          "chat30": 1
+        },
+        "claimed": []
+      }
+    },
+    "1193410143094845452": {
+      "xp": 55,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 55,
+      "msgCount": 6,
+      "quests": {
+        "date": "2026-5-15",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1072882790393192521": {
+      "xp": 309,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 309,
+      "msgCount": 13,
+      "quests": {
+        "date": "2026-5-23",
+        "progress": {
+          "chat10": 10
+        },
+        "claimed": []
+      }
+    },
+    "1504618844293955714": {
+      "xp": 88,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 88,
+      "msgCount": 9,
+      "quests": {
+        "date": "2026-5-15",
+        "progress": {
+          "chat30": 9
+        },
+        "claimed": []
+      }
+    },
+    "1373114583501377658": {
+      "xp": 11,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 11,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-15",
+        "progress": {
+          "chat30": 1
+        },
+        "claimed": []
+      }
+    },
+    "1497926048837533827": {
+      "xp": 606,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 606,
+      "msgCount": 36,
+      "quests": {
+        "date": "2026-5-22",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1347162393662455848": {
+      "xp": 565,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 565,
+      "msgCount": 41,
+      "quests": {
+        "date": "2026-6-3",
+        "progress": {
+          "chat30": 1
+        },
+        "claimed": []
+      }
+    },
+    "1490301391741391038": {
+      "xp": 8,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 8,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-15",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1402264248419221534": {
+      "xp": 430,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 430,
+      "msgCount": 24,
+      "quests": {
+        "date": "2026-5-22",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1372090312411054111": {
+      "xp": 12,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 12,
+      "msgCount": 2,
+      "quests": {
+        "date": "2026-5-18",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1401126207197810789": {
+      "xp": 388,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 388,
+      "msgCount": 32,
+      "quests": {
+        "date": "2026-6-2",
+        "progress": {
+          "chat30": 2
+        },
+        "claimed": []
+      }
+    },
+    "1404112621271126117": {
+      "xp": 58,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 58,
+      "msgCount": 6,
+      "quests": {
+        "date": "2026-5-16",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1465337886026240152": {
+      "xp": 56,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 56,
+      "msgCount": 6,
+      "quests": {
+        "date": "2026-5-17",
+        "progress": {
+          "chat10": 2
+        },
+        "claimed": []
+      }
+    },
+    "1083908657323974687": {
+      "xp": 995,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 995,
+      "msgCount": 81,
+      "quests": {
+        "date": "2026-5-31",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1271760305072115784": {
+      "xp": 136,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 136,
+      "msgCount": 5,
+      "quests": {
+        "date": "2026-5-23",
+        "progress": {
+          "chat30": 3,
+          "chat10": 3
+        },
+        "claimed": []
+      }
+    },
+    "1164720917612597351": {
+      "xp": 16,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 16,
+      "msgCount": 2,
+      "quests": {
+        "date": "2026-6-3",
+        "progress": {
+          "chat30": 1
+        },
+        "claimed": []
+      }
+    },
+    "986486117496938507": {
+      "xp": 49,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 49,
+      "msgCount": 4,
+      "quests": {
+        "date": "2026-5-19",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1138782116319080518": {
+      "xp": 8,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 8,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-16",
+        "progress": {
+          "chat30": 1,
+          "chat10": 1
+        },
+        "claimed": []
+      }
+    },
+    "1279978722937667694": {
+      "xp": 60,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 60,
+      "msgCount": 7,
+      "quests": {
+        "date": "2026-5-17",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1504535775528620062": {
+      "xp": 7286,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 7286,
+      "msgCount": 395,
+      "quests": {
+        "date": "2026-6-8",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1504828181402882049": {
+      "xp": 556,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 556,
+      "msgCount": 38,
+      "quests": {
+        "date": "2026-6-8",
+        "progress": {
+          "chat30": 5,
+          "chat10": 5
+        },
+        "claimed": []
+      }
+    },
+    "1375763969222115380": {
+      "xp": 377,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 377,
+      "msgCount": 35,
+      "quests": {
+        "date": "2026-5-23",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1417415972414816277": {
+      "xp": 6,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 6,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-16",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1460999946571481313": {
+      "xp": 135,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 135,
+      "msgCount": 6,
+      "quests": {
+        "date": "2026-5-24",
+        "progress": {
+          "chat30": 1
+        },
+        "claimed": []
+      }
+    },
+    "1318438385265938524": {
+      "xp": 1767,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 1767,
+      "msgCount": 126,
+      "quests": {
+        "date": "2026-6-10",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1449764769295761531": {
+      "xp": 699,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 699,
+      "msgCount": 70,
+      "quests": {
+        "date": "2026-5-30",
+        "progress": {
+          "chat30": 2
+        },
+        "claimed": []
+      }
+    },
+    "1489651063232663593": {
+      "xp": 545,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 545,
+      "msgCount": 30,
+      "quests": {
+        "date": "2026-5-23",
+        "progress": {
+          "chat30": 3
+        },
+        "claimed": []
+      }
+    },
+    "1475531886884294679": {
+      "xp": 307,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 307,
+      "msgCount": 26,
+      "quests": {
+        "date": "2026-6-5",
+        "progress": {
+          "chat30": 3
+        },
+        "claimed": []
+      }
+    },
+    "1196802510464225280": {
+      "xp": 396,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 396,
+      "msgCount": 15,
+      "quests": {
+        "date": "2026-5-23",
+        "progress": {
+          "chat30": 11,
+          "chat10": 10
+        },
+        "claimed": []
+      }
+    },
+    "1402546540857262145": {
+      "xp": 161,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 161,
+      "msgCount": 16,
+      "quests": {
+        "date": "2026-5-16",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1415331224997855295": {
+      "xp": 48,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 48,
+      "msgCount": 4,
+      "quests": {
+        "date": "2026-6-4",
+        "progress": {
+          "chat30": 1,
+          "chat10": 1
+        },
+        "claimed": []
+      }
+    },
+    "1379640582787301511": {
+      "xp": 164,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 164,
+      "msgCount": 9,
+      "quests": {
+        "date": "2026-6-2",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1455909321123692584": {
+      "xp": 11,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 11,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-17",
+        "progress": {
+          "chat10": 1
+        },
+        "claimed": []
+      }
+    },
+    "1392798493533409401": {
+      "xp": 253,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 253,
+      "msgCount": 11,
+      "quests": {
+        "date": "2026-6-7",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1332535663635071046": {
+      "xp": 38,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 38,
+      "msgCount": 3,
+      "quests": {
+        "date": "2026-5-17",
+        "progress": {
+          "chat10": 3
+        },
+        "claimed": []
+      }
+    },
+    "1330028937186775073": {
+      "xp": 91,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 91,
+      "msgCount": 7,
+      "quests": {
+        "date": "2026-5-20",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1504772026001526857": {
+      "xp": 306,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 306,
+      "msgCount": 22,
+      "quests": {
+        "date": "2026-5-31",
+        "progress": {
+          "chat10": 3
+        },
+        "claimed": []
+      }
+    },
+    "1491793683295633530": {
+      "xp": 42,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 42,
+      "msgCount": 4,
+      "quests": {
+        "date": "2026-5-17",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1492564595020140645": {
+      "xp": 14,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 14,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-17",
+        "progress": {
+          "chat30": 1
+        },
+        "claimed": []
+      }
+    },
+    "1458635113633026079": {
+      "xp": 15,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 15,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-17",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1501240925119185067": {
+      "xp": 7,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 7,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-17",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1268780311236448370": {
+      "xp": 5,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 5,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-17",
+        "progress": {
+          "chat10": 1
+        },
+        "claimed": []
+      }
+    },
+    "1077112846397214760": {
+      "xp": 61,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 61,
+      "msgCount": 3,
+      "quests": {
+        "date": "2026-5-30",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1472750517360001077": {
+      "xp": 38,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 38,
+      "msgCount": 4,
+      "quests": {
+        "date": "2026-5-18",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1228677104011444345": {
+      "xp": 7,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 7,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-18",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1388554214904565942": {
+      "xp": 17,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 17,
+      "msgCount": 2,
+      "quests": {
+        "date": "2026-5-18",
+        "progress": {
+          "chat30": 2
+        },
+        "claimed": []
+      }
+    },
+    "1442184178262343862": {
+      "xp": 27,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 27,
+      "msgCount": 3,
+      "quests": {
+        "date": "2026-6-3",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1024333712663519325": {
+      "xp": 23,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 23,
+      "msgCount": 4,
+      "quests": {
+        "date": "2026-5-18",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1103605743543910420": {
+      "xp": 10,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 10,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-18",
+        "progress": {
+          "chat30": 1
+        },
+        "claimed": []
+      }
+    },
+    "1497137099281797231": {
+      "xp": 20,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 20,
+      "msgCount": 2,
+      "quests": {
+        "date": "2026-5-18",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1402909914661392414": {
+      "xp": 40,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 40,
+      "msgCount": 4,
+      "quests": {
+        "date": "2026-5-30",
+        "progress": {
+          "chat30": 1
+        },
+        "claimed": []
+      }
+    },
+    "732789174310273114": {
+      "xp": 15,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 15,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-18",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1017707566073122816": {
+      "xp": 15,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 15,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-18",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1463486899707445269": {
+      "xp": 8,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 8,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-18",
+        "progress": {
+          "chat30": 1
+        },
+        "claimed": []
+      }
+    },
+    "1098853861692801084": {
+      "xp": 175,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 175,
+      "msgCount": 11,
+      "quests": {
+        "date": "2026-5-23",
+        "progress": {
+          "chat10": 1
+        },
+        "claimed": []
+      }
+    },
+    "1334878676331794564": {
+      "xp": 195,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 195,
+      "msgCount": 20,
+      "quests": {
+        "date": "2026-5-18",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1442168496799748288": {
+      "xp": 472,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 472,
+      "msgCount": 39,
+      "quests": {
+        "date": "2026-6-2",
+        "progress": {
+          "chat30": 1
+        },
+        "claimed": []
+      }
+    },
+    "1502493127972225034": {
+      "xp": 37,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 37,
+      "msgCount": 3,
+      "quests": {
+        "date": "2026-5-18",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "899955044571549698": {
+      "xp": 5,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 5,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-18",
+        "progress": {
+          "chat10": 1
+        },
+        "claimed": []
+      }
+    },
+    "1039901650644635732": {
+      "xp": 7,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 7,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-18",
+        "progress": {
+          "chat30": 1
+        },
+        "claimed": []
+      }
+    },
+    "376860086619996178": {
+      "xp": 12,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 12,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-19",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1392797355488710666": {
+      "xp": 45,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 45,
+      "msgCount": 2,
+      "quests": {
+        "date": "2026-5-21",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1367357319414939659": {
+      "xp": 13,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 13,
+      "msgCount": 2,
+      "quests": {
+        "date": "2026-5-19",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1255820225979613247": {
+      "xp": 80,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 80,
+      "msgCount": 9,
+      "quests": {
+        "date": "2026-5-19",
+        "progress": {
+          "chat10": 9
+        },
+        "claimed": []
+      }
+    },
+    "1433714038118023249": {
+      "xp": 25,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 25,
+      "msgCount": 3,
+      "quests": {
+        "date": "2026-5-19",
+        "progress": {
+          "chat10": 3
+        },
+        "claimed": []
+      }
+    },
+    "1493189935824502805": {
+      "xp": 117,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 117,
+      "msgCount": 13,
+      "quests": {
+        "date": "2026-5-27",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1344301155999682591": {
+      "xp": 60,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 60,
+      "msgCount": 5,
+      "quests": {
+        "date": "2026-5-19",
+        "progress": {
+          "chat30": 5,
+          "chat10": 5
+        },
+        "claimed": []
+      }
+    },
+    "1239114054107136144": {
+      "xp": 172,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 172,
+      "msgCount": 13,
+      "quests": {
+        "date": "2026-5-24",
+        "progress": {
+          "chat30": 1
+        },
+        "claimed": []
+      }
+    },
+    "1375724222952771766": {
+      "xp": 7138,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 7138,
+      "msgCount": 436,
+      "quests": {
+        "date": "2026-6-8",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1396844248040472728": {
+      "xp": 63,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 63,
+      "msgCount": 2,
+      "quests": {
+        "date": "2026-5-20",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "902495402400550934": {
+      "xp": 483,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 483,
+      "msgCount": 28,
+      "quests": {
+        "date": "2026-6-7",
+        "progress": {
+          "chat30": 6,
+          "chat10": 6
+        },
+        "claimed": []
+      }
+    },
+    "1418892711251021955": {
+      "xp": 1691,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 1691,
+      "msgCount": 63,
+      "quests": {
+        "date": "2026-6-7",
+        "progress": {
+          "chat30": 12
+        },
+        "claimed": []
+      }
+    },
+    "1503908432321708073": {
+      "xp": 348,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 348,
+      "msgCount": 16,
+      "quests": {
+        "date": "2026-6-7",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1386512820048232590": {
+      "xp": 327,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 327,
+      "msgCount": 10,
+      "quests": {
+        "date": "2026-5-20",
+        "progress": {
+          "chat30": 10,
+          "chat10": 10
+        },
+        "claimed": []
+      }
+    },
+    "1404395145062907974": {
+      "xp": 24,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 24,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-20",
+        "progress": {
+          "chat30": 1
+        },
+        "claimed": []
+      }
+    },
+    "1230499490990002227": {
+      "xp": 452,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 452,
+      "msgCount": 36,
+      "quests": {
+        "date": "2026-6-1",
+        "progress": {
+          "chat10": 1
+        },
+        "claimed": []
+      }
+    },
+    "1273066615726018587": {
+      "xp": 42,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 42,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-21",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1410473886037970995": {
+      "xp": 162,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 162,
+      "msgCount": 6,
+      "quests": {
+        "date": "2026-5-21",
+        "progress": {
+          "chat30": 6
+        },
+        "claimed": []
+      }
+    },
+    "1260209098218012734": {
+      "xp": 42,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 42,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-21",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "901128645345697812": {
+      "xp": 3095,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 3095,
+      "msgCount": 104,
+      "quests": {
+        "date": "2026-6-10",
+        "progress": {
+          "chat30": 2
+        },
+        "claimed": []
+      }
+    },
+    "1260891108326772736": {
+      "xp": 103,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 103,
+      "msgCount": 9,
+      "quests": {
+        "date": "2026-5-31",
+        "progress": {
+          "chat30": 1
+        },
+        "claimed": []
+      }
+    },
+    "1294970669909413940": {
+      "xp": 56,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 56,
+      "msgCount": 3,
+      "quests": {
+        "date": "2026-6-1",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1501563877777735760": {
+      "xp": 1855,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 1855,
+      "msgCount": 63,
+      "quests": {
+        "date": "2026-6-7",
+        "progress": {
+          "chat30": 3
+        },
+        "claimed": []
+      }
+    },
+    "1245216792691871744": {
+      "xp": 506,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 506,
+      "msgCount": 26,
+      "quests": {
+        "date": "2026-6-7",
+        "progress": {
+          "chat10": 5
+        },
+        "claimed": []
+      }
+    },
+    "1415663045157453959": {
+      "xp": 228,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 228,
+      "msgCount": 7,
+      "quests": {
+        "date": "2026-5-21",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1472591539443077337": {
+      "xp": 33,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 33,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-22",
+        "progress": {
+          "chat30": 1,
+          "chat10": 1
+        },
+        "claimed": []
+      }
+    },
+    "1442700228766470154": {
+      "xp": 18,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 18,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-22",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1375058156287164516": {
+      "xp": 1057,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 1057,
+      "msgCount": 56,
+      "quests": {
+        "date": "2026-6-5",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1489630289750659122": {
+      "xp": 36,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 36,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-22",
+        "progress": {
+          "chat30": 1
+        },
+        "claimed": []
+      }
+    },
+    "1313170614416183467": {
+      "xp": 63,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 63,
+      "msgCount": 2,
+      "quests": {
+        "date": "2026-5-22",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1402252846371438758": {
+      "xp": 45,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 45,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-22",
+        "progress": {
+          "chat10": 1
+        },
+        "claimed": []
+      }
+    },
+    "1290808104421818459": {
+      "xp": 45,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 45,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-22",
+        "progress": {
+          "chat30": 1
+        },
+        "claimed": []
+      }
+    },
+    "1442379592995176529": {
+      "xp": 54,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 54,
+      "msgCount": 2,
+      "quests": {
+        "date": "2026-5-22",
+        "progress": {
+          "chat30": 2
+        },
+        "claimed": []
+      }
+    },
+    "1367371550998663240": {
+      "xp": 509,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 509,
+      "msgCount": 18,
+      "quests": {
+        "date": "2026-6-6",
+        "progress": {
+          "chat10": 10
+        },
+        "claimed": []
+      }
+    },
+    "1408693367277355068": {
+      "xp": 60,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 60,
+      "msgCount": 2,
+      "quests": {
+        "date": "2026-5-22",
+        "progress": {
+          "chat30": 2,
+          "chat10": 2
+        },
+        "claimed": []
+      }
+    },
+    "1478027747233366056": {
+      "xp": 1129,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 1129,
+      "msgCount": 62,
+      "quests": {
+        "date": "2026-6-10",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1446438478329151571": {
+      "xp": 42,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 42,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-23",
+        "progress": {
+          "chat30": 1
+        },
+        "claimed": []
+      }
+    },
+    "1497801065473638611": {
+      "xp": 39,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 39,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-23",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1128900851235307563": {
+      "xp": 27,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 27,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-23",
+        "progress": {
+          "chat10": 1
+        },
+        "claimed": []
+      }
+    },
+    "899562588873039902": {
+      "xp": 200,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 200,
+      "msgCount": 21,
+      "quests": {
+        "date": "2026-6-3",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1137245596680462467": {
+      "xp": 458,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 458,
+      "msgCount": 27,
+      "quests": {
+        "date": "2026-6-5",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1396815184374267936": {
+      "xp": 312,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 312,
+      "msgCount": 10,
+      "quests": {
+        "date": "2026-5-23",
+        "progress": {
+          "chat30": 10,
+          "chat10": 10
+        },
+        "claimed": []
+      }
+    },
+    "1272208364847366258": {
+      "xp": 214,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 214,
+      "msgCount": 12,
+      "quests": {
+        "date": "2026-5-30",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1404039956069879808": {
+      "xp": 115,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 115,
+      "msgCount": 5,
+      "quests": {
+        "date": "2026-5-30",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1155513943306010665": {
+      "xp": 536,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 536,
+      "msgCount": 23,
+      "quests": {
+        "date": "2026-5-30",
+        "progress": {
+          "chat10": 7
+        },
+        "claimed": []
+      }
+    },
+    "649396509846142976": {
+      "xp": 98,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 98,
+      "msgCount": 9,
+      "quests": {
+        "date": "2026-6-2",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1475759080218820661": {
+      "xp": 87,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 87,
+      "msgCount": 3,
+      "quests": {
+        "date": "2026-5-23",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1404148589806096525": {
+      "xp": 188,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 188,
+      "msgCount": 8,
+      "quests": {
+        "date": "2026-5-30",
+        "progress": {
+          "chat30": 1
+        },
+        "claimed": []
+      }
+    },
+    "1473591764706132154": {
+      "xp": 72,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 72,
+      "msgCount": 4,
+      "quests": {
+        "date": "2026-6-1",
+        "progress": {
+          "chat10": 1
+        },
+        "claimed": []
+      }
+    },
+    "1339484088699981895": {
+      "xp": 1038,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 1038,
+      "msgCount": 34,
+      "quests": {
+        "date": "2026-5-23",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "961855802233212998": {
+      "xp": 30,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 30,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-23",
+        "progress": {
+          "chat30": 1
+        },
+        "claimed": []
+      }
+    },
+    "965141322866524191": {
+      "xp": 446,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 446,
+      "msgCount": 16,
+      "quests": {
+        "date": "2026-5-30",
+        "progress": {
+          "chat30": 4,
+          "chat10": 4
+        },
+        "claimed": []
+      }
+    },
+    "1416323105105907848": {
+      "xp": 66,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 66,
+      "msgCount": 2,
+      "quests": {
+        "date": "2026-5-23",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1451253658263228567": {
+      "xp": 117,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 117,
+      "msgCount": 3,
+      "quests": {
+        "date": "2026-5-23",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1371772491965661225": {
+      "xp": 330,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 330,
+      "msgCount": 11,
+      "quests": {
+        "date": "2026-5-23",
+        "progress": {
+          "chat10": 10
+        },
+        "claimed": []
+      }
+    },
+    "1502864293647876187": {
+      "xp": 39,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 39,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-23",
+        "progress": {
+          "chat10": 1
+        },
+        "claimed": []
+      }
+    },
+    "1080157760093688010": {
+      "xp": 130,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 130,
+      "msgCount": 5,
+      "quests": {
+        "date": "2026-6-2",
+        "progress": {
+          "chat10": 1
+        },
+        "claimed": []
+      }
+    },
+    "1369258910476664842": {
+      "xp": 501,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 501,
+      "msgCount": 22,
+      "quests": {
+        "date": "2026-6-2",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1408459419037077625": {
+      "xp": 21,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 21,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-23",
+        "progress": {
+          "chat10": 1,
+          "chat30": 1
+        },
+        "claimed": []
+      }
+    },
+    "1401768137233272932": {
+      "xp": 75,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 75,
+      "msgCount": 2,
+      "quests": {
+        "date": "2026-5-23",
+        "progress": {
+          "chat30": 2
+        },
+        "claimed": []
+      }
+    },
+    "1447879384416391240": {
+      "xp": 72,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 72,
+      "msgCount": 3,
+      "quests": {
+        "date": "2026-6-6",
+        "progress": {
+          "chat30": 1
+        },
+        "claimed": []
+      }
+    },
+    "1349382844333690880": {
+      "xp": 920,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 920,
+      "msgCount": 36,
+      "quests": {
+        "date": "2026-5-26",
+        "progress": {
+          "chat10": 1
+        },
+        "claimed": []
+      }
+    },
+    "1381511892354465832": {
+      "xp": 27,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 27,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-23",
+        "progress": {
+          "chat10": 1
+        },
+        "claimed": []
+      }
+    },
+    "1141579448492249269": {
+      "xp": 453,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 453,
+      "msgCount": 17,
+      "quests": {
+        "date": "2026-5-24",
+        "progress": {
+          "chat30": 3,
+          "chat10": 3
+        },
+        "claimed": []
+      }
+    },
+    "1336375291206959206": {
+      "xp": 108,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 108,
+      "msgCount": 7,
+      "quests": {
+        "date": "2026-5-31",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1368517163656282234": {
+      "xp": 39,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 39,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-23",
+        "progress": {
+          "chat30": 1
+        },
+        "claimed": []
+      }
+    },
+    "1441311544683270144": {
+      "xp": 42,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 42,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-23",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "945622759277490186": {
+      "xp": 18,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 18,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-23",
+        "progress": {
+          "chat10": 1,
+          "chat30": 1
+        },
+        "claimed": []
+      }
+    },
+    "1326444915810373643": {
+      "xp": 92,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 92,
+      "msgCount": 9,
+      "quests": {
+        "date": "2026-5-24",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1458117794544615568": {
+      "xp": 60,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 60,
+      "msgCount": 6,
+      "quests": {
+        "date": "2026-5-24",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1504637649200218142": {
+      "xp": 21,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 21,
+      "msgCount": 2,
+      "quests": {
+        "date": "2026-5-24",
+        "progress": {
+          "chat10": 2
+        },
+        "claimed": []
+      }
+    },
+    "1359011180886228992": {
+      "xp": 32,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 32,
+      "msgCount": 4,
+      "quests": {
+        "date": "2026-5-24",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1484949317084250265": {
+      "xp": 75,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 75,
+      "msgCount": 6,
+      "quests": {
+        "date": "2026-6-7",
+        "progress": {
+          "chat30": 1
+        },
+        "claimed": []
+      }
+    },
+    "1386212038380097536": {
+      "xp": 22,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 22,
+      "msgCount": 4,
+      "quests": {
+        "date": "2026-5-24",
+        "progress": {
+          "chat30": 4
+        },
+        "claimed": []
+      }
+    },
+    "1285548200475758663": {
+      "xp": 40,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 40,
+      "msgCount": 3,
+      "quests": {
+        "date": "2026-5-24",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1491309669950558262": {
+      "xp": 252,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 252,
+      "msgCount": 26,
+      "quests": {
+        "date": "2026-5-24",
+        "progress": {
+          "chat30": 26
+        },
+        "claimed": []
+      }
+    },
+    "1364626917491347510": {
+      "xp": 348,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 348,
+      "msgCount": 31,
+      "quests": {
+        "date": "2026-6-2",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1442841081044668487": {
+      "xp": 569,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 569,
+      "msgCount": 42,
+      "quests": {
+        "date": "2026-6-5",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1172642910290841601": {
+      "xp": 193,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 193,
+      "msgCount": 19,
+      "quests": {
+        "date": "2026-5-25",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "927773969476640798": {
+      "xp": 526,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 526,
+      "msgCount": 44,
+      "quests": {
+        "date": "2026-6-8",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1439449796602630236": {
+      "xp": 73,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 73,
+      "msgCount": 8,
+      "quests": {
+        "date": "2026-5-24",
+        "progress": {
+          "chat10": 8,
+          "chat30": 8
+        },
+        "claimed": []
+      }
+    },
+    "1393500183949480028": {
+      "xp": 209,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 209,
+      "msgCount": 14,
+      "quests": {
+        "date": "2026-6-2",
+        "progress": {
+          "chat30": 2
+        },
+        "claimed": []
+      }
+    },
+    "1332221222133436427": {
+      "xp": 8,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 8,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-24",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1204638418965889102": {
+      "xp": 24,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 24,
+      "msgCount": 2,
+      "quests": {
+        "date": "2026-5-24",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1425122699403071498": {
+      "xp": 22,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 22,
+      "msgCount": 2,
+      "quests": {
+        "date": "2026-5-24",
+        "progress": {
+          "chat30": 2
+        },
+        "claimed": []
+      }
+    },
+    "1141606353207578694": {
+      "xp": 387,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 387,
+      "msgCount": 34,
+      "quests": {
+        "date": "2026-6-2",
+        "progress": {
+          "chat30": 6
+        },
+        "claimed": []
+      }
+    },
+    "1260508818002018346": {
+      "xp": 12,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 12,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-24",
+        "progress": {
+          "chat10": 1
+        },
+        "claimed": []
+      }
+    },
+    "1471816736792772813": {
+      "xp": 15,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 15,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-24",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1264806072754110478": {
+      "xp": 8,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 8,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-24",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "995235418377289770": {
+      "xp": 24,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 24,
+      "msgCount": 2,
+      "quests": {
+        "date": "2026-5-24",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1507212730371670036": {
+      "xp": 7,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 7,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-24",
+        "progress": {
+          "chat10": 1
+        },
+        "claimed": []
+      }
+    },
+    "1504492519331856544": {
+      "xp": 71,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 71,
+      "msgCount": 4,
+      "quests": {
+        "date": "2026-6-7",
+        "progress": {
+          "chat10": 1
+        },
+        "claimed": []
+      }
+    },
+    "1089898878750445608": {
+      "xp": 75,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 75,
+      "msgCount": 7,
+      "quests": {
+        "date": "2026-5-25",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1351902963010109463": {
+      "xp": 36,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 36,
+      "msgCount": 3,
+      "quests": {
+        "date": "2026-5-24",
+        "progress": {
+          "chat10": 3
+        },
+        "claimed": []
+      }
+    },
+    "1401024356792012995": {
+      "xp": 15,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 15,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-25",
+        "progress": {
+          "chat10": 1
+        },
+        "claimed": []
+      }
+    },
+    "1267698020519251969": {
+      "xp": 7,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 7,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-25",
+        "progress": {
+          "chat10": 1
+        },
+        "claimed": []
+      }
+    },
+    "1473575832160178217": {
+      "xp": 440,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 440,
+      "msgCount": 27,
+      "quests": {
+        "date": "2026-6-4",
+        "progress": {
+          "chat30": 5
+        },
+        "claimed": []
+      }
+    },
+    "1478259002210258994": {
+      "xp": 14,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 14,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-25",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1485015114926264410": {
+      "xp": 13,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 13,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-25",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1273801433145147555": {
+      "xp": 15,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 15,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-25",
+        "progress": {
+          "chat30": 1
+        },
+        "claimed": []
+      }
+    },
+    "1365310916010184715": {
+      "xp": 118,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 118,
+      "msgCount": 4,
+      "quests": {
+        "date": "2026-6-1",
+        "progress": {
+          "chat30": 3,
+          "chat10": 3
+        },
+        "claimed": []
+      }
+    },
+    "1473889049373839512": {
+      "xp": 13,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 13,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-26",
+        "progress": {
+          "chat10": 1
+        },
+        "claimed": []
+      }
+    },
+    "1448265827299360799": {
+      "xp": 5,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 5,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-26",
+        "progress": {
+          "chat10": 1
+        },
+        "claimed": []
+      }
+    },
+    "1350129711434567691": {
+      "xp": 39,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 39,
+      "msgCount": 4,
+      "quests": {
+        "date": "2026-5-26",
+        "progress": {
+          "chat10": 4
+        },
+        "claimed": []
+      }
+    },
+    "816939888528064533": {
+      "xp": 10,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 10,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-26",
+        "progress": {
+          "chat10": 1
+        },
+        "claimed": []
+      }
+    },
+    "1128562212580106400": {
+      "xp": 156,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 156,
+      "msgCount": 5,
+      "quests": {
+        "date": "2026-5-27",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1338890128701132944": {
+      "xp": 24,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 24,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-27",
+        "progress": {
+          "chat10": 1,
+          "chat30": 1
+        },
+        "claimed": []
+      }
+    },
+    "1373434898378919977": {
+      "xp": 21,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 21,
+      "msgCount": 2,
+      "quests": {
+        "date": "2026-5-29",
+        "progress": {
+          "chat30": 2
+        },
+        "claimed": []
+      }
+    },
+    "1338069190946324531": {
+      "xp": 11,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 11,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-29",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1362272449739227327": {
+      "xp": 847,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 847,
+      "msgCount": 66,
+      "quests": {
+        "date": "2026-6-10",
+        "progress": {
+          "chat30": 1
+        },
+        "claimed": []
+      }
+    },
+    "1399345442084356162": {
+      "xp": 22,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 22,
+      "msgCount": 2,
+      "quests": {
+        "date": "2026-5-29",
+        "progress": {
+          "chat10": 2
+        },
+        "claimed": []
+      }
+    },
+    "1504018201955143691": {
+      "xp": 12,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 12,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-30",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1510048502594670593": {
+      "xp": 376,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 376,
+      "msgCount": 19,
+      "quests": {
+        "date": "2026-6-7",
+        "progress": {
+          "chat30": 2,
+          "chat10": 2
+        },
+        "claimed": []
+      }
+    },
+    "1472930181537595423": {
+      "xp": 104,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 104,
+      "msgCount": 8,
+      "quests": {
+        "date": "2026-6-1",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1297697520373202960": {
+      "xp": 12,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 12,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-30",
+        "progress": {
+          "chat10": 1
+        },
+        "claimed": []
+      }
+    },
+    "1493098853530992800": {
+      "xp": 50,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 50,
+      "msgCount": 2,
+      "quests": {
+        "date": "2026-6-1",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "313092675115024386": {
+      "xp": 5,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 5,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-30",
+        "progress": {
+          "chat10": 1
+        },
+        "claimed": []
+      }
+    },
+    "1369146096537960518": {
+      "xp": 11,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 11,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-30",
+        "progress": {
+          "chat30": 1
+        },
+        "claimed": []
+      }
+    },
+    "1240179091907280907": {
+      "xp": 7,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 7,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-30",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1265490921995370578": {
+      "xp": 9,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 9,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-30",
+        "progress": {
+          "chat10": 1
+        },
+        "claimed": []
+      }
+    },
+    "1466426632733462599": {
+      "xp": 934,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 934,
+      "msgCount": 40,
+      "quests": {
+        "date": "2026-6-6",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "649610210586918928": {
+      "xp": 31,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 31,
+      "msgCount": 4,
+      "quests": {
+        "date": "2026-5-30",
+        "progress": {
+          "chat30": 4,
+          "chat10": 4
+        },
+        "claimed": []
+      }
+    },
+    "1508459745110134864": {
+      "xp": 10,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 10,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-30",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1425310437242835074": {
+      "xp": 88,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 88,
+      "msgCount": 10,
+      "quests": {
+        "date": "2026-5-30",
+        "progress": {
+          "chat30": 10
+        },
+        "claimed": []
+      }
+    },
+    "1330433759799152671": {
+      "xp": 106,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 106,
+      "msgCount": 9,
+      "quests": {
+        "date": "2026-5-30",
+        "progress": {
+          "chat30": 9
+        },
+        "claimed": []
+      }
+    },
+    "1464274778746785894": {
+      "xp": 9,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 9,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-30",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1278583063210622979": {
+      "xp": 37,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 37,
+      "msgCount": 5,
+      "quests": {
+        "date": "2026-5-30",
+        "progress": {
+          "chat10": 5
+        },
+        "claimed": []
+      }
+    },
+    "1504950129281470636": {
+      "xp": 7,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 7,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-30",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1498336920403579041": {
+      "xp": 866,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 866,
+      "msgCount": 71,
+      "quests": {
+        "date": "2026-6-8",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1503635893188165704": {
+      "xp": 143,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 143,
+      "msgCount": 13,
+      "quests": {
+        "date": "2026-5-31",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1404798355921440798": {
+      "xp": 15,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 15,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-31",
+        "progress": {
+          "chat10": 1
+        },
+        "claimed": []
+      }
+    },
+    "1023535942847442996": {
+      "xp": 22,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 22,
+      "msgCount": 2,
+      "quests": {
+        "date": "2026-5-31",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1510205200357658624": {
+      "xp": 1612,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 1612,
+      "msgCount": 89,
+      "quests": {
+        "date": "2026-6-7",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1473651938200391751": {
+      "xp": 49,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 49,
+      "msgCount": 5,
+      "quests": {
+        "date": "2026-5-31",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1481541320848703560": {
+      "xp": 26,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 26,
+      "msgCount": 2,
+      "quests": {
+        "date": "2026-6-2",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1084102276626513940": {
+      "xp": 13,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 13,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-31",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1457170169754419231": {
+      "xp": 54,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 54,
+      "msgCount": 3,
+      "quests": {
+        "date": "2026-6-4",
+        "progress": {
+          "chat30": 1
+        },
+        "claimed": []
+      }
+    },
+    "1404811909747966028": {
+      "xp": 352,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 352,
+      "msgCount": 25,
+      "quests": {
+        "date": "2026-6-1",
+        "progress": {
+          "chat10": 5
+        },
+        "claimed": []
+      }
+    },
+    "1024242129809178654": {
+      "xp": 229,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 229,
+      "msgCount": 14,
+      "quests": {
+        "date": "2026-6-7",
+        "progress": {
+          "chat10": 2
+        },
+        "claimed": []
+      }
+    },
+    "1067019981889474781": {
+      "xp": 65,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 65,
+      "msgCount": 6,
+      "quests": {
+        "date": "2026-5-31",
+        "progress": {
+          "chat30": 6
+        },
+        "claimed": []
+      }
+    },
+    "1347895775073533964": {
+      "xp": 251,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 251,
+      "msgCount": 23,
+      "quests": {
+        "date": "2026-6-5",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1259866820513366046": {
+      "xp": 25,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 25,
+      "msgCount": 3,
+      "quests": {
+        "date": "2026-5-31",
+        "progress": {
+          "chat10": 3,
+          "chat30": 3
+        },
+        "claimed": []
+      }
+    },
+    "918102321681014815": {
+      "xp": 127,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 127,
+      "msgCount": 10,
+      "quests": {
+        "date": "2026-6-6",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1456862421976092785": {
+      "xp": 23,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 23,
+      "msgCount": 3,
+      "quests": {
+        "date": "2026-6-2",
+        "progress": {
+          "chat10": 1
+        },
+        "claimed": []
+      }
+    },
+    "1483849087366467615": {
+      "xp": 67,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 67,
+      "msgCount": 7,
+      "quests": {
+        "date": "2026-6-2",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1278265082496680049": {
+      "xp": 75,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 75,
+      "msgCount": 7,
+      "quests": {
+        "date": "2026-5-31",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1360527384855711774": {
+      "xp": 191,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 191,
+      "msgCount": 17,
+      "quests": {
+        "date": "2026-5-31",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1415298607153938473": {
+      "xp": 30,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 30,
+      "msgCount": 4,
+      "quests": {
+        "date": "2026-5-31",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1305108855684075531": {
+      "xp": 6,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 6,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-5-31",
+        "progress": {
+          "chat10": 1
+        },
+        "claimed": []
+      }
+    },
+    "1187653000819392535": {
+      "xp": 110,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 110,
+      "msgCount": 11,
+      "quests": {
+        "date": "2026-6-2",
+        "progress": {
+          "chat10": 7
+        },
+        "claimed": []
+      }
+    },
+    "1418540525048565902": {
+      "xp": 71,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 71,
+      "msgCount": 6,
+      "quests": {
+        "date": "2026-6-2",
+        "progress": {
+          "chat30": 5,
+          "chat10": 5
+        },
+        "claimed": []
+      }
+    },
+    "1452656330581082128": {
+      "xp": 63,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 63,
+      "msgCount": 3,
+      "quests": {
+        "date": "2026-6-1",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "928314991327723560": {
+      "xp": 465,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 465,
+      "msgCount": 16,
+      "quests": {
+        "date": "2026-6-1",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1489238497934966976": {
+      "xp": 30,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 30,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-6-1",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1402127710293196905": {
+      "xp": 39,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 39,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-6-1",
+        "progress": {
+          "chat30": 1
+        },
+        "claimed": []
+      }
+    },
+    "1108636530060308522": {
+      "xp": 84,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 84,
+      "msgCount": 5,
+      "quests": {
+        "date": "2026-6-2",
+        "progress": {
+          "chat10": 4
+        },
+        "claimed": []
+      }
+    },
+    "1380726718230171770": {
+      "xp": 339,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 339,
+      "msgCount": 30,
+      "quests": {
+        "date": "2026-6-5",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1320671980827185213": {
+      "xp": 247,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 247,
+      "msgCount": 8,
+      "quests": {
+        "date": "2026-6-2",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1401476258314850354": {
+      "xp": 117,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 117,
+      "msgCount": 4,
+      "quests": {
+        "date": "2026-6-1",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1047014641668206592": {
+      "xp": 117,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 117,
+      "msgCount": 3,
+      "quests": {
+        "date": "2026-6-1",
+        "progress": {
+          "chat30": 3
+        },
+        "claimed": []
+      }
+    },
+    "1436674635734188093": {
+      "xp": 330,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 330,
+      "msgCount": 11,
+      "quests": {
+        "date": "2026-6-1",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1394896137013690458": {
+      "xp": 46,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 46,
+      "msgCount": 3,
+      "quests": {
+        "date": "2026-6-2",
+        "progress": {
+          "chat10": 3
+        },
+        "claimed": []
+      }
+    },
+    "1416360495878770699": {
+      "xp": 556,
+      "level": 1,
+      "money": 6000,
+      "totalXP": 556,
+      "msgCount": 6,
+      "quests": {
+        "date": "2026-6-2",
+        "progress": {},
+        "claimed": []
+      },
+      "totalEarned": 5000
+    },
+    "1256236131062648964": {
+      "xp": 27,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 27,
+      "msgCount": 3,
+      "quests": {
+        "date": "2026-6-2",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1304578679334244362": {
+      "xp": 313,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 313,
+      "msgCount": 23,
+      "quests": {
+        "date": "2026-6-7",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1373644335450554402": {
+      "xp": 30,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 30,
+      "msgCount": 2,
+      "quests": {
+        "date": "2026-6-2",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1325322646543532064": {
+      "xp": 26,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 26,
+      "msgCount": 3,
+      "quests": {
+        "date": "2026-6-2",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1427295762521264291": {
+      "xp": 8,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 8,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-6-2",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1001459254634483773": {
+      "xp": 83,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 83,
+      "msgCount": 8,
+      "quests": {
+        "date": "2026-6-2",
+        "progress": {
+          "chat10": 8
+        },
+        "claimed": []
+      }
+    },
+    "1170627871711174702": {
+      "xp": 5,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 5,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-6-2",
+        "progress": {
+          "chat30": 1
+        },
+        "claimed": []
+      }
+    },
+    "911450250118569994": {
+      "xp": 168,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 168,
+      "msgCount": 15,
+      "quests": {
+        "date": "2026-6-2",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1234533968045539362": {
+      "xp": 26,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 26,
+      "msgCount": 3,
+      "quests": {
+        "date": "2026-6-2",
+        "progress": {
+          "chat30": 3
+        },
+        "claimed": []
+      }
+    },
+    "1427220949316538439": {
+      "xp": 15,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 15,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-6-2",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1242431647870095414": {
+      "xp": 166,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 166,
+      "msgCount": 17,
+      "quests": {
+        "date": "2026-6-2",
+        "progress": {
+          "chat10": 10
+        },
+        "claimed": []
+      }
+    },
+    "1452192696629461137": {
+      "xp": 267,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 267,
+      "msgCount": 25,
+      "quests": {
+        "date": "2026-6-2",
+        "progress": {
+          "chat10": 10
+        },
+        "claimed": []
+      }
+    },
+    "605355726973566996": {
+      "xp": 182,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 182,
+      "msgCount": 20,
+      "quests": {
+        "date": "2026-6-2",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1275314991150665869": {
+      "xp": 71,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 71,
+      "msgCount": 7,
+      "quests": {
+        "date": "2026-6-2",
+        "progress": {
+          "chat10": 7
+        },
+        "claimed": []
+      }
+    },
+    "1507054551998529536": {
+      "xp": 24,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 24,
+      "msgCount": 2,
+      "quests": {
+        "date": "2026-6-2",
+        "progress": {
+          "chat30": 2
+        },
+        "claimed": []
+      }
+    },
+    "1504140179731120353": {
+      "xp": 31,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 31,
+      "msgCount": 4,
+      "quests": {
+        "date": "2026-6-2",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1419956376133828638": {
+      "xp": 11,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 11,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-6-2",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1471501641764048979": {
+      "xp": 79,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 79,
+      "msgCount": 7,
+      "quests": {
+        "date": "2026-6-2",
+        "progress": {
+          "chat10": 7
+        },
+        "claimed": []
+      }
+    },
+    "914828159235526676": {
+      "xp": 1150,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 1150,
+      "msgCount": 74,
+      "quests": {
+        "date": "2026-6-7",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1237045533361831958": {
+      "xp": 270,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 270,
+      "msgCount": 19,
+      "quests": {
+        "date": "2026-6-6",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1112618787800358934": {
+      "xp": 785,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 785,
+      "msgCount": 40,
+      "quests": {
+        "date": "2026-6-7",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1417173667171008618": {
+      "xp": 53,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 53,
+      "msgCount": 4,
+      "quests": {
+        "date": "2026-6-2",
+        "progress": {
+          "chat30": 4
+        },
+        "claimed": []
+      }
+    },
+    "1504662372730798261": {
+      "xp": 141,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 141,
+      "msgCount": 12,
+      "quests": {
+        "date": "2026-6-7",
+        "progress": {
+          "chat30": 2
+        },
+        "claimed": []
+      }
+    },
+    "855589973280686080": {
+      "xp": 231,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 231,
+      "msgCount": 10,
+      "quests": {
+        "date": "2026-6-7",
+        "progress": {
+          "chat30": 7
+        },
+        "claimed": []
+      }
+    },
+    "1473135283443863704": {
+      "xp": 96,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 96,
+      "msgCount": 10,
+      "quests": {
+        "date": "2026-6-2",
+        "progress": {
+          "chat10": 10
+        },
+        "claimed": []
+      }
+    },
+    "1455616574605099222": {
+      "xp": 109,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 109,
+      "msgCount": 11,
+      "quests": {
+        "date": "2026-6-2",
+        "progress": {
+          "chat30": 11
+        },
+        "claimed": []
+      }
+    },
+    "1321489220673474593": {
+      "xp": 31,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 31,
+      "msgCount": 4,
+      "quests": {
+        "date": "2026-6-2",
+        "progress": {
+          "chat30": 4
+        },
+        "claimed": []
+      }
+    },
+    "1225448141675958413": {
+      "xp": 8,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 8,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-6-2",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1461578381673107478": {
+      "xp": 1535,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 1535,
+      "msgCount": 68,
+      "quests": {
+        "date": "2026-6-10",
+        "progress": {
+          "chat10": 5
+        },
+        "claimed": []
+      }
+    },
+    "1350733224695037994": {
+      "xp": 69,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 69,
+      "msgCount": 7,
+      "quests": {
+        "date": "2026-6-3",
+        "progress": {
+          "chat30": 7
+        },
+        "claimed": []
+      }
+    },
+    "1378363024523399209": {
+      "xp": 709,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 709,
+      "msgCount": 42,
+      "quests": {
+        "date": "2026-6-8",
+        "progress": {
+          "chat30": 2
+        },
+        "claimed": []
+      }
+    },
+    "1199011436081451070": {
+      "xp": 7,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 7,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-6-3",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1375079095859413012": {
+      "xp": 15,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 15,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-6-3",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1509112402711547926": {
+      "xp": 253,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 253,
+      "msgCount": 7,
+      "quests": {
+        "date": "2026-6-7",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1384829537178882148": {
+      "xp": 40,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 40,
+      "msgCount": 4,
+      "quests": {
+        "date": "2026-6-3",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1491653246400331836": {
+      "xp": 12,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 12,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-6-3",
+        "progress": {
+          "chat10": 1
+        },
+        "claimed": []
+      }
+    },
+    "1162620122683424778": {
+      "xp": 9,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 9,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-6-3",
+        "progress": {
+          "chat10": 1
+        },
+        "claimed": []
+      }
+    },
+    "1493994985132134552": {
+      "xp": 5,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 5,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-6-3",
+        "progress": {
+          "chat30": 1
+        },
+        "claimed": []
+      }
+    },
+    "1311578976153767996": {
+      "xp": 91,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 91,
+      "msgCount": 7,
+      "quests": {
+        "date": "2026-6-7",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1465526596739006580": {
+      "xp": 164,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 164,
+      "msgCount": 8,
+      "quests": {
+        "date": "2026-6-7",
+        "progress": {
+          "chat30": 1
+        },
+        "claimed": []
+      }
+    },
+    "834741264581918720": {
+      "xp": 49,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 49,
+      "msgCount": 2,
+      "quests": {
+        "date": "2026-6-7",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1245381976496672849": {
+      "xp": 7,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 7,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-6-4",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1004372886162768012": {
+      "xp": 39,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 39,
+      "msgCount": 4,
+      "quests": {
+        "date": "2026-6-5",
+        "progress": {
+          "chat10": 1
+        },
+        "claimed": []
+      }
+    },
+    "1477224636860207288": {
+      "xp": 823,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 823,
+      "msgCount": 32,
+      "quests": {
+        "date": "2026-6-7",
+        "progress": {
+          "chat10": 10
+        },
+        "claimed": []
+      }
+    },
+    "1420348995297083403": {
+      "xp": 16,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 16,
+      "msgCount": 2,
+      "quests": {
+        "date": "2026-6-4",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1300441463183638560": {
+      "xp": 715,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 715,
+      "msgCount": 29,
+      "quests": {
+        "date": "2026-6-8",
+        "progress": {
+          "chat30": 2
+        },
+        "claimed": []
+      }
+    },
+    "1341742050898477117": {
+      "xp": 10,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 10,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-6-5",
+        "progress": {
+          "chat10": 1
+        },
+        "claimed": []
+      }
+    },
+    "1376418230893285477": {
+      "xp": 402,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 402,
+      "msgCount": 18,
+      "quests": {
+        "date": "2026-6-6",
+        "progress": {
+          "chat30": 11,
+          "chat10": 10
+        },
+        "claimed": []
+      }
+    },
+    "1011651040627654698": {
+      "xp": 104,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 104,
+      "msgCount": 11,
+      "quests": {
+        "date": "2026-6-5",
+        "progress": {
+          "chat10": 10
+        },
+        "claimed": []
+      }
+    },
+    "1025571523072888882": {
+      "xp": 24,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 24,
+      "msgCount": 2,
+      "quests": {
+        "date": "2026-6-7",
+        "progress": {
+          "chat10": 1
+        },
+        "claimed": []
+      }
+    },
+    "1323172919244886046": {
+      "xp": 62,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 62,
+      "msgCount": 7,
+      "quests": {
+        "date": "2026-6-5",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1436922750978625648": {
+      "xp": 21,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 21,
+      "msgCount": 2,
+      "quests": {
+        "date": "2026-6-5",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1502708810068787366": {
+      "xp": 56,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 56,
+      "msgCount": 5,
+      "quests": {
+        "date": "2026-6-5",
+        "progress": {
+          "chat30": 5
+        },
+        "claimed": []
+      }
+    },
+    "1013689205131583488": {
+      "xp": 607,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 607,
+      "msgCount": 22,
+      "quests": {
+        "date": "2026-6-7",
+        "progress": {
+          "chat10": 10
+        },
+        "claimed": []
+      }
+    },
+    "1164781626388123659": {
+      "xp": 13,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 13,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-6-5",
+        "progress": {
+          "chat30": 1
+        },
+        "claimed": []
+      }
+    },
+    "1427153533165371552": {
+      "xp": 10,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 10,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-6-5",
+        "progress": {
+          "chat10": 1,
+          "chat30": 1
+        },
+        "claimed": []
+      }
+    },
+    "1065097243717288007": {
+      "xp": 95,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 95,
+      "msgCount": 4,
+      "quests": {
+        "date": "2026-6-7",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1455159702802399307": {
+      "xp": 6,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 6,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-6-5",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1398124484334194810": {
+      "xp": 92,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 92,
+      "msgCount": 8,
+      "quests": {
+        "date": "2026-6-5",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1481134688796938386": {
+      "xp": 142,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 142,
+      "msgCount": 6,
+      "quests": {
+        "date": "2026-6-7",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1328755920695590934": {
+      "xp": 37,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 37,
+      "msgCount": 4,
+      "quests": {
+        "date": "2026-6-5",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "906801022771544074": {
+      "xp": 5,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 5,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-6-5",
+        "progress": {
+          "chat10": 1
+        },
+        "claimed": []
+      }
+    },
+    "1511341334429044817": {
+      "xp": 149,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 149,
+      "msgCount": 14,
+      "quests": {
+        "date": "2026-6-5",
+        "progress": {
+          "chat30": 14
+        },
+        "claimed": []
+      }
+    },
+    "1358765994981593259": {
+      "xp": 15,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 15,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-6-5",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "928960567589343292": {
+      "xp": 108,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 108,
+      "msgCount": 4,
+      "quests": {
+        "date": "2026-6-6",
+        "progress": {
+          "chat10": 3
+        },
+        "claimed": []
+      }
+    },
+    "1396704971478798438": {
+      "xp": 237,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 237,
+      "msgCount": 9,
+      "quests": {
+        "date": "2026-6-5",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1247073754753011712": {
+      "xp": 81,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 81,
+      "msgCount": 3,
+      "quests": {
+        "date": "2026-6-6",
+        "progress": {
+          "chat30": 3
+        },
+        "claimed": []
+      }
+    },
+    "1277595355499728944": {
+      "xp": 42,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 42,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-6-6",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1219568181518143541": {
+      "xp": 24,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 24,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-6-6",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1401189734289510434": {
+      "xp": 33,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 33,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-6-7",
+        "progress": {
+          "chat30": 1
+        },
+        "claimed": []
+      }
+    },
+    "1211174482371149836": {
+      "xp": 75,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 75,
+      "msgCount": 3,
+      "quests": {
+        "date": "2026-6-7",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1489994901981495438": {
+      "xp": 126,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 126,
+      "msgCount": 4,
+      "quests": {
+        "date": "2026-6-7",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1413540468142112888": {
+      "xp": 33,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 33,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-6-7",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1513020565638615092": {
+      "xp": 285,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 285,
+      "msgCount": 10,
+      "quests": {
+        "date": "2026-6-7",
+        "progress": {
+          "chat30": 10,
+          "chat10": 10
+        },
+        "claimed": []
+      }
+    },
+    "1092498804017741854": {
+      "xp": 201,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 201,
+      "msgCount": 6,
+      "quests": {
+        "date": "2026-6-7",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1375536416356044993": {
+      "xp": 303,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 303,
+      "msgCount": 10,
+      "quests": {
+        "date": "2026-6-7",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1118805340918665286": {
+      "xp": 441,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 441,
+      "msgCount": 17,
+      "quests": {
+        "date": "2026-6-7",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1368796923477098619": {
+      "xp": 45,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 45,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-6-7",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1495685866331443253": {
+      "xp": 27,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 27,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-6-7",
+        "progress": {
+          "chat10": 1
+        },
+        "claimed": []
+      }
+    },
+    "979949168695066634": {
+      "xp": 117,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 117,
+      "msgCount": 5,
+      "quests": {
+        "date": "2026-6-7",
+        "progress": {
+          "chat10": 5
+        },
+        "claimed": []
+      }
+    },
+    "1301690073485672451": {
+      "xp": 36,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 36,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-6-7",
+        "progress": {
+          "chat30": 1
+        },
+        "claimed": []
+      }
+    },
+    "1291660047100809218": {
+      "xp": 27,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 27,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-6-7",
+        "progress": {
+          "chat10": 1
+        },
+        "claimed": []
+      }
+    },
+    "1271486015051403405": {
+      "xp": 318,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 318,
+      "msgCount": 11,
+      "quests": {
+        "date": "2026-6-8",
+        "progress": {
+          "chat10": 2
+        },
+        "claimed": []
+      }
+    },
+    "1393307737651281943": {
+      "xp": 15,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 15,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-6-7",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1094989595415949424": {
+      "xp": 39,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 39,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-6-7",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1223222422619295767": {
+      "xp": 102,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 102,
+      "msgCount": 3,
+      "quests": {
+        "date": "2026-6-7",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1046318754763653151": {
+      "xp": 27,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 27,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-6-7",
+        "progress": {
+          "chat10": 1
+        },
+        "claimed": []
+      }
+    },
+    "1442857845862174751": {
+      "xp": 96,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 96,
+      "msgCount": 3,
+      "quests": {
+        "date": "2026-6-7",
+        "progress": {
+          "chat30": 3
+        },
+        "claimed": []
+      }
+    },
+    "1456613145060708427": {
+      "xp": 51,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 51,
+      "msgCount": 2,
+      "quests": {
+        "date": "2026-6-7",
+        "progress": {
+          "chat30": 2
+        },
+        "claimed": []
+      }
+    },
+    "1461579739494879478": {
+      "xp": 342,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 342,
+      "msgCount": 10,
+      "quests": {
+        "date": "2026-6-7",
+        "progress": {
+          "chat30": 10
+        },
+        "claimed": []
+      }
+    },
+    "1512477855118786673": {
+      "xp": 545,
+      "level": 1,
+      "money": 6000,
+      "totalXP": 545,
+      "totalEarned": 5000,
+      "msgCount": 1,
+      "quests": {
+        "date": "2026-6-7",
+        "progress": {
+          "chat30": 1
+        },
+        "claimed": []
+      }
+    },
+    "1376963113676443845": {
+      "xp": 120,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 120,
+      "msgCount": 4,
+      "quests": {
+        "date": "2026-6-7",
+        "progress": {
+          "chat30": 4
+        },
+        "claimed": []
+      }
+    },
+    "1337989982459002880": {
+      "xp": 93,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 93,
+      "msgCount": 3,
+      "quests": {
+        "date": "2026-6-7",
+        "progress": {
+          "chat10": 3
+        },
+        "claimed": []
+      }
+    },
+    "1374739449493327882": {
+      "xp": 32,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 32,
+      "msgCount": 3,
+      "quests": {
+        "date": "2026-6-10",
+        "progress": {},
+        "claimed": []
+      }
+    },
+    "1512224796472119430": {
+      "xp": 38,
+      "level": 1,
+      "money": 1000,
+      "totalXP": 38,
+      "msgCount": 4,
+      "quests": {
+        "date": "2026-6-10",
+        "progress": {
+          "chat10": 4
+        },
+        "claimed": []
+      }
+    }
+  },
+  "marriages": {},
+  "warnings": {
+    "1445789758902108180": {
+      "1302772385707065354": [],
+      "1385083494895587449": [
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1780591720441
+        },
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1780669912242
+        },
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1780675199061
+        },
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1780753599519
+        }
+      ],
+      "1488051080825667645": [
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1778505863286
+        }
+      ],
+      "1278026985284571178": [],
+      "1176162957793706100": [
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1778508002432
+        },
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1778742508788
+        },
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1780642339879
+        }
+      ],
+      "1368588954147881010": [],
+      "1503714491437809829": [
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1778598762417
+        }
+      ],
+      "1381512932042608640": [
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1778638994805
+        }
+      ],
+      "1299226788815179803": [],
+      "1492149990087196915": [
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1778645242562
+        }
+      ],
+      "1122083584665194549": [
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1778654729214
+        }
+      ],
+      "1489594980271132814": [
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1778664929127
+        },
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1778665008255
+        },
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1780196445281
+        },
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1780462887104
+        }
+      ],
+      "1456192416125157485": [],
+      "1462762186295218309": [],
+      "1404775532960415885": [
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1780827946135
+        },
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1780829565425
+        },
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1780842966343
+        }
+      ],
+      "1502872677218648246": [],
+      "1471667843316846602": [
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1778767642871
+        },
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1778767765603
+        },
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1779274713586
+        },
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1779529942029
+        }
+      ],
+      "911874222337450025": [
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1778767956741
+        }
+      ],
+      "1381517554081861664": [
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1778823074402
+        }
+      ],
+      "1497530591740952596": [
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1778934373764
+        },
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1779637691628
+        }
+      ],
+      "1049245021053923359": [],
+      "1307637395625349170": [
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1778950871918
+        },
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1778951944372
+        },
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1780838695934
+        }
+      ],
+      "1475531886884294679": [],
+      "1402546540857262145": [
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1778952997247
+        },
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1778954848036
+        }
+      ],
+      "677200052468318218": [
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1778953245573
+        },
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1778954856383
+        },
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1779617198856
+        }
+      ],
+      "1457026378581938236": [
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1778985608005
+        }
+      ],
+      "1275122881331986502": [
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1779020789867
+        },
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1779020820436
+        },
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1779020885550
+        },
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1779527256001
+        }
+      ],
+      "1485853670703632384": [
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1779029315637
+        }
+      ],
+      "1412357241486708788": [
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1779097180810
+        },
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1780222287720
+        },
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1780710087071
+        }
+      ],
+      "1334878676331794564": [
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1779108519986
+        }
+      ],
+      "1504535775528620062": [
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1779118576325
+        },
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1780805296071
+        },
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1780814255574
+        }
+      ],
+      "1499774341452136509": [
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1779118989104
+        },
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1779119607478
+        },
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1780066817748
+        }
+      ],
+      "1489484371261128895": [],
+      "1196001840458899500": [
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1779198208945
+        },
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1779281182213
+        },
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1780321469845
+        }
+      ],
+      "1459163047133446218": [
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1779246056493
+        }
+      ],
+      "1153214975540744292": [
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1779260563703
+        },
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1780829110840
+        }
+      ],
+      "1284381855667326976": [
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1779268362632
+        }
+      ],
+      "1491640667804274869": [],
+      "1124871401355092040": [
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1779529499412
+        }
+      ],
+      "1386884691382239256": [],
+      "1141579448492249269": [
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1779543821904
+        },
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1779543826958
+        },
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1779543946906
+        }
+      ],
+      "1491309669950558262": [
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1779621210272
+        },
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1779623218018
+        }
+      ],
+      "1172642910290841601": [
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1779622577969
+        }
+      ],
+      "1499175930877448222": [
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1779625705356
+        },
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1779625946412
+        }
+      ],
+      "927773969476640798": [
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1779625743125
+        },
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1779626050827
+        },
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1779626340850
+        },
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1780728382268
+        }
+      ],
+      "1168339306134393004": [
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1779633367482
+        },
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1780748893179
+        }
+      ],
+      "1442168496799748288": [
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1779637284042
+        },
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1779883699531
+        },
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1779883715322
+        }
+      ],
+      "1367301384269070437": [
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1779638505800
+        },
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1780114636027
+        },
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1780114652160
+        }
+      ],
+      "1351902963010109463": [
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1779638585171
+        }
+      ],
+      "1460086633931215110": [
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1779638623298
+        }
+      ],
+      "1482690425981501480": [
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1779794428676
+        }
+      ],
+      "1230499490990002227": [
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1780073381436
+        },
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1780213887718
+        },
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1780242691850
+        }
+      ],
+      "1362272449739227327": [
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1780108030791
+        }
+      ],
+      "1510048502594670593": [
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1780115326827
+        },
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1780115918079
+        },
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1780702937136
+        }
+      ],
+      "1240179091907280907": [
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1780132590562
+        }
+      ],
+      "1265490921995370578": [
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1780144233682
+        }
+      ],
+      "1419127318038708224": [
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1780146998945
+        },
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1780625218679
+        },
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1780798319816
+        }
+      ],
+      "1425310437242835074": [
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1780159575983
+        }
+      ],
+      "1503635893188165704": [
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1780215532399
+        }
+      ],
+      "918102321681014815": [
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1780215875890
+        }
+      ],
+      "1442841081044668487": [
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1780217991997
+        },
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1780222470455
+        },
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1780222504321
+        }
+      ],
+      "1437076956070936586": [
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1780220483591
+        },
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1780421949906
+        },
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1780796783640
+        }
+      ],
+      "1375058156287164516": [
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1780221473919
+        },
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1780615745030
+        },
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1780615805675
+        }
+      ],
+      "1298287022577946655": [
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1780221841059
+        }
+      ],
+      "1473651938200391751": [
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1780238408168
+        },
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1780238422400
+        }
+      ],
+      "1401126207197810789": [
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1780239379327
+        }
+      ],
+      "1510205200357658624": [
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1780305119637
+        },
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1780417617755
+        }
+      ],
+      "928314991327723560": [
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1780308578251
+        }
+      ],
+      "1466426632733462599": [
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1780324824321
+        },
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1780414735162
+        }
+      ],
+      "1047014641668206592": [
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1780330769741
+        }
+      ],
+      "1318438385265938524": [
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1780370387747
+        },
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1780405478452
+        },
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1780634611768
+        },
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1780805651191
+        }
+      ],
+      "1452192696629461137": [
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1780383516991
+        }
+      ],
+      "1504140179731120353": [
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1780384998986
+        }
+      ],
+      "1498336920403579041": [
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1780390153138
+        }
+      ],
+      "1112618787800358934": [
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1780393456517
+        }
+      ],
+      "911450250118569994": [
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1780395878209
+        }
+      ],
+      "1225448141675958413": [
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1780396602179
+        }
+      ],
+      "1308799500369924120": [],
+      "1461578381673107478": [],
+      "1306589972773732355": [
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1780566092915
+        }
+      ],
+      "1502708810068787366": [
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1780635623560
+        }
+      ],
+      "1150416546330595498": [
+        {
+          "reason": "cc",
+          "moderatorId": "1265194361004752970",
+          "timestamp": 1780636027038
+        },
+        {
+          "reason": "gay",
+          "moderatorId": "1265194361004752970",
+          "timestamp": 1780641859518
+        },
+        {
+          "reason": "an cuk",
+          "moderatorId": "1265194361004752970",
+          "timestamp": 1780741415247
+        }
+      ],
+      "1376418230893285477": [
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1780757489619
+        },
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1780757785605
+        }
+      ],
+      "1013689205131583488": [
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1780764201497
+        }
+      ],
+      "1481134688796938386": [
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1780809057623
+        }
+      ],
+      "1118805340918665286": [
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1780810104797
+        }
+      ],
+      "1271486015051403405": [
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1780813274256
+        }
+      ],
+      "902495402400550934": [
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1780824512242
+        }
+      ],
+      "1490384142020645088": [
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1780835679755
+        }
+      ],
+      "1443420320404078667": [
+        {
+          "reason": "gay",
+          "moderatorId": "1265194361004752970",
+          "timestamp": 1781057658601
+        }
+      ],
+      "1449427114486005811": [
+        {
+          "reason": "lm t mệt",
+          "moderatorId": "1265194361004752970",
+          "timestamp": 1781057707570
+        }
+      ],
+      "1512224796472119430": [
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1781062596675
+        },
+        {
+          "reason": "Ghost Ping (Auto-Mod)",
+          "moderatorId": "1449427114486005811",
+          "timestamp": 1781062679251
+        }
+      ]
+    }
+  },
+  "guilds": {}
+}

@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Stela Studio — Dashboard</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #07080f;
+  --surface: #0e1019;
+  --surface2: #131621;
+  --border: #1e2235;
+  --border2: #252840;
+  --accent: #7B2FBE;
+  --accent2: #4169E1;
+  --green: #00D26A;
+  --red: #FF4757;
+  --orange: #FF8C00;
+  --gold: #FFD700;
+  --text: #e8eaf6;
+  --text2: #9ca3c4;
+  --muted: #4b5280;
+  --sidebar: 260px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{background:var(--bg);color:var(--text);font-family:'Syne',sans-serif;display:flex;overflow:hidden}
+
+/* ── SIDEBAR ── */
+.sidebar {
+  width:var(--sidebar);min-width:var(--sidebar);
+  background:var(--surface);
+  border-right:1px solid var(--border);
+  display:flex;flex-direction:column;
+  height:100vh;overflow-y:auto;
+  position:relative;z-index:20;
+}
+.sidebar-logo {
+  padding:24px 20px 20px;
+  border-bottom:1px solid var(--border);
+}
+.logo-row { display:flex;align-items:center;gap:12px; }
+.logo-icon {
+  width:42px;height:42px;
+  background:linear-gradient(135deg,var(--accent),var(--accent2));
+  border-radius:12px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:20px;
+  box-shadow:0 0 20px rgba(123,47,190,0.35);
+  flex-shrink:0;
+}
+.logo-text h2 { font-size:16px;font-weight:800;letter-spacing:-0.3px; }
+.logo-text p { font-size:10px;color:var(--muted);font-family:'Space Mono',monospace;margin-top:1px; }
+
+.bot-status {
+  margin:16px 20px 0;
+  background:var(--surface2);
+  border:1px solid var(--border);
+  border-radius:10px;
+  padding:12px 14px;
+  display:flex;align-items:center;gap:10px;
+}
+.status-dot {
+  width:8px;height:8px;border-radius:50%;
+  background:var(--green);
+  box-shadow:0 0 8px var(--green);
+  animation:blink 2s ease-in-out infinite;
+  flex-shrink:0;
+}
+.status-dot.offline{background:var(--red);box-shadow:0 0 8px var(--red);animation:none;}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:0.4}}
+.status-info { flex:1;min-width:0; }
+.status-name { font-size:13px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis; }
+.status-ping { font-size:10px;color:var(--muted);font-family:'Space Mono',monospace; }
+
+.nav { flex:1;padding:16px 12px; }
+.nav-section { margin-bottom:20px; }
+.nav-label { font-size:10px;font-weight:700;letter-spacing:1.8px;text-transform:uppercase;color:var(--muted);padding:0 8px;margin-bottom:6px; }
+.nav-item {
+  display:flex;align-items:center;gap:10px;
+  padding:10px 12px;
+  border-radius:10px;
+  cursor:pointer;
+  font-size:14px;font-weight:600;
+  color:var(--text2);
+  transition:all 0.15s;
+  margin-bottom:2px;
+  border:1px solid transparent;
+}
+.nav-item:hover{background:rgba(255,255,255,0.05);color:var(--text);}
+.nav-item.active{background:rgba(123,47,190,0.15);color:var(--text);border-color:rgba(123,47,190,0.3);}
+.nav-item .icon{width:20px;text-align:center;font-size:16px;}
+.nav-badge{margin-left:auto;background:var(--accent);color:white;font-size:10px;font-weight:700;padding:2px 7px;border-radius:20px;}
+
+.sidebar-footer {
+  padding:16px 20px;
+  border-top:1px solid var(--border);
+}
+.btn-logout {
+  width:100%;background:rgba(255,71,87,0.1);border:1px solid rgba(255,71,87,0.2);
+  color:var(--red);border-radius:10px;padding:10px;
+  font-size:13px;font-weight:700;font-family:'Syne',sans-serif;cursor:pointer;
+  transition:all 0.2s;
+}
+.btn-logout:hover{background:rgba(255,71,87,0.2);}
+
+/* ── MAIN ── */
+.main { flex:1;overflow-y:auto;display:flex;flex-direction:column; }
+.topbar {
+  padding:20px 28px;
+  border-bottom:1px solid var(--border);
+  display:flex;align-items:center;justify-content:space-between;
+  background:var(--surface);
+  position:sticky;top:0;z-index:10;
+}
+.topbar-title h1{font-size:22px;font-weight:800;letter-spacing:-0.5px;}
+.topbar-title p{font-size:12px;color:var(--muted);margin-top:2px;}
+.topbar-actions{display:flex;gap:10px;}
+.btn-save {
+  background:linear-gradient(135deg,var(--accent),var(--accent2));
+  border:none;color:white;padding:10px 20px;border-radius:10px;
+  font-size:13px;font-weight:700;font-family:'Syne',sans-serif;
+  cursor:pointer;transition:all 0.2s;display:flex;align-items:center;gap:6px;
+}
+.btn-save:hover{opacity:0.9;transform:translateY(-1px);}
+.btn-save:disabled{opacity:0.5;cursor:not-allowed;transform:none;}
+
+.content { padding:24px 28px;flex:1; }
+
+/* ── PAGES ── */
+.page{display:none;}
+.page.active{display:block;}
+
+/* ── STAT CARDS ── */
+.stat-grid { display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:14px;margin-bottom:24px; }
+.stat-card {
+  background:var(--surface);border:1px solid var(--border);border-radius:14px;
+  padding:20px;position:relative;overflow:hidden;transition:border-color 0.2s;
+}
+.stat-card:hover{border-color:var(--border2);}
+.stat-card::before {
+  content:'';position:absolute;top:0;left:0;right:0;height:2px;
+  background:linear-gradient(90deg,var(--accent),var(--accent2));
+}
+.stat-card.green::before{background:var(--green);}
+.stat-card.red::before{background:var(--red);}
+.stat-card.gold::before{background:var(--gold);}
+.stat-card.orange::before{background:var(--orange);}
+.stat-icon{font-size:24px;margin-bottom:10px;}
+.stat-value{font-size:28px;font-weight:800;font-family:'Space Mono',monospace;letter-spacing:-1px;}
+.stat-label{font-size:11px;color:var(--muted);margin-top:4px;font-weight:600;text-transform:uppercase;letter-spacing:0.8px;}
+
+/* ── SECTION ── */
+.section { background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:24px;margin-bottom:20px; }
+.section-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;}
+.section-title{font-size:15px;font-weight:800;display:flex;align-items:center;gap:8px;}
+.section-title span{font-size:18px;}
+.section-desc{font-size:12px;color:var(--muted);margin-top:3px;}
+
+/* ── FORM GRID ── */
+.form-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;}
+.form-group{display:flex;flex-direction:column;gap:6px;}
+.form-label{font-size:11px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;color:var(--text2);}
+.form-input {
+  background:var(--surface2);border:1px solid var(--border);border-radius:10px;
+  padding:11px 14px;color:var(--text);font-size:14px;font-family:'Space Mono',monospace;
+  outline:none;transition:all 0.2s;
+}
+.form-input:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(123,47,190,0.15);}
+.form-input::placeholder{color:var(--muted);}
+.form-hint{font-size:11px;color:var(--muted);}
+
+/* ── TOGGLE ── */
+.toggle-row{display:flex;align-items:center;justify-content:space-between;padding:14px 0;border-bottom:1px solid var(--border);}
+.toggle-row:last-child{border-bottom:none;padding-bottom:0;}
+.toggle-info {}
+.toggle-name{font-size:14px;font-weight:600;}
+.toggle-desc{font-size:12px;color:var(--muted);margin-top:2px;}
+.toggle {
+  position:relative;width:48px;height:26px;flex-shrink:0;
+}
+.toggle input{opacity:0;width:0;height:0;}
+.toggle-slider {
+  position:absolute;inset:0;
+  background:var(--border);border-radius:26px;cursor:pointer;
+  transition:all 0.25s;
+}
+.toggle-slider::before {
+  content:'';position:absolute;
+  width:20px;height:20px;
+  left:3px;bottom:3px;
+  background:white;border-radius:50%;
+  transition:transform 0.25s;
+  box-shadow:0 1px 4px rgba(0,0,0,0.4);
+}
+input:checked + .toggle-slider{background:linear-gradient(135deg,var(--accent),var(--accent2));}
+input:checked + .toggle-slider::before{transform:translateX(22px);}
+
+/* ── CUSTOM COMMANDS ── */
+.cmd-list{display:flex;flex-direction:column;gap:10px;margin-top:16px;}
+.cmd-item {
+  background:var(--surface2);border:1px solid var(--border);border-radius:12px;
+  padding:14px 16px;display:flex;align-items:center;gap:12px;
+}
+.cmd-name {
+  background:rgba(123,47,190,0.2);border:1px solid rgba(123,47,190,0.3);
+  color:var(--accent);padding:4px 10px;border-radius:6px;
+  font-size:13px;font-weight:700;font-family:'Space Mono',monospace;
+  white-space:nowrap;
+}
+.cmd-response{flex:1;font-size:13px;color:var(--text2);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.btn-del{background:rgba(255,71,87,0.1);border:1px solid rgba(255,71,87,0.2);color:var(--red);border-radius:8px;padding:6px 12px;font-size:12px;font-weight:700;cursor:pointer;transition:all 0.2s;white-space:nowrap;}
+.btn-del:hover{background:rgba(255,71,87,0.25);}
+.cmd-add{display:flex;gap:10px;margin-top:16px;}
+.cmd-add .form-input{flex:1;}
+
+/* ── TOAST ── */
+.toast {
+  position:fixed;bottom:24px;right:24px;
+  background:var(--surface);border:1px solid var(--border);
+  border-radius:12px;padding:14px 20px;
+  font-size:14px;font-weight:600;
+  display:flex;align-items:center;gap:10px;
+  box-shadow:0 8px 32px rgba(0,0,0,0.4);
+  transform:translateY(80px);opacity:0;
+  transition:all 0.3s cubic-bezier(0.16,1,0.3,1);
+  z-index:9999;
+}
+.toast.show{transform:translateY(0);opacity:1;}
+.toast.success{border-color:rgba(0,210,106,0.3);}
+.toast.error{border-color:rgba(255,71,87,0.3);}
+
+/* ── LEADERBOARD ── */
+.lb-item{display:flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid var(--border);}
+.lb-item:last-child{border-bottom:none;}
+.lb-rank{width:32px;height:32px;border-radius:8px;background:var(--surface2);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;font-family:'Space Mono',monospace;flex-shrink:0;}
+.lb-rank.r1{background:rgba(255,215,0,0.15);color:var(--gold);}
+.lb-rank.r2{background:rgba(192,192,192,0.1);color:#C0C0C0;}
+.lb-rank.r3{background:rgba(205,127,50,0.1);color:#CD7F32;}
+.lb-name{flex:1;font-size:14px;font-weight:600;}
+.lb-val{font-size:13px;font-family:'Space Mono',monospace;color:var(--text2);}
+
+/* ── RAID STATUS BADGE ── */
+.raid-badge{display:inline-flex;align-items:center;gap:6px;padding:6px 14px;border-radius:20px;font-size:12px;font-weight:700;}
+.raid-badge.on{background:rgba(0,210,106,0.1);color:var(--green);border:1px solid rgba(0,210,106,0.25);}
+.raid-badge.off{background:rgba(255,71,87,0.1);color:var(--red);border:1px solid rgba(255,71,87,0.25);}
+.raid-badge.locked{background:rgba(255,140,0,0.1);color:var(--orange);border:1px solid rgba(255,140,0,0.25);}
+
+/* ── RANGE INPUT ── */
+input[type=range]{-webkit-appearance:none;width:100%;height:6px;background:var(--border);border-radius:3px;outline:none;}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:18px;height:18px;background:linear-gradient(135deg,var(--accent),var(--accent2));border-radius:50%;cursor:pointer;}
+
+/* ── SELECT ── */
+select.form-input{cursor:pointer;}
+
+/* ── ACTION BTN ── */
+.action-btn{padding:10px 18px;border-radius:10px;font-size:13px;font-weight:700;font-family:'Syne',sans-serif;cursor:pointer;transition:all 0.2s;display:inline-flex;align-items:center;gap:6px;border:1px solid;}
+.action-btn.danger{background:rgba(255,71,87,0.1);border-color:rgba(255,71,87,0.3);color:var(--red);}
+.action-btn.danger:hover{background:rgba(255,71,87,0.2);}
+.action-btn.success{background:rgba(0,210,106,0.1);border-color:rgba(0,210,106,0.3);color:var(--green);}
+.action-btn.success:hover{background:rgba(0,210,106,0.2);}
+.action-btn.primary{background:linear-gradient(135deg,var(--accent),var(--accent2));border-color:transparent;color:white;}
+.action-btn.primary:hover{opacity:0.9;}
+
+.row-btns{display:flex;gap:10px;flex-wrap:wrap;}
+
+/* ── SCROLLBAR ── */
+::-webkit-scrollbar{width:5px;height:5px;}
+::-webkit-scrollbar-track{background:transparent;}
+::-webkit-scrollbar-thumb{background:var(--border2);border-radius:3px;}
+</style>
+</head>
+<body>
+
+<!-- SIDEBAR -->
+<aside class="sidebar">
+  <div class="sidebar-logo">
+    <div class="logo-row">
+      <div class="logo-icon">⭐</div>
+      <div class="logo-text">
+        <h2>Stela Studio</h2>
+        <p>DASHBOARD v5.0.0</p>
+      </div>
+    </div>
+    <div class="bot-status" id="botStatus">
+      <div class="status-dot offline" id="statusDot"></div>
+      <div class="status-info">
+        <div class="status-name" id="botName">Đang kết nối...</div>
+        <div class="status-ping" id="botPing">ping: ---ms</div>
+      </div>
+    </div>
+  </div>
+
+  <nav class="nav">
+    <div class="nav-section">
+      <div class="nav-label">Tổng quan</div>
+      <div class="nav-item active" onclick="goto('overview')">
+        <span class="icon">📊</span> Tổng quan
+      </div>
+      <div class="nav-item" onclick="goto('stats')">
+        <span class="icon">📈</span> Thống kê
+      </div>
+    </div>
+    <div class="nav-section">
+      <div class="nav-label">Cài đặt bot</div>
+      <div class="nav-item" onclick="goto('general')">
+        <span class="icon">⚙️</span> Cài đặt chung
+      </div>
+      <div class="nav-item" onclick="goto('channels')">
+        <span class="icon">📢</span> Kênh & Role
+      </div>
+      <div class="nav-item" onclick="goto('xp')">
+        <span class="icon">⭐</span> Hệ thống XP
+      </div>
+    </div>
+    <div class="nav-section">
+      <div class="nav-label">Bảo vệ</div>
+      <div class="nav-item" onclick="goto('antiraid')">
+        <span class="icon">🚨</span> Anti Raid
+      </div>
+      <div class="nav-item" onclick="goto('automod')">
+        <span class="icon">🤖</span> Auto-Mod
+      </div>
+    </div>
+    <div class="nav-section">
+      <div class="nav-label">Tính năng</div>
+      <div class="nav-item" onclick="goto('customcmds')">
+        <span class="icon">⚡</span> Custom Commands
+      </div>
+      <div class="nav-item" onclick="goto('leaderboard')">
+        <span class="icon">🏆</span> Leaderboard
+      </div>
+      <div class="nav-item" onclick="goto('minecraft')">
+        <span class="icon">⛏️</span> Minecraft
+      </div>
+    </div>
+  </nav>
+
+  <div class="sidebar-footer">
+    <button class="btn-logout" onclick="logout()">🚪 Đăng xuất</button>
+  </div>
+</aside>
+
+<!-- MAIN -->
+<main class="main">
+  <div class="topbar">
+    <div class="topbar-title">
+      <h1 id="pageTitle">Tổng quan</h1>
+      <p id="pageDesc">Xem nhanh trạng thái bot và server</p>
+    </div>
+    <div class="topbar-actions">
+      <button class="btn-save" id="saveBtn" onclick="saveConfig()" style="display:none">💾 Lưu thay đổi</button>
+    </div>
+  </div>
+  <div class="content">
+
+    <!-- ══ OVERVIEW ══ -->
+    <div class="page active" id="page-overview">
+      <div class="stat-grid">
+        <div class="stat-card green">
+          <div class="stat-icon">🟢</div>
+          <div class="stat-value" id="s-guilds">--</div>
+          <div class="stat-label">Servers</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">👥</div>
+          <div class="stat-value" id="s-users">--</div>
+          <div class="stat-label">Người dùng DB</div>
+        </div>
+        <div class="stat-card gold">
+          <div class="stat-icon">⚡</div>
+          <div class="stat-value" id="s-ping">--</div>
+          <div class="stat-label">Ping (ms)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">⏱️</div>
+          <div class="stat-value" id="s-uptime">--</div>
+          <div class="stat-label">Uptime</div>
+        </div>
+        <div class="stat-card orange">
+          <div class="stat-icon">💍</div>
+          <div class="stat-value" id="s-marriages">--</div>
+          <div class="stat-label">Cặp đôi</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">⚔️</div>
+          <div class="stat-value" id="s-clans">--</div>
+          <div class="stat-label">Clan</div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header">
+          <div>
+            <div class="section-title"><span>🚨</span> Anti Raid — Trạng thái</div>
+            <div class="section-desc">Trạng thái hiện tại của hệ thống bảo vệ</div>
+          </div>
+          <button class="action-btn primary" onclick="goto('antiraid')">⚙️ Quản lý</button>
+        </div>
+        <div id="raidOverview" style="display:flex;gap:12px;flex-wrap:wrap;">
+          <div class="raid-badge" id="rb-system">⏳ Đang tải...</div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header">
+          <div>
+            <div class="section-title"><span>⚡</span> Custom Commands</div>
+            <div class="section-desc">Lệnh tự tạo đang hoạt động</div>
+          </div>
+          <button class="action-btn primary" onclick="goto('customcmds')">✏️ Quản lý</button>
+        </div>
+        <div id="overviewCmds" style="color:var(--muted);font-size:14px;">Đang tải...</div>
+      </div>
+    </div>
+
+    <!-- ══ STATS ══ -->
+    <div class="page" id="page-stats">
+      <div class="section">
+        <div class="section-header">
+          <div class="section-title"><span>🏆</span> Top người dùng theo tiền</div>
+        </div>
+        <div id="lbMoney" class="lb-list">Đang tải...</div>
+      </div>
+      <div class="section">
+        <div class="section-header">
+          <div class="section-title"><span>⭐</span> Top người dùng theo XP</div>
+        </div>
+        <div id="lbXP" class="lb-list">Đang tải...</div>
+      </div>
+    </div>
+
+    <!-- ══ GENERAL ══ -->
+    <div class="page" id="page-general">
+      <div class="section">
+        <div class="section-header">
+          <div class="section-title"><span>⚙️</span> Cài đặt chung</div>
+        </div>
+        <div class="form-grid">
+          <div class="form-group">
+            <label class="form-label">Prefix lệnh</label>
+            <input class="form-input" id="cfg-prefix" placeholder="!" maxlength="5">
+            <span class="form-hint">Ký tự bắt đầu lệnh, ví dụ: !</span>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Footer embed</label>
+            <input class="form-input" id="cfg-footer" placeholder="Stela Studio v5.0.0">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Website URL</label>
+            <input class="form-input" id="cfg-webURL" placeholder="https://...">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Gemini AI Key</label>
+            <input class="form-input" id="cfg-geminiKey" type="password" placeholder="AI...">
+            <span class="form-hint">Lấy miễn phí tại aistudio.google.com</span>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Mật khẩu Dashboard</label>
+            <input class="form-input" id="cfg-dashboardPassword" type="password" placeholder="••••••••">
+            <span class="form-hint">Mật khẩu để đăng nhập trang này</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══ CHANNELS ══ -->
+    <div class="page" id="page-channels">
+      <div class="section">
+        <div class="section-header">
+          <div class="section-title"><span>📢</span> ID Kênh & Role</div>
+          <div class="section-desc">Điền ID Discord. Bật Developer Mode → chuột phải → Copy ID</div>
+        </div>
+        <div class="form-grid">
+          <div class="form-group">
+            <label class="form-label">Kênh Chào mừng</label>
+            <input class="form-input" id="cfg-welcomeChannelId" placeholder="123456789012345678">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Kênh Tạm biệt</label>
+            <input class="form-input" id="cfg-goodbyeChannelId" placeholder="123456789012345678">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Kênh MC Status</label>
+            <input class="form-input" id="cfg-statusChannelId" placeholder="123456789012345678">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Kênh Nội quy</label>
+            <input class="form-input" id="cfg-rulesChannelId" placeholder="123456789012345678">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Kênh Log AutoMod</label>
+            <input class="form-input" id="cfg-autoModLogChannelId" placeholder="123456789012345678">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Kênh Log Raid</label>
+            <input class="form-input" id="cfg-raidLogChannelId" placeholder="123456789012345678">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Kênh Boost</label>
+            <input class="form-input" id="cfg-boostChannelId" placeholder="123456789012345678">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Kênh Starboard</label>
+            <input class="form-input" id="cfg-starboardChannelId" placeholder="123456789012345678">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Kênh Suggestion</label>
+            <input class="form-input" id="cfg-suggestionChannelId" placeholder="123456789012345678">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Kênh Birthday</label>
+            <input class="form-input" id="cfg-birthdayChannelId" placeholder="123456789012345678">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Role Staff</label>
+            <input class="form-input" id="cfg-staffRoleId" placeholder="123456789012345678">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Role Admin</label>
+            <input class="form-input" id="cfg-adminRoleId" placeholder="123456789012345678">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Role Boost</label>
+            <input class="form-input" id="cfg-boostRoleId" placeholder="123456789012345678">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Starboard Threshold</label>
+            <input class="form-input" id="cfg-starboardThreshold" type="number" min="1" max="20" placeholder="3">
+            <span class="form-hint">Số ⭐ cần để pin lên starboard</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══ XP ══ -->
+    <div class="page" id="page-xp">
+      <div class="section">
+        <div class="section-header">
+          <div class="section-title"><span>⭐</span> Cài đặt XP</div>
+        </div>
+        <div class="form-grid">
+          <div class="form-group">
+            <label class="form-label">XP tối thiểu / tin nhắn</label>
+            <input class="form-input" id="cfg-xp-min" type="number" min="1" max="100" placeholder="5">
+          </div>
+          <div class="form-group">
+            <label class="form-label">XP tối đa / tin nhắn</label>
+            <input class="form-input" id="cfg-xp-max" type="number" min="1" max="200" placeholder="15">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Cooldown XP (giây)</label>
+            <input class="form-input" id="cfg-xpCooldown" type="number" min="5" max="300" placeholder="60">
+            <span class="form-hint">Khoảng cách giữa các lần nhận XP</span>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="section-header">
+          <div class="section-title"><span>💎</span> Phần thưởng Boost</div>
+        </div>
+        <div class="form-grid">
+          <div class="form-group">
+            <label class="form-label">🪙 Tiền thưởng</label>
+            <input class="form-input" id="cfg-boost-money" type="number" placeholder="5000">
+          </div>
+          <div class="form-group">
+            <label class="form-label">⭐ XP thưởng</label>
+            <input class="form-input" id="cfg-boost-xp" type="number" placeholder="500">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══ ANTI RAID ══ -->
+    <div class="page" id="page-antiraid">
+      <div class="section">
+        <div class="section-header">
+          <div>
+            <div class="section-title"><span>🚨</span> Hệ thống Anti Raid</div>
+            <div class="section-desc">Tự động phát hiện và ngăn chặn raid server</div>
+          </div>
+          <div id="raidStatusBadge"></div>
+        </div>
+
+        <div class="toggle-row">
+          <div class="toggle-info">
+            <div class="toggle-name">🛡️ Bật/Tắt toàn bộ Anti Raid</div>
+            <div class="toggle-desc">Tắt để tạm thời cho phép tất cả (khi tổ chức event, v.v.)</div>
+          </div>
+          <label class="toggle"><input type="checkbox" id="ar-system" onchange="patchRaid('system',this.checked)"><span class="toggle-slider"></span></label>
+        </div>
+        <div class="toggle-row">
+          <div class="toggle-info">
+            <div class="toggle-name">👥 Phát hiện Mass Join</div>
+            <div class="toggle-desc">Kick/ban khi nhiều người join cùng lúc</div>
+          </div>
+          <label class="toggle"><input type="checkbox" id="ar-massjoin" onchange="patchRaid('massJoin',this.checked)"><span class="toggle-slider"></span></label>
+        </div>
+        <div class="toggle-row">
+          <div class="toggle-info">
+            <div class="toggle-name">🆕 Chặn tài khoản mới</div>
+            <div class="toggle-desc">Kick acc Discord tạo chưa đủ số ngày quy định</div>
+          </div>
+          <label class="toggle"><input type="checkbox" id="ar-newaccount" onchange="patchRaid('newAccount',this.checked)"><span class="toggle-slider"></span></label>
+        </div>
+        <div class="toggle-row">
+          <div class="toggle-info">
+            <div class="toggle-name">🔒 Auto Lockdown khi phát hiện raid</div>
+            <div class="toggle-desc">Khóa toàn bộ kênh text, tự mở sau 5 phút</div>
+          </div>
+          <label class="toggle"><input type="checkbox" id="ar-lockdown" onchange="patchRaid('lockdown',this.checked)"><span class="toggle-slider"></span></label>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header">
+          <div class="section-title"><span>🎛️</span> Cài đặt chi tiết</div>
+        </div>
+        <div class="form-grid">
+          <div class="form-group">
+            <label class="form-label">Ngưỡng Mass Join (người/10s)</label>
+            <input class="form-input" id="ar-threshold" type="number" min="2" max="50" placeholder="8" onchange="patchRaid('threshold',this.value)">
+            <span class="form-hint">Bao nhiêu người join trong 10s thì coi là raid</span>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Tuổi acc tối thiểu (ngày)</label>
+            <input class="form-input" id="ar-minage" type="number" min="1" max="365" placeholder="7" onchange="patchRaid('minAgeDays',this.value)">
+            <span class="form-hint">Acc mới hơn số ngày này sẽ bị kick</span>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Hành động với raider</label>
+            <select class="form-input" id="ar-action" onchange="patchRaid('action',this.value)">
+              <option value="kick">Kick</option>
+              <option value="ban">Ban</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header">
+          <div class="section-title"><span>⚡</span> Hành động thủ công</div>
+        </div>
+        <div class="row-btns">
+          <button class="action-btn danger" onclick="manualLockdown()">🔒 Lockdown server ngay</button>
+          <button class="action-btn success" onclick="manualUnlock()">🔓 Mở khóa server</button>
+        </div>
+        <p style="font-size:12px;color:var(--muted);margin-top:12px;">⚠️ Lockdown sẽ khóa toàn bộ kênh text. Tự động mở sau 5 phút hoặc nhấn Mở khóa.</p>
+      </div>
+    </div>
+
+    <!-- ══ AUTO MOD ══ -->
+    <div class="page" id="page-automod">
+      <div class="section">
+        <div class="section-header">
+          <div class="section-title"><span>🤖</span> Cài đặt Auto-Mod</div>
+          <div class="section-desc">Thay đổi cần restart bot để có hiệu lực</div>
+        </div>
+        <div class="toggle-row">
+          <div class="toggle-info">
+            <div class="toggle-name">🔇 Anti-Spam</div>
+            <div class="toggle-desc">5+ tin nhắn / 5 giây → mute 5 phút</div>
+          </div>
+          <label class="toggle"><input type="checkbox" id="am-spam" checked><span class="toggle-slider"></span></label>
+        </div>
+        <div class="toggle-row">
+          <div class="toggle-info">
+            <div class="toggle-name">🚫 Anti-Scam</div>
+            <div class="toggle-desc">Phát hiện tin nhắn crypto/casino/giveaway giả → Softban</div>
+          </div>
+          <label class="toggle"><input type="checkbox" id="am-scam" checked><span class="toggle-slider"></span></label>
+        </div>
+        <div class="toggle-row">
+          <div class="toggle-info">
+            <div class="toggle-name">🔗 Anti-Link</div>
+            <div class="toggle-desc">Chặn link không nằm trong whitelist</div>
+          </div>
+          <label class="toggle"><input type="checkbox" id="am-links" checked><span class="toggle-slider"></span></label>
+        </div>
+        <div class="toggle-row">
+          <div class="toggle-info">
+            <div class="toggle-name">📢 Anti-Mention Spam</div>
+            <div class="toggle-desc">Xóa tin nhắn mention 5+ người cùng lúc</div>
+          </div>
+          <label class="toggle"><input type="checkbox" id="am-mentions" checked><span class="toggle-slider"></span></label>
+        </div>
+        <div class="toggle-row">
+          <div class="toggle-info">
+            <div class="toggle-name">🤬 Lọc từ xấu</div>
+            <div class="toggle-desc">Xóa tin nhắn chứa từ ngữ không phù hợp + nhắc nhẹ nhàng</div>
+          </div>
+          <label class="toggle"><input type="checkbox" id="am-badwords" checked><span class="toggle-slider"></span></label>
+        </div>
+        <div class="toggle-row">
+          <div class="toggle-info">
+            <div class="toggle-name">👻 Anti Ghost Ping</div>
+            <div class="toggle-desc">Ping rồi xóa tin nhắn → warn, 5 lần → mute 36 phút</div>
+          </div>
+          <label class="toggle"><input type="checkbox" id="am-ghostping" checked><span class="toggle-slider"></span></label>
+        </div>
+        <div class="toggle-row">
+          <div class="toggle-info">
+            <div class="toggle-name">🔔 Tự reply khi ping Admin/Mod</div>
+            <div class="toggle-desc">Bot nhắn "mấy e chờ admin/mod rep nha" khi ai ping staff</div>
+          </div>
+          <label class="toggle"><input type="checkbox" id="am-modping" checked><span class="toggle-slider"></span></label>
+        </div>
+      </div>
+      <div class="section">
+        <div class="section-header">
+          <div class="section-title"><span>🔗</span> Whitelist Link</div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Domain được phép (mỗi dòng một domain)</label>
+          <textarea class="form-input" id="am-whitelist" rows="6" style="resize:vertical;font-size:13px;line-height:1.8">discord.gg
+discord.com
+stelasmp.online
+meomeow2108.github.io
+youtube.com
+youtu.be</textarea>
+        </div>
+        <p style="font-size:12px;color:var(--muted);margin-top:8px;">⚠️ Thay đổi whitelist cần restart bot để có hiệu lực</p>
+      </div>
+    </div>
+
+    <!-- ══ CUSTOM COMMANDS ══ -->
+    <div class="page" id="page-customcmds">
+      <div class="section">
+        <div class="section-header">
+          <div>
+            <div class="section-title"><span>⚡</span> Custom Commands</div>
+            <div class="section-desc">Tạo lệnh tùy chỉnh — bot sẽ trả lời khi dùng lệnh</div>
+          </div>
+        </div>
+
+        <div class="cmd-add">
+          <input class="form-input" id="new-cmd-name" placeholder="Tên lệnh (vd: hello)" style="max-width:180px">
+          <input class="form-input" id="new-cmd-resp" placeholder="Bot sẽ trả lời...">
+          <button class="action-btn primary" onclick="addCmd()">➕ Thêm</button>
+        </div>
+
+        <div class="cmd-list" id="cmdList">
+          <div style="color:var(--muted);font-size:14px;padding:12px 0">Đang tải...</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══ LEADERBOARD ══ -->
+    <div class="page" id="page-leaderboard">
+      <div class="section">
+        <div class="section-header">
+          <div class="section-title"><span>🏆</span> Top 10 — Tiền</div>
+        </div>
+        <div id="lb-money"></div>
+      </div>
+      <div class="section">
+        <div class="section-header">
+          <div class="section-title"><span>⭐</span> Top 10 — XP</div>
+        </div>
+        <div id="lb-xp"></div>
+      </div>
+    </div>
+
+    <!-- ══ MINECRAFT ══ -->
+    <div class="page" id="page-minecraft">
+      <div class="section">
+        <div class="section-header">
+          <div class="section-title"><span>⛏️</span> Cài đặt Minecraft Server</div>
+        </div>
+        <div class="form-grid">
+          <div class="form-group">
+            <label class="form-label">Host / IP server</label>
+            <input class="form-input" id="cfg-mc-host" placeholder="stelasmp.online">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Port</label>
+            <input class="form-input" id="cfg-mc-port" type="number" placeholder="25565">
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- end content -->
+</main>
+
+<!-- TOAST -->
+<div class="toast" id="toast"></div>
+
+<script>
+const PAGE_META = {
+  overview:   { title: 'Tổng quan',          desc: 'Trạng thái bot và thống kê nhanh' },
+  stats:      { title: 'Thống kê',           desc: 'Leaderboard người dùng' },
+  general:    { title: 'Cài đặt chung',      desc: 'Prefix, footer, API keys', save: true },
+  channels:   { title: 'Kênh & Role',        desc: 'ID kênh Discord và role', save: true },
+  xp:         { title: 'Hệ thống XP',        desc: 'Cài đặt kinh nghiệm và phần thưởng', save: true },
+  antiraid:   { title: 'Anti Raid',           desc: 'Hệ thống chống raid server' },
+  automod:    { title: 'Auto-Mod',            desc: 'Tự động kiểm duyệt tin nhắn' },
+  customcmds: { title: 'Custom Commands',     desc: 'Tạo lệnh tùy chỉnh cho bot' },
+  leaderboard:{ title: 'Leaderboard',         desc: 'Bảng xếp hạng người dùng' },
+  minecraft:  { title: 'Minecraft',           desc: 'Cài đặt server Minecraft', save: true },
+};
+
+let currentPage = 'overview';
+let cfgCache = {};
+let dirty = false;
+
+function goto(page) {
+  document.querySelectorAll('.nav-item').forEach(el => {
+    el.classList.toggle('active', el.getAttribute('onclick')?.includes(`'${page}'`));
+  });
+  document.querySelectorAll('.page').forEach(el => el.classList.remove('active'));
+  document.getElementById(`page-${page}`)?.classList.add('active');
+  const meta = PAGE_META[page] || { title: page, desc: '' };
+  document.getElementById('pageTitle').textContent = meta.title;
+  document.getElementById('pageDesc').textContent  = meta.desc;
+  document.getElementById('saveBtn').style.display = meta.save ? 'flex' : 'none';
+  currentPage = page;
+  loadPageData(page);
+}
+
+async function api(path, method='GET', body=null) {
+  const opts = { method, headers: { 'Content-Type': 'application/json' } };
+  if (body) opts.body = JSON.stringify(body);
+  const res = await fetch(path, opts);
+  return res.json();
+}
+
+function toast(msg, type='success') {
+  const el = document.getElementById('toast');
+  el.textContent = msg;
+  el.className = `toast ${type} show`;
+  setTimeout(() => el.classList.remove('show'), 3000);
+}
+
+function fmtUptime(s) {
+  if (s < 60) return `${s}s`;
+  if (s < 3600) return `${Math.floor(s/60)}m`;
+  if (s < 86400) return `${Math.floor(s/3600)}h ${Math.floor((s%3600)/60)}m`;
+  return `${Math.floor(s/86400)}d ${Math.floor((s%86400)/3600)}h`;
+}
+
+function fmtNum(n) { return Number(n).toLocaleString('vi-VN'); }
+
+// ── LOAD STATS ──
+async function loadStats() {
+  const s = await api('/api/stats');
+  document.getElementById('botName').textContent  = s.username || 'Offline';
+  document.getElementById('botPing').textContent  = `ping: ${s.ping}ms`;
+  document.getElementById('statusDot').className = `status-dot ${s.online ? '' : 'offline'}`;
+  document.getElementById('s-guilds').textContent   = s.guilds;
+  document.getElementById('s-users').textContent    = fmtNum(s.users);
+  document.getElementById('s-ping').textContent     = s.ping;
+  document.getElementById('s-uptime').textContent   = fmtUptime(s.uptime);
+  document.getElementById('s-marriages').textContent = s.marriages;
+  document.getElementById('s-clans').textContent    = s.clans;
+}
+
+// ── LOAD CONFIG ──
+async function loadConfig() {
+  cfgCache = await api('/api/config');
+  // General
+  if (document.getElementById('cfg-prefix')) {
+    document.getElementById('cfg-prefix').value   = cfgCache.prefix || '!';
+    document.getElementById('cfg-footer').value   = cfgCache.footer || '';
+    document.getElementById('cfg-webURL').value   = cfgCache.webURL || '';
+    document.getElementById('cfg-geminiKey').value = cfgCache.geminiKey || '';
+    document.getElementById('cfg-dashboardPassword').value = '';
+  }
+  // Channels
+  const chFields = ['welcomeChannelId','goodbyeChannelId','statusChannelId','rulesChannelId',
+    'autoModLogChannelId','raidLogChannelId','boostChannelId','starboardChannelId',
+    'suggestionChannelId','birthdayChannelId','staffRoleId','adminRoleId','boostRoleId','starboardThreshold'];
+  chFields.forEach(k => { const el = document.getElementById(`cfg-${k}`); if(el) el.value = cfgCache[k] || ''; });
+  // XP
+  if (document.getElementById('cfg-xp-min')) {
+    document.getElementById('cfg-xp-min').value = cfgCache.xpPerMessage?.min || 5;
+    document.getElementById('cfg-xp-max').value = cfgCache.xpPerMessage?.max || 15;
+    document.getElementById('cfg-xpCooldown').value = Math.floor((cfgCache.xpCooldown||60000)/1000);
+    document.getElementById('cfg-boost-money').value = cfgCache.boostReward?.money || 5000;
+    document.getElementById('cfg-boost-xp').value   = cfgCache.boostReward?.xp    || 500;
+  }
+  // Minecraft
+  if (document.getElementById('cfg-mc-host')) {
+    document.getElementById('cfg-mc-host').value = cfgCache.minecraftServer?.host || '';
+    document.getElementById('cfg-mc-port').value = cfgCache.minecraftServer?.port || 25565;
+  }
+}
+
+// ── SAVE CONFIG ──
+async function saveConfig() {
+  const btn = document.getElementById('saveBtn');
+  btn.disabled = true; btn.textContent = '⏳ Đang lưu...';
+  const patch = {};
+
+  if (currentPage === 'general') {
+    patch.prefix   = document.getElementById('cfg-prefix').value;
+    patch.footer   = document.getElementById('cfg-footer').value;
+    patch.webURL   = document.getElementById('cfg-webURL').value;
+    patch.geminiKey = document.getElementById('cfg-geminiKey').value;
+    const newPass = document.getElementById('cfg-dashboardPassword').value;
+    if (newPass) patch.dashboardPassword = newPass;
+  }
+  if (currentPage === 'channels') {
+    const chFields = ['welcomeChannelId','goodbyeChannelId','statusChannelId','rulesChannelId',
+      'autoModLogChannelId','raidLogChannelId','boostChannelId','starboardChannelId',
+      'suggestionChannelId','birthdayChannelId','staffRoleId','adminRoleId','boostRoleId'];
+    chFields.forEach(k => { patch[k] = document.getElementById(`cfg-${k}`)?.value || ''; });
+    patch.starboardThreshold = parseInt(document.getElementById('cfg-starboardThreshold')?.value) || 3;
+  }
+  if (currentPage === 'xp') {
+    patch.xpPerMessage = {
+      min: parseInt(document.getElementById('cfg-xp-min').value) || 5,
+      max: parseInt(document.getElementById('cfg-xp-max').value) || 15,
+    };
+    patch.xpCooldown = (parseInt(document.getElementById('cfg-xpCooldown').value) || 60) * 1000;
+    patch.boostReward = {
+      money: parseInt(document.getElementById('cfg-boost-money').value) || 5000,
+      xp:    parseInt(document.getElementById('cfg-boost-xp').value)    || 500,
+    };
+  }
+  if (currentPage === 'minecraft') {
+    patch.minecraftServer = {
+      host: document.getElementById('cfg-mc-host').value,
+      port: parseInt(document.getElementById('cfg-mc-port').value) || 25565,
+    };
+  }
+
+  const r = await api('/api/config', 'PATCH', patch);
+  btn.disabled = false; btn.innerHTML = '💾 Lưu thay đổi';
+  if (r.ok) toast('✅ Đã lưu! Một số thay đổi cần restart bot.', 'success');
+  else toast('❌ ' + (r.error || 'Lỗi khi lưu'), 'error');
+}
+
+// ── ANTI RAID ──
+async function loadAntiRaid() {
+  const r = await api('/api/antiraid');
+  document.getElementById('ar-system').checked    = r.system ?? true;
+  document.getElementById('ar-massjoin').checked  = r.massJoin?.enabled ?? true;
+  document.getElementById('ar-newaccount').checked = r.newAccount?.enabled ?? true;
+  document.getElementById('ar-lockdown').checked  = r.lockdown?.auto ?? true;
+  document.getElementById('ar-threshold').value   = r.massJoin?.threshold ?? 8;
+  document.getElementById('ar-minage').value      = r.newAccount?.minAgeDays ?? 7;
+  document.getElementById('ar-action').value      = r.massJoin?.action ?? 'kick';
+
+  const badge = document.getElementById('raidStatusBadge');
+  const ob    = document.getElementById('rb-system');
+  if (r.isLocked) {
+    badge.innerHTML = '<span class="raid-badge locked">🔒 Server đang Lockdown</span>';
+    if (ob) ob.innerHTML = '<span class="raid-badge locked">🔒 Đang Lockdown</span>';
+  } else if (r.system) {
+    badge.innerHTML = '<span class="raid-badge on">✅ Đang hoạt động</span>';
+    if (ob) ob.innerHTML = '<span class="raid-badge on">✅ Anti Raid bật</span>';
+  } else {
+    badge.innerHTML = '<span class="raid-badge off">❌ Đã tắt</span>';
+    if (ob) ob.innerHTML = '<span class="raid-badge off">❌ Anti Raid tắt</span>';
+  }
+}
+
+async function patchRaid(key, val) {
+  const r = await api('/api/antiraid', 'PATCH', { [key]: val });
+  if (r.ok) toast(`✅ Đã cập nhật Anti Raid!`);
+  else toast('⚠️ ' + r.error, 'error');
+  if (document.getElementById('raidStatusBadge')) loadAntiRaid();
+}
+
+async function manualLockdown() {
+  if (!confirm('⚠️ Bạn chắc chắn muốn khóa toàn bộ kênh server không?')) return;
+  const r = await api('/api/antiraid/lockdown', 'POST', { action: 'lock', reason: 'Dashboard manual lockdown' });
+  if (r.ok) { toast('🔒 Đã lockdown server!'); loadAntiRaid(); }
+  else toast('❌ ' + r.error, 'error');
+}
+
+async function manualUnlock() {
+  const r = await api('/api/antiraid/lockdown', 'POST', { action: 'unlock' });
+  if (r.ok) { toast('🔓 Đã mở khóa server!'); loadAntiRaid(); }
+  else toast('❌ ' + r.error, 'error');
+}
+
+// ── CUSTOM COMMANDS ──
+async function loadCustomCmds() {
+  const cmds = await api('/api/customcmds');
+  const list = document.getElementById('cmdList');
+  if (!list) return;
+  const entries = Object.entries(cmds);
+  if (!entries.length) { list.innerHTML = '<div style="color:var(--muted);font-size:14px;padding:12px 0">Chưa có custom command nào!</div>'; return; }
+  list.innerHTML = entries.map(([name, data]) => `
+    <div class="cmd-item">
+      <span class="cmd-name">!${name}</span>
+      <span class="cmd-response">${data.response}</span>
+      <button class="btn-del" onclick="delCmd('${name}')">🗑️ Xóa</button>
+    </div>`).join('');
+
+  // Overview summary
+  const ov = document.getElementById('overviewCmds');
+  if (ov) ov.innerHTML = entries.length > 0
+    ? `<b>${entries.length}</b> lệnh: ` + entries.slice(0,5).map(([n]) => `<code style="background:rgba(123,47,190,0.15);color:var(--accent);padding:2px 7px;border-radius:5px;font-size:12px">!${n}</code>`).join(' ')
+    : '<span style="color:var(--muted)">Chưa có lệnh nào</span>';
+}
+
+async function addCmd() {
+  const name = document.getElementById('new-cmd-name').value.trim().replace(/^!/,'').toLowerCase();
+  const resp = document.getElementById('new-cmd-resp').value.trim();
+  if (!name || !resp) { toast('❌ Điền đầy đủ tên lệnh và nội dung!', 'error'); return; }
+  const r = await api('/api/customcmds', 'POST', { name, response: resp });
+  if (r.ok) {
+    document.getElementById('new-cmd-name').value = '';
+    document.getElementById('new-cmd-resp').value = '';
+    toast(`✅ Đã thêm lệnh !${name}!`);
+    loadCustomCmds();
+  } else toast('❌ ' + r.error, 'error');
+}
+
+async function delCmd(name) {
+  await api(`/api/customcmds/${name}`, 'DELETE');
+  toast(`🗑️ Đã xóa lệnh !${name}`);
+  loadCustomCmds();
+}
+
+// ── LEADERBOARD ──
+async function loadLeaderboard() {
+  const users = await api('/api/users/top');
+  const medals = ['🥇','🥈','🥉'];
+  const rankClass = i => i === 0 ? 'r1' : i === 1 ? 'r2' : i === 2 ? 'r3' : '';
+
+  const moneyHTML = users.map((u,i) => `
+    <div class="lb-item">
+      <div class="lb-rank ${rankClass(i)}">${medals[i] || i+1}</div>
+      <div class="lb-name">${u.id}</div>
+      <div class="lb-val">${fmtNum(u.money)} 🪙</div>
+    </div>`).join('');
+
+  const xpSorted = [...users].sort((a,b) => b.xp - a.xp);
+  const xpHTML = xpSorted.map((u,i) => `
+    <div class="lb-item">
+      <div class="lb-rank ${rankClass(i)}">${medals[i] || i+1}</div>
+      <div class="lb-name">${u.id}</div>
+      <div class="lb-val">${fmtNum(u.xp)} XP · Lv.${u.level}</div>
+    </div>`).join('');
+
+  const lbM = document.getElementById('lb-money');
+  const lbX = document.getElementById('lb-xp');
+  const lbMO = document.getElementById('lbMoney');
+  const lbXO = document.getElementById('lbXP');
+  if (lbM) lbM.innerHTML = moneyHTML || '<div style="color:var(--muted)">Chưa có dữ liệu</div>';
+  if (lbX) lbX.innerHTML = xpHTML   || '<div style="color:var(--muted)">Chưa có dữ liệu</div>';
+  if (lbMO) lbMO.innerHTML = moneyHTML.slice(0, 800);
+  if (lbXO) lbXO.innerHTML = xpHTML.slice(0, 800);
+}
+
+// ── PAGE LOADER ──
+async function loadPageData(page) {
+  if (page === 'overview') { await loadStats(); await loadAntiRaid(); await loadCustomCmds(); }
+  if (page === 'stats' || page === 'leaderboard') loadLeaderboard();
+  if (['general','channels','xp','minecraft'].includes(page)) loadConfig();
+  if (page === 'antiraid') loadAntiRaid();
+  if (page === 'customcmds') loadCustomCmds();
+}
+
+async function logout() {
+  await api('/api/logout', 'POST');
+  window.location.href = '/';
+}
+
+// ── INIT ──
+loadPageData('overview');
+setInterval(loadStats, 30_000);
+</script>
+</body>
+</html>

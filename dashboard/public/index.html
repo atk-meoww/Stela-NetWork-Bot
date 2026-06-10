@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Stela Studio — Dashboard</title>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--accent:#7c3aed;--accent2:#3b82f6;--accent-g:linear-gradient(135deg,#7c3aed,#3b82f6);--green:#10b981;--red:#ef4444;--orange:#f59e0b;--gold:#fbbf24;--sidebar-w:240px;--radius:12px;--font:'Outfit',sans-serif;--mono:'JetBrains Mono',monospace;--trans:all .2s cubic-bezier(.4,0,.2,1)}
+[data-theme="dark"]{--bg:#0a0b0f;--bg2:#0f1117;--surface:#13151e;--surface2:#1a1d2b;--border:#1e2235;--border2:#252840;--text:#e2e8f7;--text2:#8892b0;--text3:#4a5580}
+[data-theme="light"]{--bg:#f0f2f9;--bg2:#e8ebf5;--surface:#ffffff;--surface2:#f4f6fc;--border:#d8ddf0;--border2:#c8ceea;--text:#1a1d2e;--text2:#5a6280;--text3:#a0a8c0}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;overflow:hidden}
+body{background:var(--bg);color:var(--text);font-family:var(--font);display:flex;transition:background .3s,color .3s}
+::-webkit-scrollbar{width:5px;height:5px}::-webkit-scrollbar-track{background:transparent}::-webkit-scrollbar-thumb{background:var(--border2);border-radius:4px}
+button{cursor:pointer;font-family:var(--font)}
+input,select,textarea{font-family:var(--font)}
+
+/* SIDEBAR */
+.sidebar{width:var(--sidebar-w);min-width:var(--sidebar-w);background:var(--surface);border-right:1px solid var(--border);display:flex;flex-direction:column;height:100vh;overflow-y:auto;z-index:20;transition:var(--trans)}
+.sidebar-header{padding:20px 16px;border-bottom:1px solid var(--border)}
+.logo-row{display:flex;align-items:center;gap:10px}
+.logo-icon{width:38px;height:38px;background:var(--accent-g);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;box-shadow:0 0 20px rgba(124,58,237,.4)}
+.logo-name{font-size:15px;font-weight:800;letter-spacing:-.3px}
+.logo-ver{font-size:10px;color:var(--text3);font-family:var(--mono);margin-top:1px}
+.bot-info{margin:12px 16px;background:var(--surface2);border:1px solid var(--border);border-radius:var(--radius);padding:10px 12px;display:flex;align-items:center;gap:9px}
+.bot-avatar{width:34px;height:34px;border-radius:50%;background:var(--accent-g);display:flex;align-items:center;justify-content:center;font-size:15px;flex-shrink:0;overflow:hidden}
+.bot-avatar img{width:100%;height:100%;object-fit:cover}
+.bot-name{font-size:13px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bot-status{display:flex;align-items:center;gap:5px;margin-top:2px}
+.status-dot{width:7px;height:7px;border-radius:50%;background:var(--red);transition:.3s}
+.status-dot.online{background:var(--green);box-shadow:0 0 6px var(--green)}
+.status-text{font-size:11px;color:var(--text2);font-family:var(--mono)}
+.nav{padding:8px;flex:1}
+.nav-section-label{font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--text3);padding:8px 8px 4px}
+.nav-item{display:flex;align-items:center;gap:9px;padding:9px 10px;border-radius:9px;color:var(--text2);font-size:13.5px;font-weight:500;cursor:pointer;transition:var(--trans);margin-bottom:1px;border:1px solid transparent;user-select:none}
+.nav-item:hover{background:var(--surface2);color:var(--text);border-color:var(--border)}
+.nav-item.active{background:rgba(124,58,237,.15);color:#a78bfa;border-color:rgba(124,58,237,.3);font-weight:600}
+.nav-icon{font-size:16px;width:20px;text-align:center;flex-shrink:0}
+.nav-badge{margin-left:auto;background:var(--accent);color:#fff;font-size:10px;font-weight:700;padding:2px 6px;border-radius:20px}
+.sidebar-footer{padding:12px 16px;border-top:1px solid var(--border);display:flex;flex-direction:column;gap:8px}
+.role-badge{display:inline-flex;align-items:center;gap:5px;padding:4px 10px;border-radius:20px;font-size:11px;font-weight:700;width:fit-content}
+.role-badge.owner{background:rgba(251,191,36,.1);border:1px solid rgba(251,191,36,.3);color:var(--gold)}
+.role-badge.admin{background:rgba(124,58,237,.1);border:1px solid rgba(124,58,237,.3);color:#a78bfa}
+.role-badge.mod{background:rgba(59,130,246,.1);border:1px solid rgba(59,130,246,.3);color:#93c5fd}
+.footer-actions{display:flex;gap:6px}
+.footer-btn{flex:1;padding:7px;border-radius:8px;border:1px solid var(--border);background:var(--surface2);color:var(--text2);font-size:12px;transition:var(--trans);display:flex;align-items:center;justify-content:center;gap:5px}
+.footer-btn:hover{border-color:var(--border2);color:var(--text)}
+
+/* MAIN */
+.main{flex:1;display:flex;flex-direction:column;overflow:hidden}
+.topbar{height:56px;min-height:56px;background:var(--surface);border-bottom:1px solid var(--border);display:flex;align-items:center;padding:0 24px;gap:12px;z-index:10}
+.page-title{font-size:16px;font-weight:700;flex:1}
+.topbar-actions{display:flex;align-items:center;gap:8px}
+.icon-btn{width:34px;height:34px;border-radius:9px;border:1px solid var(--border);background:var(--surface2);color:var(--text2);font-size:16px;display:flex;align-items:center;justify-content:center;transition:var(--trans)}
+.icon-btn:hover{border-color:var(--border2);color:var(--text)}
+.ping-chip{background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:4px 10px;font-size:11px;color:var(--text2);font-family:var(--mono)}
+.content{flex:1;overflow-y:auto;padding:24px}
+
+/* PAGES */
+.page{display:none}
+.page.active{display:block;animation:fadeIn .25s ease}
+@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+
+/* STAT CARDS */
+.stats-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(175px,1fr));gap:14px;margin-bottom:24px}
+.stat-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:18px;transition:var(--trans)}
+.stat-card:hover{border-color:var(--border2);transform:translateY(-2px)}
+.stat-card-icon{font-size:22px;margin-bottom:10px}
+.stat-card-val{font-size:24px;font-weight:800;font-family:var(--mono);letter-spacing:-1px}
+.stat-card-label{font-size:12px;color:var(--text2);margin-top:3px;font-weight:500}
+.stat-card-sub{font-size:11px;color:var(--text3);margin-top:4px;font-family:var(--mono)}
+
+/* GRID */
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.grid-3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px}
+@media(max-width:900px){.grid-2,.grid-3{grid-template-columns:1fr}}
+
+/* CARDS */
+.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden}
+.card-header{padding:14px 18px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;gap:10px}
+.card-title{font-size:14px;font-weight:700;display:flex;align-items:center;gap:7px}
+.card-body{padding:18px}
+.card-footer{padding:12px 18px;border-top:1px solid var(--border);background:var(--surface2)}
+
+/* TOGGLE */
+.toggle{position:relative;display:inline-block;width:44px;height:24px;flex-shrink:0}
+.toggle input{opacity:0;width:0;height:0}
+.toggle-slider{position:absolute;inset:0;background:var(--border2);border-radius:24px;cursor:pointer;transition:.25s}
+.toggle-slider::before{content:'';position:absolute;width:18px;height:18px;border-radius:50%;left:3px;top:3px;background:#fff;transition:.25s;box-shadow:0 1px 3px rgba(0,0,0,.3)}
+.toggle input:checked+.toggle-slider{background:var(--accent)}
+.toggle input:checked+.toggle-slider::before{transform:translateX(20px)}
+
+/* FORMS */
+.form-row{margin-bottom:14px}
+.form-label{font-size:11px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;color:var(--text2);margin-bottom:6px;display:block}
+.form-input{width:100%;background:var(--surface2);border:1px solid var(--border);border-radius:9px;padding:10px 13px;color:var(--text);font-size:13.5px;outline:none;transition:var(--trans)}
+.form-input:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(124,58,237,.15)}
+.form-input::placeholder{color:var(--text3)}
+.form-select{width:100%;background:var(--surface2);border:1px solid var(--border);border-radius:9px;padding:10px 13px;color:var(--text);font-size:13.5px;outline:none;transition:var(--trans);cursor:pointer;appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%238892b0' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 10px center;padding-right:34px}
+.form-select:focus{border-color:var(--accent)}
+.setting-row{display:flex;align-items:center;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--border)}
+.setting-row:last-child{border-bottom:none;padding-bottom:0}
+.setting-name{font-size:13.5px;font-weight:600}
+.setting-desc{font-size:12px;color:var(--text2);margin-top:2px}
+
+/* BUTTONS */
+.btn{padding:8px 16px;border-radius:9px;font-size:13.5px;font-weight:600;border:none;cursor:pointer;transition:var(--trans);display:inline-flex;align-items:center;gap:6px}
+.btn-primary{background:var(--accent-g);color:#fff}
+.btn-primary:hover{opacity:.9;box-shadow:0 4px 12px rgba(124,58,237,.35)}
+.btn-secondary{background:var(--surface2);border:1px solid var(--border);color:var(--text)}
+.btn-secondary:hover{border-color:var(--border2)}
+.btn-danger{background:rgba(239,68,68,.1);border:1px solid rgba(239,68,68,.3);color:var(--red)}
+.btn-danger:hover{background:rgba(239,68,68,.2)}
+.btn-success{background:rgba(16,185,129,.1);border:1px solid rgba(16,185,129,.3);color:var(--green)}
+.btn-success:hover{background:rgba(16,185,129,.2)}
+.btn-warning{background:rgba(245,158,11,.1);border:1px solid rgba(245,158,11,.3);color:var(--orange)}
+.btn-warning:hover{background:rgba(245,158,11,.2)}
+.btn-sm{padding:5px 12px;font-size:12px;border-radius:7px}
+.btn-xs{padding:3px 9px;font-size:11px;border-radius:6px}
+.flex-1{flex:1}
+
+/* TABLE */
+.table-wrap{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:13px}
+thead th{padding:9px 12px;text-align:left;font-size:11px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;color:var(--text3);border-bottom:1px solid var(--border)}
+tbody td{padding:10px 12px;border-bottom:1px solid var(--border)}
+tbody tr:last-child td{border-bottom:none}
+tbody tr:hover td{background:var(--surface2)}
+
+/* CHIPS */
+.tag-chip{display:inline-flex;align-items:center;gap:4px;padding:2px 8px;border-radius:20px;font-size:11px;font-weight:600}
+.chip-purple{background:rgba(124,58,237,.1);border:1px solid rgba(124,58,237,.3);color:#a78bfa}
+.chip-blue{background:rgba(59,130,246,.1);border:1px solid rgba(59,130,246,.3);color:#93c5fd}
+.chip-green{background:rgba(16,185,129,.1);border:1px solid rgba(16,185,129,.3);color:#6ee7b7}
+.chip-red{background:rgba(239,68,68,.1);border:1px solid rgba(239,68,68,.3);color:#fca5a5}
+.chip-gold{background:rgba(251,191,36,.1);border:1px solid rgba(251,191,36,.3);color:var(--gold)}
+
+/* TOAST */
+#toast-wrap{position:fixed;bottom:20px;right:20px;z-index:9999;display:flex;flex-direction:column;gap:8px;pointer-events:none}
+.toast{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:12px 16px;font-size:13px;font-weight:500;display:flex;align-items:center;gap:9px;min-width:220px;box-shadow:0 8px 24px rgba(0,0,0,.25);animation:toastIn .3s cubic-bezier(.34,1.56,.64,1);pointer-events:all}
+.toast.success{border-color:rgba(16,185,129,.4);background:rgba(16,185,129,.06)}
+.toast.error{border-color:rgba(239,68,68,.4);background:rgba(239,68,68,.06)}
+.toast.info{border-color:rgba(59,130,246,.4);background:rgba(59,130,246,.06)}
+@keyframes toastIn{from{opacity:0;transform:translateX(20px)}to{opacity:1;transform:translateX(0)}}
+
+/* MODAL */
+.modal-bg{position:fixed;inset:0;z-index:1000;background:rgba(0,0,0,.6);backdrop-filter:blur(4px);display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:.2s}
+.modal-bg.open{opacity:1;pointer-events:all}
+.modal{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:24px;width:90%;max-width:440px;box-shadow:0 20px 60px rgba(0,0,0,.4);transform:scale(.95);transition:.25s cubic-bezier(.34,1.56,.64,1)}
+.modal-bg.open .modal{transform:scale(1)}
+.modal-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px}
+.modal-title{font-size:16px;font-weight:700}
+.modal-close{width:28px;height:28px;border-radius:7px;border:1px solid var(--border);background:var(--surface2);color:var(--text2);font-size:14px;display:flex;align-items:center;justify-content:center;transition:var(--trans)}
+.modal-close:hover{background:var(--border)}
+.modal-actions{display:flex;gap:8px;justify-content:flex-end;margin-top:18px}
+
+/* LOTTERY */
+.lottery-pool{text-align:center;padding:24px;background:linear-gradient(135deg,rgba(251,191,36,.08),rgba(124,58,237,.08));border:1px solid rgba(251,191,36,.2);border-radius:var(--radius);margin-bottom:16px}
+.pool-amount{font-size:36px;font-weight:800;font-family:var(--mono);color:var(--gold);letter-spacing:-1px}
+.pool-label{font-size:13px;color:var(--text2);margin-top:4px}
+
+/* UTILS */
+.flex{display:flex}.items-center{align-items:center}.justify-between{justify-content:space-between}
+.gap-2{gap:8px}.gap-3{gap:12px}
+.mb-4{margin-bottom:16px}.mb-6{margin-bottom:24px}.mt-3{margin-top:12px}.mt-4{margin-top:16px}
+.text-sm{font-size:12px}.text-xs{font-size:11px}
+.text-muted{color:var(--text2)}.text-dim{color:var(--text3)}
+.font-mono{font-family:var(--mono)}.w-full{width:100%}
+.text-green{color:var(--green)}.text-red{color:var(--red)}.text-gold{color:var(--gold)}.text-orange{color:var(--orange)}
+.loading{color:var(--text3);text-align:center;padding:32px;font-size:13px}
+.empty-state{text-align:center;padding:40px 20px;color:var(--text2)}
+.empty-icon{font-size:36px;margin-bottom:10px}
+.section-title{font-size:11px;font-weight:700;color:var(--text3);margin-bottom:10px;text-transform:uppercase;letter-spacing:.8px}
+.user-cell{display:flex;align-items:center;gap:8px}
+.user-avatar-sm{width:28px;height:28px;border-radius:50%;background:var(--accent-g);display:flex;align-items:center;justify-content:center;font-size:12px;color:#fff;font-weight:700;flex-shrink:0}
+</style>
+</head>
+<body>
+
+<aside class="sidebar">
+  <div class="sidebar-header">
+    <div class="logo-row">
+      <div class="logo-icon">⭐</div>
+      <div><div class="logo-name">Stela Studio</div><div class="logo-ver">Dashboard v5.0.0</div></div>
+    </div>
+  </div>
+  <div class="bot-info">
+    <div class="bot-avatar" id="botAvatar">🤖</div>
+    <div style="overflow:hidden;flex:1">
+      <div class="bot-name" id="botName">Loading...</div>
+      <div class="bot-status">
+        <div class="status-dot" id="statusDot"></div>
+        <div class="status-text" id="statusText">Kết nối...</div>
+      </div>
+    </div>
+  </div>
+  <nav class="nav">
+    <div class="nav-section-label">Tổng quan</div>
+    <div class="nav-item active" data-page="overview"><span class="nav-icon">📊</span>Tổng quan</div>
+    <div class="nav-section-label" style="margin-top:8px">Quản lý</div>
+    <div class="nav-item" data-page="economy"><span class="nav-icon">💰</span>Economy</div>
+    <div class="nav-item" data-page="tickets"><span class="nav-icon">🎫</span>Tickets<span class="nav-badge" id="ticketBadge" style="display:none">0</span></div>
+    <div class="nav-item" data-page="market"><span class="nav-icon">🏪</span>Market &amp; Lottery</div>
+    <div class="nav-section-label" style="margin-top:8px">Cài đặt</div>
+    <div class="nav-item" data-page="security"><span class="nav-icon">🛡️</span>Bảo mật &amp; Raid</div>
+    <div class="nav-item" data-page="config"><span class="nav-icon">⚙️</span>Cấu hình</div>
+    <div class="nav-item" data-page="customcmds"><span class="nav-icon">🧩</span>Custom Cmds</div>
+  </nav>
+  <div class="sidebar-footer">
+    <div class="role-badge" id="roleBadge">👤 Loading</div>
+    <div class="footer-actions">
+      <button class="footer-btn" id="themeBtn">🌙 <span id="themeLabel">Dark</span></button>
+      <button class="footer-btn" id="logoutBtn">🚪 Đăng xuất</button>
+    </div>
+  </div>
+</aside>
+
+<div class="main">
+  <div class="topbar">
+    <div class="page-title" id="pageTitle">📊 Tổng quan</div>
+    <div class="topbar-actions">
+      <div class="ping-chip">🏓 <span id="pingVal">—</span> ms</div>
+      <button class="icon-btn" onclick="reloadPage()" title="Refresh">🔄</button>
+    </div>
+  </div>
+  <div class="content">
+
+    <!-- OVERVIEW -->
+    <div class="page active" id="page-overview">
+      <div class="stats-grid" id="statsGrid"><div class="loading">⏳ Đang tải...</div></div>
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-header"><div class="card-title">⚡ Trạng thái Bot</div><button class="btn btn-secondary btn-sm" onclick="loadOverview()">🔄</button></div>
+          <div class="card-body" id="botStatusCard"><div class="loading">Đang tải...</div></div>
+        </div>
+        <div class="card">
+          <div class="card-header"><div class="card-title">🏆 Top Giàu nhất</div></div>
+          <div class="card-body" style="padding:0" id="topPreviewList"><div class="loading">Đang tải...</div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ECONOMY -->
+    <div class="page" id="page-economy">
+      <div class="flex items-center justify-between mb-6">
+        <div><h2 style="font-size:18px;font-weight:800">💰 Economy</h2><div class="text-sm text-muted mt-3">Xếp hạng &amp; chỉnh sửa người dùng</div></div>
+        <select class="form-select" style="width:160px" id="econMode" onchange="loadEconomy()">
+          <option value="money">💰 Xếp hạng tiền</option>
+          <option value="xp">⭐ Xếp hạng XP</option>
+        </select>
+      </div>
+      <div class="card mb-4">
+        <div class="card-header"><div class="card-title">🔧 Chỉnh sửa người dùng</div></div>
+        <div class="card-body">
+          <div class="grid-3">
+            <div class="form-row" style="margin-bottom:0"><label class="form-label">User ID</label><input class="form-input" id="editUserId" placeholder="123456789012345678"></div>
+            <div class="form-row" style="margin-bottom:0"><label class="form-label">Loại</label><select class="form-select" id="editType"><option value="money">💰 Tiền</option><option value="xp">⭐ XP</option></select></div>
+            <div class="form-row" style="margin-bottom:0"><label class="form-label">Số lượng</label><div class="flex gap-2"><input class="form-input" id="editAmount" placeholder="VD: 1000 hoặc -500"><button class="btn btn-primary" onclick="doEditUser()">Lưu</button></div></div>
+          </div>
+          <div class="flex gap-2 mt-3">
+            <button class="btn btn-danger btn-sm" onclick="resetUser('money')">🗑️ Reset tiền</button>
+            <button class="btn btn-danger btn-sm" onclick="resetUser('xp')">🗑️ Reset XP</button>
+            <button class="btn btn-danger btn-sm" onclick="resetUser('all')">☠️ Reset tất cả</button>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header"><div class="card-title" id="econTableTitle">🥇 Xếp hạng tiền</div><span class="text-sm text-muted">Top 50</span></div>
+        <div class="table-wrap"><table><thead><tr><th>#</th><th>Người dùng</th><th>ID</th><th>Số tiền / XP</th><th>Level</th><th>Hành động</th></tr></thead><tbody id="econTableBody"><tr><td colspan="6" class="loading">Đang tải...</td></tr></tbody></table></div>
+      </div>
+    </div>
+
+    <!-- TICKETS -->
+    <div class="page" id="page-tickets">
+      <div class="flex items-center justify-between mb-6">
+        <div><h2 style="font-size:18px;font-weight:800">🎫 Tickets</h2><div class="text-sm text-muted mt-3">Ticket đang mở</div></div>
+        <button class="btn btn-secondary" onclick="loadTickets()">🔄 Refresh</button>
+      </div>
+      <div class="card">
+        <div class="table-wrap"><table><thead><tr><th>User ID</th><th>Kênh</th><th>Server</th><th>Tạo lúc</th><th>Hành động</th></tr></thead><tbody id="ticketsTableBody"><tr><td colspan="5" class="loading">Đang tải...</td></tr></tbody></table></div>
+      </div>
+    </div>
+
+    <!-- MARKET & LOTTERY -->
+    <div class="page" id="page-market">
+      <h2 style="font-size:18px;font-weight:800;margin-bottom:6px">🏪 Market &amp; 🎰 Lottery</h2>
+      <div class="text-sm text-muted mb-6">Quản lý chợ và xổ số</div>
+      <div class="grid-2">
+        <div>
+          <div class="section-title">🎰 Xổ số</div>
+          <div class="card">
+            <div class="card-body">
+              <div class="lottery-pool"><div class="pool-amount" id="lotteryPool">0 🪙</div><div class="pool-label">Jackpot hiện tại</div></div>
+              <div class="grid-2 gap-2 mb-4">
+                <div class="stat-card" style="padding:12px"><div class="stat-card-label">Tổng vé</div><div class="stat-card-val text-gold" id="lotteryTickets">0</div></div>
+                <div class="stat-card" style="padding:12px"><div class="stat-card-label">Người tham gia</div><div class="stat-card-val" id="lotteryParticipants">0</div></div>
+              </div>
+              <div class="text-sm text-muted mb-4">Quay cuối: <span class="font-mono" id="lotteryLastDraw">—</span></div>
+              <div class="flex gap-2"><button class="btn btn-warning flex-1" onclick="drawLottery()">🎰 Quay ngay</button><button class="btn btn-danger btn-sm" onclick="resetLottery()">🗑️ Reset</button></div>
+            </div>
+            <div class="card-footer">
+              <div class="section-title">📜 Lịch sử quay</div>
+              <div id="lotteryHistory"><div class="text-sm text-muted">Chưa có lịch sử</div></div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="section-title">🏪 Chợ người chơi</div>
+          <div class="card">
+            <div class="card-header"><div class="card-title">Đang rao bán</div><button class="btn btn-secondary btn-sm" onclick="loadMarket()">🔄</button></div>
+            <div class="table-wrap"><table><thead><tr><th>Tên</th><th>Giá</th><th>Người bán</th><th></th></tr></thead><tbody id="marketTableBody"><tr><td colspan="4" class="loading">Đang tải...</td></tr></tbody></table></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECURITY -->
+    <div class="page" id="page-security">
+      <h2 style="font-size:18px;font-weight:800;margin-bottom:6px">🛡️ Bảo mật &amp; Anti-Raid</h2>
+      <div class="text-sm text-muted mb-6">Quản lý hệ thống bảo vệ server</div>
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-header"><div class="card-title">⚔️ Anti-Raid</div><button class="btn btn-secondary btn-sm" onclick="loadSecurity()">🔄</button></div>
+          <div class="card-body" id="antiRaidBody"><div class="loading">Đang tải...</div></div>
+          <div class="card-footer flex gap-2">
+            <button class="btn btn-danger flex-1" onclick="doLockdown('lock')">🔒 Lockdown</button>
+            <button class="btn btn-success flex-1" onclick="doLockdown('unlock')">🔓 Mở khóa</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header"><div class="card-title">👻 Anti Ghost Ping</div></div>
+          <div class="card-body" id="ghostPingBody"><div class="loading">Đang tải...</div></div>
+        </div>
+      </div>
+      <div class="card mt-4" id="dashUsersCard" style="display:none">
+        <div class="card-header"><div class="card-title">👑 Quyền Dashboard (Owner only)</div><button class="btn btn-secondary btn-sm" onclick="loadDashUsers()">🔄</button></div>
+        <div class="card-body" id="dashUsersBody"><div class="loading">Đang tải...</div></div>
+      </div>
+    </div>
+
+    <!-- CONFIG -->
+    <div class="page" id="page-config">
+      <div class="flex items-center justify-between mb-6">
+        <div><h2 style="font-size:18px;font-weight:800">⚙️ Cấu hình Bot</h2><div class="text-sm text-muted mt-3">Channel IDs, API Keys, tính năng</div></div>
+        <button class="btn btn-primary" onclick="saveConfig()">💾 Lưu tất cả</button>
+      </div>
+      <div id="configGrid" class="grid-2"><div class="loading">Đang tải...</div></div>
+    </div>
+
+    <!-- CUSTOM COMMANDS -->
+    <div class="page" id="page-customcmds">
+      <div class="flex items-center justify-between mb-6">
+        <div><h2 style="font-size:18px;font-weight:800">🧩 Custom Commands</h2><div class="text-sm text-muted mt-3">Tạo lệnh tùy chỉnh</div></div>
+      </div>
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-header"><div class="card-title">➕ Thêm lệnh mới</div></div>
+          <div class="card-body">
+            <div class="form-row"><label class="form-label">Tên lệnh (không cần !)</label><input class="form-input" id="cmdName" placeholder="vd: hello"></div>
+            <div class="form-row" style="margin-bottom:0"><label class="form-label">Nội dung phản hồi</label><textarea class="form-input" id="cmdResponse" rows="4" placeholder="Bot sẽ trả lời..."></textarea></div>
+          </div>
+          <div class="card-footer"><button class="btn btn-primary w-full" onclick="addCustomCmd()">➕ Thêm lệnh</button></div>
+        </div>
+        <div class="card">
+          <div class="card-header"><div class="card-title">📋 Danh sách</div><button class="btn btn-secondary btn-sm" onclick="loadCustomCmds()">🔄</button></div>
+          <div id="cmdList" style="max-height:380px;overflow-y:auto"><div class="loading">Đang tải...</div></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- MODAL -->
+<div class="modal-bg" id="modalBg">
+  <div class="modal">
+    <div class="modal-header"><div class="modal-title" id="modalTitle">Xác nhận</div><button class="modal-close" onclick="closeModal()">✕</button></div>
+    <div id="modalBody"></div>
+    <div class="modal-actions" id="modalActions"></div>
+  </div>
+</div>
+<div id="toast-wrap"></div>
+
+<script>
+let me = null, configData = {};
+
+// INIT
+document.addEventListener('DOMContentLoaded', async () => {
+  try {
+    const r = await fetch('/api/me');
+    if (!r.ok) return location.href='/';
+    me = await r.json();
+    const b = document.getElementById('roleBadge');
+    b.textContent = me.roleLabel; b.className = `role-badge ${me.role}`;
+    if (me.role === 'owner') document.getElementById('dashUsersCard').style.display = '';
+  } catch { return location.href='/'; }
+
+  const saved = localStorage.getItem('stelaDashTheme')||'dark';
+  setTheme(saved);
+
+  document.querySelectorAll('.nav-item').forEach(el => el.addEventListener('click', () => navigateTo(el.dataset.page)));
+  document.getElementById('logoutBtn').onclick = logout;
+  document.getElementById('themeBtn').onclick   = toggleTheme;
+
+  loadOverview();
+  setInterval(updatePing, 10000);
+  updatePing();
+});
+
+// NAV
+const PAGE_TITLES = { overview:'📊 Tổng quan', economy:'💰 Economy', tickets:'🎫 Tickets', market:'🏪 Market & Lottery', security:'🛡️ Bảo mật', config:'⚙️ Cấu hình', customcmds:'🧩 Custom Commands' };
+function navigateTo(page) {
+  document.querySelectorAll('.nav-item').forEach(el => el.classList.toggle('active', el.dataset.page === page));
+  document.querySelectorAll('.page').forEach(el => el.classList.toggle('active', el.id === `page-${page}`));
+  document.getElementById('pageTitle').textContent = PAGE_TITLES[page] || page;
+  if (page==='economy')    loadEconomy();
+  if (page==='tickets')    loadTickets();
+  if (page==='market')     { loadMarket(); loadLottery(); }
+  if (page==='security')   loadSecurity();
+  if (page==='config')     loadConfigPage();
+  if (page==='customcmds') loadCustomCmds();
+}
+function reloadPage() { navigateTo(document.querySelector('.nav-item.active')?.dataset.page||'overview'); if (document.getElementById('page-overview').classList.contains('active')) loadOverview(); }
+
+// THEME
+function setTheme(t) { document.documentElement.dataset.theme=t; document.getElementById('themeLabel').textContent=t==='dark'?'Dark':'Light'; document.getElementById('themeBtn').innerHTML=`${t==='dark'?'🌙':'☀️'} <span id="themeLabel">${t==='dark'?'Dark':'Light'}</span>`; localStorage.setItem('stelaDashTheme',t); }
+function toggleTheme() { setTheme(document.documentElement.dataset.theme==='dark'?'light':'dark'); }
+
+// API
+async function api(url, method='GET', body=null) { const opts={method,headers:{'Content-Type':'application/json'}}; if(body) opts.body=JSON.stringify(body); const r=await fetch(url,opts); return r.json(); }
+function fmt(n) { return Number(n||0).toLocaleString('vi-VN'); }
+function timeAgo(ts) { if(!ts)return'—'; const d=Math.floor((Date.now()-ts)/1000); if(d<60)return`${d}s trước`; if(d<3600)return`${Math.floor(d/60)}m trước`; if(d<86400)return`${Math.floor(d/3600)}h trước`; return`${Math.floor(d/86400)}d trước`; }
+function fmtUptime(s) { const h=Math.floor(s/3600),m=Math.floor((s%3600)/60),sec=s%60; return`${h}h ${m}m ${sec}s`; }
+
+// PING
+async function updatePing() { try { const d=await api('/api/stats'); const v=document.getElementById('pingVal'); const p=d.ping||0; v.textContent=p; v.style.color=p<80?'var(--green)':p<200?'var(--orange)':'var(--red)'; } catch {} }
+
+// OVERVIEW
+async function loadOverview() {
+  try {
+    const d = await api('/api/stats');
+    document.getElementById('statusDot').className = `status-dot ${d.online?'online':''}`;
+    document.getElementById('statusText').textContent = d.online?'Online':'Offline';
+    document.getElementById('botName').textContent = d.username||'Stela Bot';
+    if (d.avatar) document.getElementById('botAvatar').innerHTML = `<img src="${d.avatar}" alt="">`;
+
+    const stats = [
+      {icon:'🤖',val:d.online?'Online':'Offline',label:'Trạng thái',sub:d.username,color:d.online?'var(--green)':'var(--red)'},
+      {icon:'🏓',val:`${d.ping}ms`,label:'Ping',sub:d.ping<80?'Xuất sắc':'Ổn định',color:d.ping<80?'var(--green)':'var(--orange)'},
+      {icon:'⏱️',val:fmtUptime(d.uptime),label:'Uptime',sub:'Kể từ khởi động'},
+      {icon:'👥',val:fmt(d.memberCount),label:'Thành viên',sub:`${d.guilds} server`},
+      {icon:'💾',val:fmt(d.users),label:'Users DB',sub:'Đã lưu'},
+      {icon:'💍',val:fmt(d.marriages),label:'Cặp đôi',sub:'Kết hôn'},
+      {icon:'⚔️',val:fmt(d.clans),label:'Clan',sub:'Hoạt động'},
+    ];
+    document.getElementById('statsGrid').innerHTML = stats.map(s=>`<div class="stat-card"><div class="stat-card-icon">${s.icon}</div><div class="stat-card-val" ${s.color?`style="color:${s.color}"`:''}>${s.val}</div><div class="stat-card-label">${s.label}</div><div class="stat-card-sub">${s.sub||''}</div></div>`).join('');
+
+    document.getElementById('botStatusCard').innerHTML = [
+      ['Trạng thái',`<span class="tag-chip ${d.online?'chip-green':'chip-red'}">${d.online?'🟢 Online':'🔴 Offline'}</span>`],
+      ['Username',`<span class="font-mono text-sm">${d.username}</span>`],
+      ['Ping API',`<span class="font-mono text-sm">${d.ping}ms</span>`],
+      ['Uptime',`<span class="font-mono text-sm">${fmtUptime(d.uptime)}</span>`],
+      ['Servers',`<span class="font-mono text-sm">${d.guilds}</span>`],
+      ['Members',`<span class="font-mono text-sm">${fmt(d.memberCount)}</span>`],
+    ].map((r,i,a)=>`<div class="setting-row" ${i===a.length-1?'style="border-bottom:none"':''}><div class="setting-name">${r[0]}</div>${r[1]}</div>`).join('');
+
+    loadTopPreview();
+  } catch(e) { console.error(e); }
+}
+
+async function loadTopPreview() {
+  try {
+    const data = await api('/api/economy/top?mode=money');
+    const top5 = data.slice(0,5);
+    const medals = ['🥇','🥈','🥉','4️⃣','5️⃣'];
+    if (!top5.length) { document.getElementById('topPreviewList').innerHTML='<div class="empty-state"><div class="empty-icon">📭</div><div class="empty-text">Chưa có dữ liệu</div></div>'; return; }
+    document.getElementById('topPreviewList').innerHTML = top5.map((u,i)=>`
+      <div style="display:flex;align-items:center;justify-content:space-between;padding:10px 18px;border-bottom:1px solid var(--border)">
+        <div class="user-cell"><span style="font-size:18px">${medals[i]}</span>
+          <div><div style="font-size:13px;font-weight:600">${u.username||`User ${u.id.slice(-4)}`}</div><div class="text-xs font-mono text-muted">${u.id.slice(-8)}...</div></div>
+        </div>
+        <div style="text-align:right"><div class="font-mono text-sm text-gold">${fmt(u.money)} 🪙</div><div class="text-xs text-muted">Lv.${u.level}</div></div>
+      </div>`).join('');
+  } catch {}
+}
+
+// ECONOMY
+async function loadEconomy() {
+  const mode = document.getElementById('econMode').value;
+  document.getElementById('econTableTitle').textContent = mode==='xp'?'⭐ Xếp hạng XP':'🥇 Xếp hạng tiền';
+  document.getElementById('econTableBody').innerHTML = '<tr><td colspan="6" class="loading">Đang tải...</td></tr>';
+  try {
+    const data = await api(`/api/economy/top?mode=${mode}`);
+    if (!data.length) { document.getElementById('econTableBody').innerHTML='<tr><td colspan="6"><div class="empty-state"><div class="empty-icon">📭</div><div class="empty-text">Chưa có dữ liệu</div></div></td></tr>'; return; }
+    const medals = ['🥇','🥈','🥉'];
+    document.getElementById('econTableBody').innerHTML = data.map((u,i)=>`
+      <tr>
+        <td>${medals[i]||`#${i+1}`}</td>
+        <td><div class="user-cell"><div class="user-avatar-sm">${(u.username||'?')[0].toUpperCase()}</div><span style="font-weight:600">${u.username||`User_${u.id.slice(-4)}`}</span></div></td>
+        <td><span class="font-mono text-xs text-muted">${u.id}</span></td>
+        <td><span class="font-mono text-sm ${mode==='xp'?'text-gold':'text-green'}">${fmt(mode==='xp'?u.xp:u.money)} ${mode==='xp'?'XP':'🪙'}</span></td>
+        <td><span class="tag-chip chip-purple">Lv.${u.level}</span></td>
+        <td><div class="flex gap-2"><button class="btn btn-secondary btn-xs" onclick="fillEdit('${u.id}')">✏️</button><button class="btn btn-danger btn-xs" onclick="confirmReset('${u.id}')">🗑️</button></div></td>
+      </tr>`).join('');
+  } catch(e) { document.getElementById('econTableBody').innerHTML=`<tr><td colspan="6" style="padding:20px;color:var(--text2)">❌ ${e.message}</td></tr>`; }
+}
+function fillEdit(id) { document.getElementById('editUserId').value=id; document.getElementById('editUserId').scrollIntoView({behavior:'smooth'}); }
+async function doEditUser() {
+  const userId=document.getElementById('editUserId').value.trim(), type=document.getElementById('editType').value, amount=parseInt(document.getElementById('editAmount').value);
+  if (!userId||isNaN(amount)) return toast('Nhập đầy đủ thông tin!','error');
+  try { const r=await api('/api/economy/add','POST',{userId,type,amount}); if(r.ok){toast(`✅ Xong! Giá trị mới: ${fmt(r.newValue)}`,'success');loadEconomy();}else toast(r.error,'error'); } catch { toast('Lỗi kết nối','error'); }
+}
+async function resetUser(type) {
+  const userId=document.getElementById('editUserId').value.trim();
+  if (!userId) return toast('Nhập User ID trước!','error');
+  openModal('⚠️ Xác nhận',`Reset <b>${type==='all'?'toàn bộ':type}</b> của <code>${userId}</code>?`,[
+    {label:'Hủy',cls:'btn-secondary',fn:closeModal},
+    {label:'Reset',cls:'btn-danger',fn:async()=>{ closeModal(); try { const r=await api('/api/economy/reset','POST',{userId,type}); if(r.ok){toast('✅ Đã reset!','success');loadEconomy();}else toast(r.error,'error'); } catch { toast('Lỗi','error'); } }}
+  ]);
+}
+function confirmReset(userId) { document.getElementById('editUserId').value=userId; resetUser('all'); }
+
+// TICKETS
+async function loadTickets() {
+  document.getElementById('ticketsTableBody').innerHTML='<tr><td colspan="5" class="loading">Đang tải...</td></tr>';
+  try {
+    const data=await api('/api/tickets');
+    const badge=document.getElementById('ticketBadge');
+    badge.style.display=data.length?'':'none'; if(data.length) badge.textContent=data.length;
+    if (!data.length) { document.getElementById('ticketsTableBody').innerHTML='<tr><td colspan="5"><div class="empty-state"><div class="empty-icon">✅</div><div class="empty-text">Không có ticket nào đang mở</div></div></td></tr>'; return; }
+    document.getElementById('ticketsTableBody').innerHTML=data.map(t=>`<tr><td class="font-mono text-xs">${t.userId}</td><td><span class="tag-chip chip-blue">#${t.channelName}</span></td><td>${t.guildName}</td><td class="text-sm text-muted">${timeAgo(t.createdAt)}</td><td><button class="btn btn-danger btn-xs" onclick="closeTicket('${t.channelId}','${t.channelName}')">🔒 Đóng</button></td></tr>`).join('');
+  } catch(e) { document.getElementById('ticketsTableBody').innerHTML=`<tr><td colspan="5" style="padding:20px;color:var(--text2)">❌ Bot cần online. ${e.message}</td></tr>`; }
+}
+async function closeTicket(cid,name) {
+  openModal('🔒 Đóng Ticket',`Xóa kênh <b>#${name}</b>?`,[
+    {label:'Hủy',cls:'btn-secondary',fn:closeModal},
+    {label:'Đóng',cls:'btn-danger',fn:async()=>{ closeModal(); try { const r=await api(`/api/tickets/${cid}`,'DELETE'); if(r.ok){toast('✅ Đã đóng!','success');loadTickets();}else toast(r.error,'error'); } catch { toast('Lỗi','error'); } }}
+  ]);
+}
+
+// MARKET
+async function loadMarket() {
+  document.getElementById('marketTableBody').innerHTML='<tr><td colspan="4" class="loading">Đang tải...</td></tr>';
+  try {
+    const data=await api('/api/market');
+    if (!data.length) { document.getElementById('marketTableBody').innerHTML='<tr><td colspan="4"><div class="empty-state"><div class="empty-icon">🏪</div><div class="empty-text">Chợ trống</div></div></td></tr>'; return; }
+    document.getElementById('marketTableBody').innerHTML=data.map(item=>`<tr><td style="font-weight:600">${item.name||'?'}</td><td class="font-mono text-sm text-gold">${fmt(item.price)} 🪙</td><td class="font-mono text-xs text-muted">${(item.sellerId||'?').slice(-8)}...</td><td><button class="btn btn-danger btn-xs" onclick="removeMarket('${item.id}')">🗑️</button></td></tr>`).join('');
+  } catch {}
+}
+async function removeMarket(id) { try { const r=await api(`/api/market/${id}`,'DELETE'); if(r.ok){toast('✅ Đã xóa!','success');loadMarket();}else toast(r.error,'error'); } catch { toast('Lỗi','error'); } }
+
+// LOTTERY
+async function loadLottery() {
+  try {
+    const d=await api('/api/lottery');
+    document.getElementById('lotteryPool').textContent=`${fmt(d.pool)} 🪙`;
+    document.getElementById('lotteryTickets').textContent=fmt(d.totalTickets);
+    document.getElementById('lotteryParticipants').textContent=d.participants;
+    document.getElementById('lotteryLastDraw').textContent=d.lastDraw?timeAgo(d.lastDraw):'Chưa quay';
+    const hist=d.history||[];
+    document.getElementById('lotteryHistory').innerHTML=hist.length?hist.map(h=>`<div style="display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid var(--border);font-size:12px"><span>🏆 ...${(h.winner||'?').slice(-8)}</span><span class="text-gold font-mono">+${fmt(h.amount)} 🪙</span></div>`).join(''):'<div class="text-sm text-muted">Chưa có lịch sử</div>';
+  } catch {}
+}
+async function drawLottery() {
+  openModal('🎰 Quay Xổ Số','Tiến hành quay jackpot ngay?',[
+    {label:'Hủy',cls:'btn-secondary',fn:closeModal},
+    {label:'Quay!',cls:'btn-warning',fn:async()=>{ closeModal(); try { const r=await api('/api/lottery/draw','POST'); if(r.ok){toast('🎰 Đã quay!','success');loadLottery();}else toast(r.error||'Lỗi hoặc chưa có vé','error'); } catch { toast('Lỗi','error'); } }}
+  ]);
+}
+async function resetLottery() {
+  openModal('⚠️ Reset Xổ Số','Reset jackpot và toàn bộ vé? <b>Không thể hoàn tác!</b>',[
+    {label:'Hủy',cls:'btn-secondary',fn:closeModal},
+    {label:'Reset',cls:'btn-danger',fn:async()=>{ closeModal(); try { const r=await api('/api/lottery/reset','POST'); if(r.ok){toast('✅ Đã reset!','success');loadLottery();}else toast(r.error,'error'); } catch { toast('Lỗi','error'); } }}
+  ]);
+}
+
+// SECURITY
+async function loadSecurity() {
+  try {
+    const d=await api('/api/antiraid');
+    document.getElementById('antiRaidBody').innerHTML=`
+      <div class="setting-row"><div><div class="setting-name">Hệ thống Anti-Raid</div><div class="setting-desc">Bật/tắt toàn bộ</div></div><label class="toggle"><input type="checkbox" ${d.system?'checked':''} onchange="patchRaid('system',this.checked)"><span class="toggle-slider"></span></label></div>
+      <div class="setting-row"><div><div class="setting-name">Mass Join Detection</div><div class="setting-desc">Phát hiện join ồ ạt</div></div><label class="toggle"><input type="checkbox" ${d.massJoin?.enabled?'checked':''} onchange="patchRaid('massJoin',this.checked)"><span class="toggle-slider"></span></label></div>
+      <div class="setting-row"><div><div class="setting-name">New Account Filter</div><div class="setting-desc">Lọc tài khoản mới</div></div><label class="toggle"><input type="checkbox" ${d.newAccount?.enabled?'checked':''} onchange="patchRaid('newAccount',this.checked)"><span class="toggle-slider"></span></label></div>
+      <div class="setting-row" style="border-bottom:none"><div><div class="setting-name">Auto Lockdown</div><div class="setting-desc">Tự động khóa khi bị raid</div></div><label class="toggle"><input type="checkbox" ${d.lockdown?.auto?'checked':''} onchange="patchRaid('lockdown',this.checked)"><span class="toggle-slider"></span></label></div>
+      <div style="margin-top:12px;padding:10px;background:var(--surface2);border-radius:9px;border:1px solid var(--border)"><div class="text-sm">Server: <b class="${d.isLocked?'text-red':'text-green'}">${d.isLocked?'🔒 Lockdown':'🟢 Bình thường'}</b></div></div>`;
+  } catch { document.getElementById('antiRaidBody').innerHTML='<div class="text-sm text-muted">Bot chưa chạy</div>'; }
+  try {
+    const d=await api('/api/ghostping');
+    document.getElementById('ghostPingBody').innerHTML=`<div class="setting-row" style="border-bottom:none"><div><div class="setting-name">Anti Ghost Ping</div><div class="setting-desc">Cảnh cáo khi xóa mention</div></div><label class="toggle"><input type="checkbox" ${d.enabled?'checked':''} onchange="patchGhostPing(this.checked)"><span class="toggle-slider"></span></label></div>`;
+  } catch { document.getElementById('ghostPingBody').innerHTML='<div class="text-sm text-muted">Bot chưa chạy</div>'; }
+  if (me.role==='owner') loadDashUsers();
+}
+async function patchRaid(key,val) { try { const r=await api('/api/antiraid','PATCH',{[key]:val}); if(!r.ok) toast(r.error,'error'); else toast('✅ Đã cập nhật!','success'); } catch { toast('Lỗi','error'); } }
+async function patchGhostPing(val) { try { const r=await api('/api/ghostping','PATCH',{enabled:val}); if(r.ok) toast(`${val?'✅ Bật':'⛔ Tắt'} Anti Ghost Ping`,'success'); } catch { toast('Lỗi','error'); } }
+async function doLockdown(action) {
+  openModal(action==='lock'?'🔒 Lockdown':'🔓 Mở khóa',action==='lock'?'Khóa toàn bộ server?':'Mở khóa server?',[
+    {label:'Hủy',cls:'btn-secondary',fn:closeModal},
+    {label:action==='lock'?'Lockdown':'Mở khóa',cls:action==='lock'?'btn-danger':'btn-success',fn:async()=>{ closeModal(); try { const r=await api('/api/antiraid/lockdown','POST',{action}); if(r.ok) toast(`✅ Xong!`,'success'); else toast(r.error,'error'); } catch { toast('Lỗi','error'); } }}
+  ]);
+}
+async function loadDashUsers() {
+  try {
+    const d=await api('/api/dashboard/users');
+    document.getElementById('dashUsersBody').innerHTML=`
+      <div class="form-row"><label class="form-label">Admin IDs (cách bằng dấu phẩy)</label><textarea class="form-input" id="adminIDsIn" rows="2">${(d.adminIDs||[]).join(',')}</textarea></div>
+      <div class="form-row" style="margin-bottom:0"><label class="form-label">Dashboard Mod IDs</label><textarea class="form-input" id="modIDsIn" rows="2">${(d.dashboardModIDs||[]).join(',')}</textarea></div>
+      <div class="mt-3"><button class="btn btn-primary" onclick="saveDashUsers()">💾 Lưu quyền</button></div>`;
+  } catch {}
+}
+async function saveDashUsers() {
+  const adminIDs=document.getElementById('adminIDsIn').value.split(',').map(s=>s.trim()).filter(Boolean);
+  const dashboardModIDs=document.getElementById('modIDsIn').value.split(',').map(s=>s.trim()).filter(Boolean);
+  try { const r=await api('/api/dashboard/users','PATCH',{adminIDs,dashboardModIDs}); if(r.ok) toast('✅ Đã lưu!','success'); else toast(r.error,'error'); } catch { toast('Lỗi','error'); }
+}
+
+// CONFIG
+async function loadConfigPage() {
+  document.getElementById('configGrid').innerHTML='<div class="loading">Đang tải...</div>';
+  try {
+    configData=await api('/api/config');
+    const c=configData;
+    const f=(id,label,val,type='text')=>`<div class="form-row"><label class="form-label">${label}</label><input class="form-input" id="cfg_${id}" type="${type}" value="${val||''}" placeholder="${label}"></div>`;
+    document.getElementById('configGrid').innerHTML=`
+      <div class="card"><div class="card-header"><div class="card-title">📢 Channel IDs</div></div><div class="card-body">
+        ${f('welcomeChannelId','👋 Welcome Channel',c.welcomeChannelId)}
+        ${f('goodbyeChannelId','👋 Goodbye Channel',c.goodbyeChannelId)}
+        ${f('logChannelId','📋 Log Channel',c.logChannelId)}
+        ${f('starboardChannelId','⭐ Starboard Channel',c.starboardChannelId)}
+        ${f('suggestionChannelId','💡 Suggestion Channel',c.suggestionChannelId)}
+        ${f('birthdayChannelId','🎂 Birthday Channel',c.birthdayChannelId)}
+        ${f('lotteryChannelId','🎰 Lottery Channel',c.lotteryChannelId)}
+        ${f('weeklyEventChannelId','📅 Weekly Event Channel',c.weeklyEventChannelId)}
+      </div></div>
+      <div class="card"><div class="card-header"><div class="card-title">🤖 Bot Config</div></div><div class="card-body">
+        ${f('prefix','Prefix',c.prefix)}
+        ${f('footer','Footer text',c.footer)}
+        ${f('webURL','Web URL',c.webURL)}
+        ${f('geminiKey','🔑 Gemini API Key',c.geminiKey,'password')}
+        ${f('ticketPanelImage','🎫 Ticket Panel Image/GIF URL',c.ticketPanelImage)}
+        ${f('staffRoleId','👮 Staff Role ID',c.staffRoleId)}
+        ${f('adminRoleId','🛡️ Admin Role ID',c.adminRoleId)}
+        ${f('boostChannelId','🚀 Boost Channel ID',c.boostChannelId)}
+      </div></div>
+      <div class="card"><div class="card-header"><div class="card-title">⛏️ Minecraft Server</div></div><div class="card-body">
+        ${f('mc_host','Host',c.minecraftServer?.host)}
+        ${f('mc_port','Port',c.minecraftServer?.port)}
+      </div></div>
+      <div class="card"><div class="card-header"><div class="card-title">⭐ XP Config</div></div><div class="card-body">
+        ${f('xp_min','XP min mỗi tin nhắn',c.xpPerMessage?.min)}
+        ${f('xp_max','XP max mỗi tin nhắn',c.xpPerMessage?.max)}
+        ${f('xpCooldown','XP Cooldown (ms)',c.xpCooldown)}
+        ${f('starboardThreshold','⭐ Starboard Threshold',c.starboardThreshold)}
+      </div></div>
+      ${me.role==='owner'?`<div class="card"><div class="card-header"><div class="card-title">🔒 Bảo mật (Owner only)</div></div><div class="card-body">${f('dashboardPassword','Dashboard Password',c.dashboardPassword,'password')}</div></div>`:''}
+    `;
+  } catch(e) { document.getElementById('configGrid').innerHTML=`<div class="text-muted">Lỗi: ${e.message}</div>`; }
+}
+async function saveConfig() {
+  const g=id=>document.getElementById(`cfg_${id}`)?.value?.trim()||'';
+  const body={
+    prefix:g('prefix'),footer:g('footer'),webURL:g('webURL'),geminiKey:g('geminiKey'),ticketPanelImage:g('ticketPanelImage'),
+    staffRoleId:g('staffRoleId'),adminRoleId:g('adminRoleId'),boostChannelId:g('boostChannelId'),
+    welcomeChannelId:g('welcomeChannelId'),goodbyeChannelId:g('goodbyeChannelId'),logChannelId:g('logChannelId'),
+    starboardChannelId:g('starboardChannelId'),suggestionChannelId:g('suggestionChannelId'),birthdayChannelId:g('birthdayChannelId'),
+    lotteryChannelId:g('lotteryChannelId'),weeklyEventChannelId:g('weeklyEventChannelId'),
+    xpCooldown:parseInt(g('xpCooldown'))||60000,starboardThreshold:parseInt(g('starboardThreshold'))||3,
+    xpPerMessage:{min:parseInt(g('xp_min'))||5,max:parseInt(g('xp_max'))||15},
+    minecraftServer:{host:g('mc_host'),port:parseInt(g('mc_port'))||25565},
+  };
+  if (me.role==='owner'){ const pw=g('dashboardPassword'); if(pw&&pw!=='***') body.dashboardPassword=pw; }
+  try { const r=await api('/api/config','PATCH',body); if(r.ok) toast('✅ Đã lưu cấu hình!','success'); else toast(r.error||'Lỗi','error'); } catch { toast('Lỗi kết nối','error'); }
+}
+
+// CUSTOM COMMANDS
+async function loadCustomCmds() {
+  document.getElementById('cmdList').innerHTML='<div class="loading">Đang tải...</div>';
+  try {
+    const cmds=await api('/api/customcmds');
+    const entries=Object.entries(cmds);
+    if (!entries.length) { document.getElementById('cmdList').innerHTML='<div class="empty-state"><div class="empty-icon">🧩</div><div class="empty-text">Chưa có lệnh nào</div></div>'; return; }
+    document.getElementById('cmdList').innerHTML=entries.map(([name,cmd])=>`<div style="display:flex;align-items:center;justify-content:space-between;padding:10px 16px;border-bottom:1px solid var(--border)"><div style="flex:1;overflow:hidden"><div style="font-weight:700;font-size:13px">!${name}</div><div class="text-xs text-muted" style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-top:2px">${(cmd.response||'').slice(0,60)}</div></div><button class="btn btn-danger btn-xs" style="margin-left:10px;flex-shrink:0" onclick="deleteCmd('${name}')">🗑️</button></div>`).join('');
+  } catch {}
+}
+async function addCustomCmd() {
+  const name=document.getElementById('cmdName').value.trim().toLowerCase(),response=document.getElementById('cmdResponse').value.trim();
+  if (!name||!response) return toast('Nhập đầy đủ tên và nội dung!','error');
+  try { const r=await api('/api/customcmds','POST',{name,response}); if(r.ok){toast(`✅ Thêm !${name} thành công!`,'success');document.getElementById('cmdName').value='';document.getElementById('cmdResponse').value='';loadCustomCmds();}else toast(r.error,'error'); } catch { toast('Lỗi','error'); }
+}
+async function deleteCmd(name) {
+  try { const r=await api(`/api/customcmds/${name}`,'DELETE'); if(r.ok){toast(`✅ Đã xóa !${name}!`,'success');loadCustomCmds();}else toast(r.error,'error'); } catch { toast('Lỗi','error'); }
+}
+
+// MODAL
+function openModal(title,body,actions=[]) {
+  document.getElementById('modalTitle').textContent=title;
+  document.getElementById('modalBody').innerHTML=`<div style="font-size:14px;line-height:1.6;color:var(--text2)">${body}</div>`;
+  document.getElementById('modalActions').innerHTML=actions.map((a,i)=>`<button class="btn ${a.cls}" id="ma${i}">${a.label}</button>`).join('');
+  actions.forEach((a,i)=>document.getElementById(`ma${i}`).onclick=a.fn);
+  document.getElementById('modalBg').classList.add('open');
+}
+function closeModal() { document.getElementById('modalBg').classList.remove('open'); }
+document.getElementById('modalBg').addEventListener('click',e=>{ if(e.target===e.currentTarget) closeModal(); });
+
+// TOAST
+function toast(msg,type='info') {
+  const icons={success:'✅',error:'❌',info:'ℹ️'};
+  const el=document.createElement('div'); el.className=`toast ${type}`;
+  el.innerHTML=`<span>${icons[type]}</span><span>${msg}</span>`;
+  document.getElementById('toast-wrap').appendChild(el);
+  setTimeout(()=>{ el.style.cssText='opacity:0;transform:translateX(20px);transition:.3s'; setTimeout(()=>el.remove(),300); },3000);
+}
+
+// LOGOUT
+async function logout() { await fetch('/api/logout',{method:'POST'}).catch(()=>{}); location.href='/'; }
+</script>
+</body>
+</html>
