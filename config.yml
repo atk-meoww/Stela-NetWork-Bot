@@ -1,0 +1,2084 @@
+# ==============================================
+# Ticket bot general settings
+# ==============================================
+
+# Vars:
+# {root} - Base directory, same place as this file
+dbPath: "{root}/data" 
+
+# Role Admin và Staff có quyền Blacklist
+rolesThatCanBlacklist: [ "1468288305287135470", "1445797855037227131", "1488884171110613092", "1488911239185961040", "1488174588289351730", "1445798700352802837"]
+rolesOnBlacklist: [] 
+blacklistCleanup: "120" 
+transcriptType: "HTML" 
+transcriptName: "{channelName}-transcript" 
+transcriptImages: false 
+reOpenStaffOnly: false 
+closeStaffOnly: true 
+deleteStaffOnly: true 
+commands_cooldown: "5" 
+buttons_cooldown: "5" 
+maxOpenTickets: "1" 
+preventNewTicket: false 
+silentStartup: false 
+deleteTicketTime: "5" 
+claimFeature: true # Đã bật tính năng Claim để staff nhận đơn
+claimRename: false 
+claimRenameName: "{category}-{username}" 
+claim1on1: false 
+status:
+  botActivityText: "Hỗ trợ Stela Network" 
+  botActivityType: "Watching" 
+  streamingOptionURL: "" 
+  botStatus: "online" 
+alertReply:
+  enabled: false 
+  time: "300" 
+  autoAction: "none" 
+autoCloseTickets:
+  enabled: false 
+  interval: "60" 
+  time: "86400" 
+  ignoreBots: false 
+autoDeleteTickets:
+  enabled: false 
+  interval: "60" 
+  time: "86400" 
+onUserLeave: "close" 
+addUsersBack: true 
+statsChannels:
+  enabled: false 
+  interval: "600" 
+  channels:
+    - channelID: "111111111111111111" 
+      type: "totalTickets" 
+      name: "Total Tickets: {stats}" 
+    - channelID: "111111111111111111"
+      type: "openTickets"
+      name: "Total Open Tickets: {stats}"
+    - channelID: "111111111111111111"
+      type: "ratings"
+      name: "Average Rating: {stats}/5.0"
+
+# ==============================================
+# Ticket Category settings
+# ==============================================
+
+TicketCategories:
+  - id: 3 # HỖ TRỢ (Tất cả đều thấy)
+    name: "hỗ-trợ" 
+    nameEmoji: "❓ " 
+    categoryID: ["1483546181312188539"] 
+    closedCategoryID: ["1483546190980186274"] 
+    # Admin, Founder, Owner + Police, Helper
+    support_role_ids: ["1445798700352802837", "1445797126897664010","1445799338700836864"] 
+    permissions: 
+      ticketCreator:
+        open:
+          allow: ["ViewChannel", "SendMessages", "EmbedLinks", "AttachFiles", "ReadMessageHistory"] 
+          deny: [] 
+        close:
+          allow: [] 
+          deny: ["SendMessages"] 
+      supportRoles:
+        open:
+          allow: ["ViewChannel", "SendMessages", "EmbedLinks", "AttachFiles", "ReadMessageHistory"]
+          deny: []
+        close:
+          allow: []
+          deny: ["SendMessages"]
+      addedRoles:
+        open:
+          allow: ["ViewChannel", "SendMessages", "EmbedLinks", "AttachFiles", "ReadMessageHistory"]
+          deny: []
+        close:
+          allow: []
+          deny: ["SendMessages"]
+      addedUsers:
+        open:
+          allow: ["ViewChannel", "SendMessages", "EmbedLinks", "AttachFiles", "ReadMessageHistory"]
+          deny: []
+        close:
+          allow: []
+          deny: ["SendMessages"]
+    pingRoles: true 
+    # Ping tất cả role
+    ping_role_ids: ["1468288305287135470", "1445797855037227131", "1488884171110613092", "1488911239185961040", "1488174588289351730", "1445798700352802837"]
+    ghostPingRoles: false
+    textContent: "{support-roles}" 
+    creatorRoles: [] 
+    buttonEmoji: "1445806406707183636" 
+    buttonLabel: "Hỗ Trợ" 
+    buttonStyle: "Primary" 
+    menuEmoji: "1445806406707183636" 
+    menuLabel: "Hỗ Trợ" 
+    menuDescription: "Mở ticket hỗ trợ chung." 
+    embedTitle: "Ticket Hỗ Trợ" 
+    color: "#2FF200" 
+    description: "Bạn Cần Hỗ Trợ Gì Ạ ><\nBạn Vui Lòng Đợi BQT Sẽ Hỗ Trợ Bạn Trong Thời Gian Sớm Nhất Nhaa" 
+    ticketName: "category-username" 
+    ticketTopic: "Người tạo: {user} | Loại: {type}" 
+    slowmode: "0" 
+    useCodeBlocks: false 
+    modal: true 
+    modalTitle: "Yêu Cầu Hỗ Trợ" 
+    questions: 
+      - label: "Tên game của bạn là gì?"
+        placeholder: "Ví Dụ: DieuAnhCuti"
+        style: "Short" 
+        required: true 
+        minLength: 0 
+        maxLength: 500
+      - label: "Bạn tạo ticket để làm gì?"
+        placeholder: "Lý do, ..."
+        style: "Paragraph" 
+        required: false 
+        minLength: 0 
+        maxLength: 500 
+
+  - id: 4 # MUA RANK (CHỈ Admin, Founder, Owner)
+    name: "mua-rank"
+    nameEmoji: "💰 " 
+    categoryID: ["1481474737573068872"] 
+    closedCategoryID: ["1483546190980186274"] 
+    # CHỈ CÓ Admin, Founder, Owner. KHÔNG CÓ Police, Helper
+    support_role_ids: ["1449736543743774859", "1449736543743774860", "1449736543756353548", "1449736543756353547"] 
+    permissions: 
+      ticketCreator:
+        open:
+          allow: ["ViewChannel", "SendMessages", "EmbedLinks", "AttachFiles", "ReadMessageHistory"] 
+          deny: [] 
+        close:
+          allow: [] 
+          deny: ["SendMessages"] 
+      supportRoles:
+        open:
+          allow: ["ViewChannel", "SendMessages", "EmbedLinks", "AttachFiles", "ReadMessageHistory"]
+          deny: []
+        close:
+          allow: []
+          deny: ["SendMessages"]
+      addedRoles:
+        open:
+          allow: ["ViewChannel", "SendMessages", "EmbedLinks", "AttachFiles", "ReadMessageHistory"]
+          deny: []
+        close:
+          allow: []
+          deny: ["SendMessages"]
+      addedUsers:
+        open:
+          allow: ["ViewChannel", "SendMessages", "EmbedLinks", "AttachFiles", "ReadMessageHistory"]
+          deny: []
+        close:
+          allow: []
+          deny: ["SendMessages"]
+    pingRoles: true 
+    # Chỉ ping Admin, Founder, Owner
+    ping_role_ids: ["1468288305287135470", "1445797855037227131", "1488884171110613092", "1488911239185961040", "1488174588289351730", "1445798700352802837"] 
+    ghostPingRoles: false 
+    textContent: "{support-roles}" 
+    creatorRoles: [] 
+    buttonEmoji: "1445806450306977917" 
+    buttonLabel: "Mua Rank" 
+    buttonStyle: "Success" 
+    menuEmoji: "1445806450306977917" 
+    menuLabel: "Mua Rank" 
+    menuDescription: "Mở ticket để mua rank/vật phẩm." 
+    embedTitle: "Ticket Mua Rank" 
+    color: "#ADD8E6" 
+    description: "Mua Rank Gì Thì Ghi Lại Thông Tin Dưới Đây :\n\n- Bảng giá rank:\n**Rank: Wynn+ (Plus)**\nBuy Price: 25k VNĐ ( Card: 30k )\n+5 Homes\n+10 Slot Auction\nUnlock /kit command\n\n**Rank: Custom+**\nBuy Price: 150k VNĐ ( Card: 200k )\n+10 Homes\n+15 Slot Auction\nUnlock /kit command\n\nAnd more...\n\nVà Đợi Đội Ngũ BQT Sẽ Hỗ Trợ Bạn Sớm Nhất >.<" 
+    ticketName: "category-username" 
+    ticketTopic: "Người tạo: {user} | Loại: {type}" 
+    slowmode: "0" 
+    useCodeBlocks: false 
+    modal: true 
+    modalTitle: "Hóa Đơn Mua Rank" 
+    questions: 
+      - label: "Tên game của bạn là gì?"
+        placeholder: "Ví Dụ: DieuAnhCuti"
+        style: "Short" 
+        required: true 
+        minLength: 0 
+        maxLength: 500 
+      - label: "Bạn mua rank gì?"
+        placeholder: "Ví dụ: Custom"
+        style: "Paragraph" 
+        required: false 
+        minLength: 0 
+        maxLength: 500
+      - label: "Bạn thanh toán bằng card hay bank?"
+        placeholder: "Ví dụ: Bank"
+        style: "Short" 
+        required: true 
+        minLength: 0 
+        maxLength: 500
+
+  - id: 5 # REPORT (Tất cả đều thấy)
+    name: "tố-cáo"
+    nameEmoji: "🚨 " 
+    categoryID: ["1489773999365030149"] 
+    closedCategoryID: ["1483546190980186274"] 
+    # Admin, Founder, Owner + Police, Helper
+    support_role_ids: ["1445798700352802837", "1445797126897664010","1445799338700836864"]
+    permissions: 
+      ticketCreator:
+        open:
+          allow: ["ViewChannel", "SendMessages", "EmbedLinks", "AttachFiles", "ReadMessageHistory"] 
+          deny: [] 
+        close:
+          allow: [] 
+          deny: ["SendMessages"] 
+      supportRoles:
+        open:
+          allow: ["ViewChannel", "SendMessages", "EmbedLinks", "AttachFiles", "ReadMessageHistory"]
+          deny: []
+        close:
+          allow: []
+          deny: ["SendMessages"]
+      addedRoles:
+        open:
+          allow: ["ViewChannel", "SendMessages", "EmbedLinks", "AttachFiles", "ReadMessageHistory"]
+          deny: []
+        close:
+          allow: []
+          deny: ["SendMessages"]
+      addedUsers:
+        open:
+          allow: ["ViewChannel", "SendMessages", "EmbedLinks", "AttachFiles", "ReadMessageHistory"]
+          deny: []
+        close:
+          allow: []
+          deny: ["SendMessages"]
+    pingRoles: true 
+    # Ping tất cả role
+    ping_role_ids: ["1445798700352802837", "1445797126897664010","1445799338700836864"]
+    ghostPingRoles: false 
+    textContent: "{support-roles}" 
+    creatorRoles: [] 
+    buttonEmoji: "1445806422422978610" 
+    buttonLabel: "Report" 
+    buttonStyle: "Secondary" 
+    menuEmoji: "1445806422422978610" 
+    menuLabel: "Report" 
+    menuDescription: "Mở ticket tố cáo người chơi." 
+    embedTitle: "Ticket Tố Cáo" 
+    color: "#FFD700" 
+    description: "Bạn Cần Hỗ Trợ Gì Ạ ><\nBạn Vui Lòng Đợi BQT Sẽ Hỗ Trợ Bạn Trong Thời Gian Sớm Nhất Nhaa" 
+    ticketName: "category-username" 
+    ticketTopic: "Người tạo: {user} | Loại: {type}" 
+    slowmode: "0" 
+    useCodeBlocks: false 
+    modal: true 
+    modalTitle: "Báo Cáo Vi Phạm" 
+    questions: 
+      - label: "Tên người chơi muốn tố cáo là gì?"
+        placeholder: "Ví Dụ: DieuAnhCuti"
+        style: "Short" 
+        required: true 
+        minLength: 0 
+        maxLength: 500
+      - label: "Lý do tố cáo là gì? (Ghi rõ)"
+        placeholder: "Ví dụ: Autototem, Hack Cheat, ..."
+        style: "Paragraph" 
+        required: true 
+        minLength: 0 
+        maxLength: 500
+      - label: "Thời gian xảy ra việc này là khi nào?"
+        placeholder: "Ví dụ: 15h 1/12/25"
+        style: "Short" 
+        required: true 
+        minLength: 0 
+        maxLength: 500
+        
+  - id: 6 # NHẬN GIVEAWAY (Tất cả đều thấy)
+    name: " nhận ga"
+    nameEmoji: "🎉" 
+    categoryID: ["1489774852922413249"] 
+    closedCategoryID: ["1483546190980186274"] 
+    # Admin, Founder, Owner + Police, Helper
+    support_role_ids: ["1445798700352802837", "1445797126897664010","1445799338700836864"]
+    permissions: 
+      ticketCreator:
+        open:
+          allow: ["ViewChannel", "SendMessages", "EmbedLinks", "AttachFiles", "ReadMessageHistory"] 
+          deny: [] 
+        close:
+          allow: [] 
+          deny: ["SendMessages"] 
+      supportRoles:
+        open:
+          allow: ["ViewChannel", "SendMessages", "EmbedLinks", "AttachFiles", "ReadMessageHistory"]
+          deny: []
+        close:
+          allow: []
+          deny: ["SendMessages"]
+      addedRoles:
+        open:
+          allow: ["ViewChannel", "SendMessages", "EmbedLinks", "AttachFiles", "ReadMessageHistory"]
+          deny: []
+        close:
+          allow: []
+          deny: ["SendMessages"]
+      addedUsers:
+        open:
+          allow: ["ViewChannel", "SendMessages", "EmbedLinks", "AttachFiles", "ReadMessageHistory"]
+          deny: []
+        close:
+          allow: []
+          deny: ["SendMessages"]
+    pingRoles: true 
+    # Ping tất cả role
+    ping_role_ids: ["1445798700352802837", "1445797126897664010","1445799338700836864"]
+    textContent: "{support-roles}" 
+    creatorRoles: [] 
+    buttonEmoji: "1445809308171370542" 
+    buttonLabel: "Nhận Giveaway" 
+    buttonStyle: "Danger" # Nút màu đỏ
+    menuEmoji: "1445809308171370542" 
+    menuLabel: "Nhận Giveaway" 
+    menuDescription: "Mở ticket để nhận thưởng Giveaway." 
+    embedTitle: "Ticket Nhận Giveaway" 
+    color: "#FF0000" 
+    description: "Chúc Mừng Bạn Đã Trúng Giveaway! 🎉\nVui Lòng Điền Thông Tin Bên Dưới Để BQT Trao Giải Sớm Nhất Nhé!" 
+    ticketName: "category-username"  
+    ticketTopic: "Người trúng giải: {user}" 
+    slowmode: "0" 
+    useCodeBlocks: false 
+    modal: false
+    modalTitle: "Xác Nhận Trúng Giải" 
+    questions: 
+      - label: "Bạn trúng giải gì?"
+        placeholder: "Ví dụ: Canva, Youtube , Tiền OwO , ..."
+        style: "Short" 
+        required: true 
+        minLength: 0 
+        maxLength: 500
+# ==============================================
+# Multi Panel settings
+# ==============================================
+
+panels:
+  - id: 1 
+    categories: ["3, 4, 5, 6"] # Đã thêm ticket số 6 vào đây
+    maxButtonsPerRow: "5" 
+    menuPlaceholder: "Chọn loại Ticket cần hỗ trợ." 
+    panelEmbed:
+      color: "#D4AF37"
+      title: "ʜᴇᴀᴠᴇɴsᴍᴘ"
+      description: "Bạn gặp khó khăn, cần giúp đỡ? hãy tạo ticket để được hỗ trợ!\n**Rules:**\n> Không ping staff bừa bãi\n> Không Toxic nếu vi phạm staff có quyền không xử lí\n> Chọn đúng loại ticket cần hỗ trợ\n> Cố tình tạo ticket troll sẽ bị mute nặng\n- Vui lòng tuân thủ các điều luật trên" 
+      timestamp: true
+      URL: ""
+      image: "https://media.discordapp.net/attachments/1304981541973397545/1443990128514306070/standard.gif?ex=692b141a&is=6929c29a&hm=56e4b7d1e22837be394efe285daf23e5e6ffa744250934dea9d41aa59c1cc791"
+      thumbnail: "https://cdn.discordapp.com/icons/1430479234236940390/9ddb865ab4ba849ee8635a4e8ed8b292.webp"
+      footer:
+        text: "Powered by Stela Network"
+        iconURL: ""
+      author:
+        name: ""
+        iconURL: ""
+        url: ""
+
+# ==============================================
+# Ticket DM user settings
+# ==============================================
+
+DMUserSettings:
+  embed: true 
+  transcript: true 
+  ratingSystem:
+    enabled: false 
+    menu:
+      emoji: "⭐"
+      placeholder: "Chọn số sao đánh giá"
+    modal: true 
+    modalTitle: "Đánh Giá Ticket"
+    questions: 
+      - label: "Góp ý của bạn là gì?"
+        placeholder: "Viết góp ý tại đây."
+        style: "Paragraph" 
+        required: true 
+        minLength: 80 
+        maxLength: 1000 
+
+# ==============================================
+# Slash commands settings
+# ==============================================
+
+commands:
+  add:
+    enabled: true
+    permission: "KickMembers"
+    pingUser: false 
+  alert:
+    enabled: true
+    permission: "KickMembers"
+  transcript:
+    enabled: true
+    permission: "KickMembers"
+  claim:
+    enabled: true
+    permission: "KickMembers"
+  unclaim:
+    enabled: true
+    permission: "KickMembers"
+  move:
+    enabled: true
+    permission: "KickMembers"
+    updateTopic: true
+  transfer:
+    enabled: true
+    permission: "KickMembers"
+    pingUser: false 
+    updateTopic: true 
+  pin:
+    enabled: true
+    permission: "KickMembers"
+    emoji: "📌"
+    alreadyPinned: "Ticket này đã được ghim từ trước!"
+  priority:
+    enabled: true
+    permission: "KickMembers"
+    emojis:
+      low: "🟢"
+      medium: "🟡"
+      high: "🔴"
+    alreadyPriority: "Ticket này đã được set mức độ ưu tiên rồi!"
+    notPriority: "Ticket này chưa được set mức độ ưu tiên!"
+  slowmode:
+    enabled: true
+    permission: "KickMembers"
+    alreadySlowmode: "Ticket này đã có chế độ làm chậm đó rồi."
+    slowmodeRemoved: "Đã gỡ bỏ chế độ làm chậm."
+  close:
+    enabled: true
+    permission: "KickMembers"
+  closerequest:
+    enabled: true
+    permission: "ViewChannel"
+    pingRoles: false 
+  reopen:
+    enabled: true
+    permission: "KickMembers"
+  delete:
+    enabled: true
+    permission: "KickMembers"
+  panel:
+    enabled: true
+    permission: "ManageChannels"
+    support_role_ids: ["1445799338700836864", "1487619176477757552", "1445798700352802837", "1445797126897664010"]
+  remove:
+    enabled: true
+    permission: "KickMembers"
+  rename:
+    enabled: true
+    permission: "KickMembers"
+  topic:
+    enabled: true
+    permission: "KickMembers"
+  blacklist:
+    enabled: true
+    permission: "KickMembers"
+    userOrRoleError: "Vui lòng cung cấp User hoặc Role, không phải cả hai hoặc không có gì."
+    wrongDuration: "Định dạng thời gian không hợp lệ. Ví dụ: 1s, 1m, 1h, 1d, 1w."
+    validPage: "Vui lòng cung cấp số trang hợp lệ >= 1."
+    blacklistEmpty: "Danh sách đen hiện đang trống!"
+    blacklistEmptyType: "Danh sách đen {type} hiện đang trống!" 
+    pageError: "Trang không tồn tại. Vui lòng chọn trang từ 1 đến {maxPage}." 
+  unblacklist:
+    enabled: true
+    permission: "KickMembers"
+  ping:
+    enabled: true
+    permission: "KickMembers"
+  stats:
+    enabled: true
+    permission: "KickMembers"
+    support_role_ids: [] 
+  help:
+    enabled: true
+    permission: "KickMembers"
+  preference:
+    enabled: false
+    permission: "ViewChannel"
+    defaultDM: true 
+  tickets:
+    enabled: true
+    permission: "ViewChannel"
+    support_role_ids: [] 
+  userInfo:
+    enabled: true
+    permission: "KickMembers"
+
+contextMenuCommands:
+  userInfo:
+    enabled: true
+    permission: "KickMembers"
+  blacklistAdd:
+    enabled: true
+    permission: "KickMembers"
+  blacklistRemove:
+    enabled: true
+    permission: "KickMembers"
+  ticketAlert:
+    enabled: true
+    permission: "KickMembers"
+  ticketPin:
+    enabled: true
+    permission: "KickMembers"
+  ticketTranscript:
+    enabled: true
+    permission: "KickMembers"
+  ticketsList: 
+    enabled: true
+    permission: "ViewChannel"
+  ticketCloseRequest:
+    enabled: true
+    permission: "ViewChannel"
+  ticketClaim:
+    enabled: true
+    permission: "KickMembers"
+  ticketUnclaim:
+    enabled: true
+    permission: "KickMembers"
+
+# ==============================================
+# General button settings
+# ==============================================
+
+closeButton:
+  label: "Đóng" 
+  emoji: "🔒" 
+  style: "Danger" 
+  allowedRoles: [] 
+
+reOpenButton:
+  label: "Mở lại" 
+  emoji: "🔓" 
+  style: "Success" 
+  allowedRoles: [] 
+
+transcriptButton:
+  label: "Lưu trữ" 
+  emoji: "📝" 
+  style: "Primary" 
+
+deleteButton:
+  label: "Xóa" 
+  emoji: "⛔" 
+  style: "Danger" 
+  allowedRoles: [] 
+
+claimButton:
+  label: "Nhận Ticket" 
+  emoji: "👋" 
+  style: "Success" 
+
+unclaimButton:
+  label: "Hủy Nhận" 
+  emoji: "👋" 
+  style: "Danger" 
+
+newTicketButton:
+  label: "Click Vào Đây" 
+  emoji: "🎫" 
+
+closeRequestButton:
+  label: "Chấp nhận & Đóng" 
+  emoji: "✅" 
+  style: "Success" 
+
+closeButtonModal:
+  enabled: false 
+  modalTitle: "Đóng Ticket"
+  questions: 
+    - label: "Lý do đóng ticket là gì?"
+      placeholder: "Nhập lý do tại đây."
+      style: "Paragraph" 
+      required: true 
+      minLength: 1 
+      maxLength: 1000 
+
+deleteButtonModal:
+  enabled: false 
+  modalTitle: "Xóa Ticket"
+  questions: 
+    - label: "Lý do xóa ticket là gì?"
+      placeholder: "Nhập lý do tại đây."
+      style: "Paragraph" 
+      required: true 
+      minLength: 1 
+      maxLength: 1000 
+
+# ==============================================
+# Working Hours Settings
+# ==============================================
+
+workingHours:
+  enabled: false 
+  timezone: "Asia/Ho_Chi_Minh" 
+  bypassRoles: [] 
+  default: 
+    min: "09:00"
+    max: "17:00"
+    blockTicketCreation: true
+  days:
+    - day: "monday" 
+      min: "09:00" 
+      max: "17:00" 
+      blockTicketCreation: true 
+    - day: "tuesday"
+      min: "09:00"
+      max: "17:00"
+      blockTicketCreation: true
+    - day: "wednesday"
+      min: "09:00"
+      max: "17:00"
+      blockTicketCreation: true
+    - day: "thursday"
+      min: "09:00"
+      max: "17:00"
+      blockTicketCreation: true
+    - day: "friday"
+      min: "09:00"
+      max: "17:00"
+      blockTicketCreation: true
+    - day: "saturday"
+      min: "09:00"
+      max: "12:00"
+      blockTicketCreation: true
+    - day: "sunday"
+      min: "09:00"
+      max: "12:00"
+      blockTicketCreation: true
+  outsideWarning: true     
+  addField: true 
+  fieldTitle: "Giờ Làm Việc" 
+  valueDays: "TODAY" 
+  fieldValue: "> {day}: {openingTime} đến {closingTime}" 
+
+workingHoursEmbed:
+  color: "#FF0000"
+  title: "Giờ Làm Việc"
+  description: "Ticket chỉ mở cửa từ {openingTime} đến {closingTime}.\nBây giờ là {now}." 
+  timestamp: true
+  URL: ""
+  image: ""
+  thumbnail: ""
+  footer:
+    text: ""
+    iconURL: ""
+  author:
+    name: ""
+    iconURL: ""
+    url: ""
+
+outsideWorkingHoursEmbed:
+  color: "#FF0000"
+  title: "Ngoài Giờ Làm Việc"
+  description: "Bạn đã tạo ticket ngoài giờ làm việc. Phản hồi có thể sẽ bị chậm trễ.\nGiờ làm việc hôm nay là từ {openingTime} đến {closingTime}." 
+  timestamp: true
+  URL: ""
+  image: ""
+  thumbnail: ""
+  footer:
+    text: ""
+    iconURL: ""
+  author:
+    name: ""
+    iconURL: ""
+    url: ""
+
+# ==============================================
+# Log channels
+# ==============================================
+
+toggleLogs:
+  userAdd: true
+  userRemove: true
+  userLeft: true
+  ticketCreate: true
+  ticketClose: true
+  ticketAlert: true
+  ticketReopen: true
+  ticketDelete: true
+  ticketClaim: true
+  ticketUnclaim: true
+  ticketMove: true
+  ticketRename: true
+  ticketTopic: true
+  ticketTransfer: true
+  ticketPin: true
+  ticketSlowmode: true
+  ticketPriority: true
+  ticketFeedback: true
+  DMErrors: true
+  blacklistAdd: true
+  blacklistRemove: true
+
+logs:
+  default: "1445920178855612550" 
+  transcripts: "1445920178855612550" 
+  userAdd: ""
+  userRemove: ""
+  userLeft: ""
+  ticketCreate: ""
+  ticketClose: ""
+  ticketAlert: ""
+  ticketReopen: ""
+  ticketDelete: ""
+  ticketClaim: ""
+  ticketUnclaim: ""
+  ticketMove: ""
+  ticketRename: ""
+  ticketTopic: ""
+  ticketTransfer: ""
+  ticketPin: ""
+  ticketSlowmode: ""
+  ticketPriority: ""
+  ticketFeedback: ""
+  DMErrors: ""
+  blacklistAdd: ""
+  blacklistRemove: ""
+
+# ==============================================
+# Embeds Locale (ĐÃ VIỆT HÓA)
+# ==============================================
+
+ticketOpenEmbed:
+  title: "" 
+  timestamp: true
+  URL: ""
+  image: "https://media.discordapp.net/attachments/1304981541973397545/1443990128514306070/standard.gif?ex=692b141a&is=6929c29a&hm=56e4b7d1e22837be394efe285daf23e5e6ffa744250934dea9d41aa59c1cc791"
+#  thumbnail: ""
+#  footer:
+#    text: ""
+#    iconURL: ""
+  useMenu: false 
+  menuPlaceholder: "Chọn một tùy chọn" 
+  closeDescription: "Đóng ticket này." 
+  claimDescription: "Nhận ticket này." 
+  unclaimDescription: "Hủy nhận ticket này." 
+
+logTicketOpenEmbed:
+  color: "#2FF200"
+  title: "Ticket Logs | Ticket Đã Tạo"
+  description: ""
+  timestamp: true
+  URL: ""
+  image: ""
+#  thumbnail: ""
+#  footer:
+#    text: ""
+#    iconURL: ""
+  author:
+    name: ""
+    iconURL: ""
+    url: ""
+  field_creator: "• Người Tạo"
+  field_ticket: "• Ticket"
+  field_creation: "• Thời Gian Tạo"
+
+newTicketEmbed:
+  color: "#2FF200"
+  title: "Ticket Đã Được Tạo!"
+  description: "Ticket mới của bạn ({channel}) đã được tạo, **{user}**!" 
+  timestamp: true
+  URL: ""
+  image: ""
+  thumbnail: ""
+#  footer:
+#    text: ""
+#    iconURL: ""
+  author:
+    name: ""
+    iconURL: ""
+    url: ""
+
+blacklistFailedEmbed:
+  color: "#2FF200"
+  title: ""
+  description: "**{target} ({target.tag})** đã nằm trong danh sách đen rồi." 
+  timestamp: false
+  URL: ""
+  image: ""
+  thumbnail: ""
+  footer:
+    text: ""
+    iconURL: ""
+  author:
+    name: ""
+    iconURL: ""
+    url: ""
+
+blacklistSuccessEmbed:
+  color: "#2FF200"
+  title: ""
+  description: "**{target} ({target.tag})** đã được thêm vào danh sách đen.\nLý do: **{reason}**\nThời hạn: **{duration}**" 
+  timestamp: false
+  URL: ""
+  image: ""
+  thumbnail: ""
+  footer:
+    text: ""
+    iconURL: ""
+  author:
+    name: ""
+    iconURL: ""
+    url: ""
+
+logBlacklistEmbed:
+  color: "#2FF200"
+  title: "Ticket Logs | Đã Blacklist"
+  description: ""
+  timestamp: true
+  URL: ""
+  image: ""
+#  thumbnail: ""
+#  footer:
+#    text: ""
+#    iconURL: ""
+  author:
+    name: ""
+    iconURL: ""
+    url: ""
+  field_staff: "• Staff"
+  field_target: "• Mục Tiêu"
+  field_reason: "• Lý Do"
+  field_duration: "• Thời Hạn"
+
+unblacklistFailedEmbed:
+  color: "#2FF200"
+  title: ""
+  description: "**{target} ({target.tag})** hiện không có trong danh sách đen." 
+  timestamp: false
+  URL: ""
+  image: ""
+  thumbnail: ""
+  footer:
+    text: ""
+    iconURL: ""
+  author:
+    name: ""
+    iconURL: ""
+    url: ""
+
+unblacklistSuccessEmbed:
+  color: "#2FF200"
+  title: ""
+  description: "**{target} ({target.tag})** đã được gỡ khỏi danh sách đen.\nLý do: **{reason}**" 
+  timestamp: false
+  URL: ""
+  image: ""
+  thumbnail: ""
+  footer:
+    text: ""
+    iconURL: ""
+  author:
+    name: ""
+    iconURL: ""
+    url: ""
+
+logUnblacklistEmbed:
+  color: "#2FF200"
+  title: "Ticket Logs | Đã Gỡ Blacklist"
+  description: ""
+  timestamp: true
+  URL: ""
+  image: ""
+#  thumbnail: ""
+#  footer:
+#    text: ""
+#    iconURL: ""
+  author:
+    name: ""
+    iconURL: ""
+    url: ""
+  field_staff: "• Staff"
+  field_target: "• Mục Tiêu"
+  field_reason: "• Lý Do"
+
+blacklistListEmbed:
+  color: "#2FF200"
+  title: "Danh Sách Đen {type} - Trang {page}"
+  timestamp: false
+  URL: ""
+  image: ""
+  thumbnail: ""
+  footer:
+    text: ""
+    iconURL: ""
+  author:
+    name: ""
+    iconURL: ""
+    url: ""
+
+addEmbed:
+  ephemeral: false
+  color: "#2FF200"
+  title: ""
+  description: "Đã thêm **{target} ({target.tag})** vào ticket.\nLý do: **{reason}**" 
+  timestamp: false
+  URL: ""
+  image: ""
+  thumbnail: ""
+  footer:
+    text: ""
+    iconURL: ""
+  author:
+    name: ""
+    iconURL: ""
+    url: ""
+
+logAddEmbed:
+  color: "#2FF200"
+  title: "Ticket Logs | Người Dùng Được Thêm"
+  description: ""
+  timestamp: true
+  URL: ""
+  image: ""
+#  thumbnail: ""
+#  footer:
+#    text: ""
+#    iconURL: ""
+  author:
+    name: ""
+    iconURL: ""
+    url: ""
+  field_staff: "• Staff"
+  field_target: "• Mục Tiêu"
+  field_ticket: "• Ticket"
+  field_reason: "• Lý Do"
+
+alertReplyEmbed:
+  color: "#2FF200"
+  title: "Phản Hồi Cảnh Báo"
+  description: "Người dùng đã phản hồi lại cảnh báo và có vẻ đang online."
+  timestamp: true
+  URL: ""
+  image: ""
+  thumbnail: ""
+  footer:
+    text: ""
+    iconURL: ""
+  author:
+    name: ""
+    iconURL: ""
+    url: ""
+
+alertEmbed:
+  color: "#2FF200"
+  title: "Thông Báo Đóng Ticket"
+  description: "Ticket này sẽ sớm bị đóng nếu không nhận được phản hồi." 
+  timestamp: true
+  URL: ""
+  image: ""
+  thumbnail: ""
+  footer:
+    text: ""
+    iconURL: ""
+  author:
+    name: ""
+    iconURL: ""
+    url: ""
+
+logAlertEmbed:
+  color: "#FF2400"
+  title: "Ticket Logs | Cảnh Báo Ticket"
+  description: ""
+  timestamp: true
+  URL: ""
+  image: ""
+#  thumbnail: ""
+#  footer:
+#    text: ""
+#    iconURL: ""
+  author:
+    name: ""
+    iconURL: ""
+    url: ""
+  field_staff: "• Người Gửi"
+  field_user: "• Người Nhận"
+  field_creator: "• Người Tạo Ticket"
+  field_ticket: "• Ticket"
+  field_time: "• Thời Gian"
+
+removeEmbed:
+  ephemeral: false
+  color: "#FF0000"
+  title: ""
+  description: "Đã xóa **{target} ({target.tag})** khỏi ticket.\nLý do: **{reason}**" 
+  timestamp: false
+  URL: ""
+  image: ""
+  thumbnail: ""
+  footer:
+    text: ""
+    iconURL: ""
+  author:
+    name: ""
+    iconURL: ""
+    url: ""
+
+logRemoveEmbed:
+  color: "#FF0000"
+  title: "Ticket Logs | Người Dùng Bị Xóa"
+  description: ""
+  timestamp: true
+  URL: ""
+  image: ""
+#  thumbnail: ""
+#  footer:
+#    text: ""
+#    iconURL: ""
+  author:
+    name: ""
+    iconURL: ""
+    url: ""
+  field_staff: "• Staff"
+  field_target: "• Mục Tiêu"
+  field_ticket: "• Ticket"
+  field_reason: "• Lý Do"
+
+userLeftEmbed:
+  color: "#FF0000"
+  title: "Người dùng đã rời server"
+  description: "Thành viên **{user}** đã rời khỏi server." 
+  timestamp: true
+  URL: ""
+  image: ""
+  thumbnail: ""
+#  footer:
+#    text: "" 
+#    iconURL: "" 
+  author:
+    name: ""
+    iconURL: ""
+    url: ""
+
+logUserLeftEmbed:
+  color: "#FF0000"
+  title: "Ticket Logs | Người Dùng Rời Đi"
+  description: ""
+  timestamp: true
+  URL: ""
+  image: ""
+#  thumbnail: ""
+#  footer:
+#    text: ""
+#    iconURL: ""
+  author:
+    name: ""
+    iconURL: ""
+    url: ""
+  field_user: "• Người Tạo Ticket"
+  field_ticket: "• Ticket"
+  field_creation: "• Thời Gian Tạo"
+  field_action: "• Hành Động Tự Động"
+  field_claimedBy: "• Nhận Bởi"
+
+moveEmbed:
+  ephemeral : false
+  color: "2FF200"
+  title: ""
+  description: "Đã chuyển ticket này sang category **{category}**." 
+  timestamp: false
+  URL: ""
+  image: ""
+  thumbnail: ""
+  footer:
+    text: "" 
+    iconURL: "" 
+  author:
+    name: ""
+    iconURL: ""
+    url: ""
+
+logMoveEmbed:
+  color: "2FF200"
+  title: "Ticket Logs | Ticket Đã Di Chuyển"
+  description: ""
+  timestamp: true
+  URL: ""
+  image: ""
+#  thumbnail: ""
+#  footer:
+#    text: ""
+#    iconURL: ""
+  author:
+    name: ""
+    iconURL: ""
+    url: ""
+  field_staff: "• Staff"
+  field_ticket: "• Ticket"
+  field_category: "• Category"
+
+pinEmbed:
+  ephemeral : false
+  color: "2FF200"
+  title: ""
+  description: "Ticket này đã được ghim."
+  timestamp: false
+  URL: ""
+  image: ""
+  thumbnail: ""
+  footer:
+    text: "" 
+    iconURL: "" 
+  author:
+    name: ""
+    iconURL: ""
+    url: ""
+
+logPinEmbed:
+  color: "#2FF200"
+  title: "Ticket Logs | Ticket Đã Ghim"
+  description: ""
+  timestamp: true
+  URL: ""
+  image: ""
+#  thumbnail: ""
+#  footer:
+#    text: ""
+#    iconURL: ""
+  author:
+    name: ""
+    iconURL: ""
+    url: ""
+  field_staff: "• Staff"
+  field_ticket: "• Ticket"
+
+priorityAddEmbed:
+  ephemeral: false
+  color: "2FF200"
+  title: ""
+  description: "Mức độ ưu tiên đã được đặt thành **{priority}**.\nLý do: **{reason}**" 
+  timestamp: false
+  URL: ""
+  image: ""
+  thumbnail: ""
+  footer:
+    text: "" 
+    iconURL: "" 
+  author:
+    name: ""
+    iconURL: ""
+    url: ""
+
+logPriorityAddEmbed:
+  color: "#2FF200"
+  title: "Ticket Logs | Đã Thêm Ưu Tiên"
+  description: ""
+  timestamp: true
+  URL: ""
+  image: ""
+#  thumbnail: ""
+#  footer:
+#    text: ""
+#    iconURL: ""
+  author:
+    name: ""
+    iconURL: ""
+    url: ""
+  field_staff: "• Staff"
+  field_ticket: "• Ticket"
+  field_priority: "• Mức Độ"
+  field_reason: "• Lý Do"
+
+priorityRemoveEmbed:
+  ephemeral: false
+  color: "FF2400"
+  title: ""
+  description: "Mức độ ưu tiên của ticket này đã bị xóa."
+  timestamp: false
+  URL: ""
+  image: ""
+  thumbnail: ""
+  footer:
+    text: "" 
+    iconURL: "" 
+  author:
+    name: ""
+    iconURL: ""
+    url: ""
+
+logPriorityRemoveEmbed:
+  color: "#2FF200"
+  title: "Ticket Logs | Đã Xóa Ưu Tiên"
+  description: ""
+  timestamp: true
+  URL: ""
+  image: ""
+#  thumbnail: ""
+#  footer:
+#    text: ""
+#    iconURL: ""
+  author:
+    name: ""
+    iconURL: ""
+    url: ""
+  field_staff: "• Staff"
+  field_ticket: "• Ticket"
+
+renameEmbed:
+  ephemeral: false
+  color: "#2FF200"
+  title: ""
+  description: "Ticket này đã được đổi tên thành **{name}**!" 
+  timestamp: false
+  URL: ""
+  image: ""
+  thumbnail: ""
+  footer:
+    text: "" 
+    iconURL: "" 
+  author:
+    name: ""
+    iconURL: ""
+    url: ""
+
+logRenameEmbed:
+  color: "#2FF200"
+  title: "Ticket Logs | Ticket Đổi Tên"
+  description: ""
+  timestamp: true
+  URL: ""
+  image: ""
+#  thumbnail: ""
+#  footer:
+#    text: ""
+#    iconURL: ""
+  author:
+    name: ""
+    iconURL: ""
+    url: ""
+  field_staff: "• Staff"
+  field_oldname: "• Tên Cũ"
+  field_newname: "• Tên Mới"
+
+topicEmbed:
+  ephemeral: false
+  color: "#2FF200"
+  title: ""
+  description: "Chủ đề của ticket này đã đổi thành **{topic}**" 
+  timestamp: false
+  URL: ""
+  image: ""
+  thumbnail: ""
+  footer:
+    text: "" 
+    iconURL: "" 
+  author:
+    name: ""
+    iconURL: ""
+    url: ""
+
+logTopicEmbed:
+  color: "#2FF200"
+  title: "Ticket Logs | Ticket Đổi Chủ Đề"
+  description: ""
+  timestamp: true
+  URL: ""
+  image: ""
+#  thumbnail: ""
+#  footer:
+#    text: ""
+#    iconURL: ""
+  author:
+    name: ""
+    iconURL: ""
+    url: ""
+  field_staff: "• Staff"
+  field_oldtopic: "• Chủ Đề Cũ"
+  field_newtopic: "• Chủ Đề Mới"
+
+slowmodeEmbed:
+  ephemeral: false
+  color: "#2FF200"
+  title: ""
+  description: "Đã bật chế độ làm chậm **{time}** cho ticket này." 
+  timestamp: false
+  URL: ""
+  image: ""
+  thumbnail: ""
+  footer:
+    text: "" 
+    iconURL: "" 
+  author:
+    name: ""
+    iconURL: ""
+    url: ""
+
+logSlowmodeEmbed:
+  color: "#2FF200"
+  title: "Ticket Logs | Ticket Slowmode"
+  description: ""
+  timestamp: true
+  URL: ""
+  image: ""
+#  thumbnail: ""
+#  footer:
+#    text: ""
+#    iconURL: ""
+  author:
+    name: ""
+    iconURL: ""
+    url: ""
+  field_staff: "• Staff"
+  field_ticket: "• Ticket"
+  field_slowmode: "• Thời Gian"
+
+transferEmbed:
+  ephemeral: false
+  color: "#2FF200"
+  title: ""
+  description: "Quyền sở hữu ticket đã được chuyển cho **{user} ({user.tag})**." 
+  timestamp: false
+  URL: ""
+  image: ""
+  thumbnail: ""
+  footer:
+    text: "" 
+    iconURL: "" 
+  author:
+    name: ""
+    iconURL: ""
+    url: ""
+
+logTransferEmbed:
+  color: "#2FF200"
+  title: "Ticket Logs | Chuyển Quyền Sở Hữu"
+  description: ""
+  timestamp: true
+  URL: ""
+  image: ""
+#  thumbnail: ""
+#  footer:
+#    text: ""
+#    iconURL: ""
+  author:
+    name: ""
+    iconURL: ""
+    url: ""
+  field_staff: "• Staff"
+  field_ticket: "• Ticket"
+  field_transfer: "• Chi Tiết"
+
+claimedEmbed:
+  color: "#2FF200"
+  title: "Đã Nhận Ticket"
+  description: "Ticket này đã được nhận bởi {user}.\nHọ sẽ hỗ trợ bạn ngay!" 
+  timestamp: true
+  URL: ""
+  image: ""
+  thumbnail: ""
+#  footer:
+#    text: ""
+#    iconURL: ""
+  author:
+    name: ""
+    iconURL: ""
+    url: ""
+
+logClaimedEmbed:
+  color: "#2FF200"
+  title: "Ticket Logs | Ticket Đã Nhận"
+  description: ""
+  timestamp: true
+  URL: ""
+  image: ""
+#  thumbnail: ""
+#  footer:
+#    text: ""
+#    iconURL: ""
+  author:
+    name: ""
+    iconURL: ""
+    url: ""
+  field_staff: "• Staff"
+  field_ticket: "• Ticket"
+
+unclaimedEmbed:
+  color: "#FF2400"
+  title: "Đã Hủy Nhận Ticket"
+  description: "Ticket này đã bị hủy nhận bởi {user}." 
+  timestamp: true
+  URL: ""
+  image: ""
+  thumbnail: ""
+#  footer:
+#    text: ""
+#    iconURL: ""
+  author:
+    name: ""
+    iconURL: ""
+    url: ""
+
+logUnclaimedEmbed:
+  color: "#FF2400"
+  title: "Ticket Logs | Ticket Hủy Nhận"
+  description: ""
+  timestamp: true
+  URL: ""
+  image: ""
+#  thumbnail: ""
+#  footer:
+#    text: ""
+#    iconURL: ""
+  author:
+    name: ""
+    iconURL: ""
+    url: ""
+  field_staff: "• Staff"
+  field_ticket: "• Ticket"
+
+closeEmbed:
+  color: "#FF2400"
+  title: "Ticket Đã Đóng"
+  description: "Ticket này đã được đóng bởi **{user} ({user.tag})**\nLý do: **{reason}**" 
+  timestamp: true
+  URL: ""
+  image: ""
+  thumbnail: ""
+#  footer:
+#    text: ""
+#    iconURL: ""
+  author:
+    name: ""
+    iconURL: ""
+    url: ""
+  reOpenButton: true 
+  transcriptButton: true 
+  deleteButton: true 
+  useMenu: false 
+  menuPlaceholder: "Chọn tùy chọn" 
+  reopenDescription: "Mở lại ticket này." 
+  transcriptDescription: "Tạo bản lưu trữ." 
+  deleteDescription: "Xóa ticket này." 
+
+autoCloseEmbed:
+  color: "#FF2400"
+  title: "Ticket Tự Động Đóng"
+  description: "Ticket này đã tự động đóng bởi **{user} ({user.tag})**" 
+  timestamp: true
+  URL: ""
+  image: ""
+  thumbnail: ""
+#  footer:
+#    text: ""
+#    iconURL: ""
+  author:
+    name: ""
+    iconURL: ""
+    url: ""
+
+logCloseEmbed:
+  color: "#FF2400"
+  title: "Ticket Logs | Ticket Đã Đóng"
+  description: ""
+  timestamp: true
+  URL: ""
+  image: ""
+#  thumbnail: ""
+#  footer:
+#    text: ""
+#    iconURL: ""
+  author:
+    name: ""
+    iconURL: ""
+    url: ""
+  field_staff: "• Đóng Bởi"
+  field_user: "• Người Tạo Ticket"
+  field_ticket: "• Ticket"
+  field_reason: "• Lý Do"
+  field_claimedBy: "Nhận Bởi"
+
+logAutoCloseEmbed:
+  color: "#FF2400"
+  title: "Ticket Logs | Ticket Tự Động Đóng"
+  description: ""
+  timestamp: true
+  URL: ""
+  image: ""
+#  thumbnail: ""
+#  footer:
+#    text: ""
+#    iconURL: ""
+  author:
+    name: ""
+    iconURL: ""
+    url: ""
+  field_staff: "• Đóng Tự Động Bởi"
+  field_user: "• Người Tạo Ticket"
+  field_ticket: "• Ticket"
+  field_claimedBy: "Nhận Bởi"
+
+closeRequestEmbed:
+  color: "#FF2400"
+  title: "Yêu Cầu Đóng Ticket"
+  description: "**{user} ({user.tag})** đã yêu cầu đóng ticket của họ.\nLý do: **{reason}**" 
+  timestamp: true
+  URL: ""
+  image: ""
+  thumbnail: ""
+#  footer:
+#    text: ""
+#    iconURL: ""
+  author:
+    name: ""
+    iconURL: ""
+    url: ""  
+
+reopenEmbed:
+  color: "#2FF200"
+  title: "Ticket Đã Mở Lại"
+  description: "Ticket này đã được mở lại bởi **{user} ({user.tag})**" 
+  timestamp: true
+  URL: ""
+  image: ""
+  thumbnail: ""
+#  footer:
+#    text: ""
+#    iconURL: ""
+  author:
+    name: ""
+    iconURL: ""
+    url: ""
+
+logReopenEmbed:
+  color: "#2FF200"
+  title: "Ticket Logs | Ticket Mở Lại"
+  description: ""
+  timestamp: true
+  URL: ""
+  image: ""
+#  thumbnail: ""
+#  footer:
+#    text: ""
+#    iconURL: ""
+  author:
+    name: ""
+    iconURL: ""
+    url: ""
+  field_staff: "• Mở Lại Bởi"
+  field_user: "• Người Tạo Ticket"
+  field_ticket: "• Ticket"
+
+deleteEmbed:
+  color: "#FF0000"
+  title: ""
+  description: "Xóa ticket trong {time} giây" 
+  timestamp: false
+  URL: ""
+  image: ""
+  thumbnail: ""
+  footer:
+    text: ""
+    iconURL: ""
+  author:
+    name: ""
+    iconURL: ""
+    url: ""
+
+autoDeleteEmbed:
+  color: "#FF0000"
+  title: ""
+  description: "Tự động xóa ticket trong {time} giây" 
+  timestamp: false
+  URL: ""
+  image: ""
+  thumbnail: ""
+  footer:
+    text: ""
+    iconURL: ""
+  author:
+    name: ""
+    iconURL: ""
+    url: ""
+
+logDeleteEmbed:
+  color: "#FF0000"
+  title: "Ticket Logs | Ticket Đã Xóa"
+  description: ""
+  timestamp: true
+  URL: ""
+  image: ""
+#  thumbnail: ""
+#  footer:
+#    text: ""
+#    iconURL: ""
+  author:
+    name: ""
+    iconURL: ""
+    url: ""
+  field_staff: "• Xóa Bởi"
+  field_user: "• Người Tạo Ticket"
+  field_ticket: "• Ticket"
+  field_creation: "• Thời Gian Tạo"
+  field_reason: "• Lý Do"
+  field_closedAt: "Đóng Lúc"
+  field_claimedBy: "Nhận Bởi"
+
+logAutoDeleteEmbed:
+  color: "#FF0000"
+  title: "Ticket Logs | Ticket Tự Động Xóa"
+  description: ""
+  timestamp: true
+  URL: ""
+  image: ""
+#  thumbnail: ""
+#  footer:
+#    text: ""
+#    iconURL: ""
+  author:
+    name: ""
+    iconURL: ""
+    url: ""
+  field_staff: "• Tự Động Xóa Bởi"
+  field_user: "• Người Tạo Ticket"
+  field_ticket: "• Ticket"
+  field_creation: "• Thời Gian Tạo"
+  field_closedAt: "Đóng Lúc"
+  field_claimedBy: "Nhận Bởi"
+
+transcriptEmbed:
+  color: "#2FF200"
+  title: "Lưu Trữ Ticket"
+  description: ""
+  timestamp: true
+  URL: ""
+  image: ""
+  thumbnail: ""
+#  footer:
+#    text: ""
+#    iconURL: ""
+  author:
+    name: ""
+    iconURL: ""
+    url: ""
+  field_creator: "Người Tạo"
+  field_ticket: "Tên Ticket"
+  field_category: "Category"
+  field_creation: "Thời Gian Tạo"
+
+transcriptReplyEmbed:
+  ephemeral: true
+  color: "#2FF200"
+  title: "Đã Lưu Transcript"
+  description: "Transcript đã được lưu bởi {user} ({user.tag}) tại kênh {channel}" 
+  timestamp: true
+  URL: ""
+  image: ""
+  thumbnail: ""
+#  footer:
+#    text: ""
+#    iconURL: ""
+  author:
+    name: ""
+    iconURL: ""
+    url: ""
+
+statsEmbed:
+  ephemeral: false
+  color: "#2FF200"
+  title: "📊 Thống Kê"
+  description: ""
+  timestamp: true
+  URL: ""
+  image: ""
+#  thumbnail: ""
+#  footer:
+#    text: ""
+#    iconURL: ""
+  author:
+    name: ""
+    iconURL: ""
+    url: ""
+  field_tickets: "🎫 Tickets"
+  field_reviews: "⭐ Đánh giá"
+  field_server: "🏢 Server"
+  field_bot: "🤖 Bot"
+
+statsSetEmbed:
+  ephemeral: true
+  color: "#2FF200"
+  title: "📊 Chỉnh Sửa Thống Kê"
+  description: "Chỉ số `{stat}` đã được đặt thành `{value}` bởi **{user}** ({user.tag})" 
+  timestamp: true
+  URL: ""
+  image: ""
+  thumbnail: ""
+#  footer:
+#    text: ""
+#    iconURL: ""
+  author:
+    name: ""
+    iconURL: ""
+    url: ""
+
+pingEmbed:
+  ephemeral: false
+  color: "#2FF200"
+  title: "Ping & Độ Trễ"
+  description: ""
+  timestamp: true
+  URL: ""
+  image: ""
+  thumbnail: ""
+#  footer:
+#    text: ""
+#    iconURL: ""
+  author:
+    name: ""
+    iconURL: ""
+    url: ""
+
+userInfoEmbed:
+  ephemeral: true
+  color: "#2FF200"
+  title: "Thông Tin Người Dùng"
+  description: ""
+  timestamp: true
+  URL: ""
+  image: ""
+#  thumbnail: ""
+#  footer:
+#    text: ""
+#    iconURL: ""
+  author:
+    name: ""
+    iconURL: ""
+    url: ""
+  field_info: "Thông Tin"
+  field_avatar: "Avatar"
+  field_roles: "Roles"
+  field_createdAt: "Tạo Lúc"
+  field_joinedAt: "Tham Gia Lúc"
+
+helpEmbed:
+  ephemeral: true
+  color: "#2FF200"
+  title: "Giúp Đỡ"
+  description: ""
+  timestamp: true
+  URL: ""
+  image: ""
+  thumbnail: ""
+#  footer:
+#    text: ""
+#    iconURL: ""
+  author:
+    name: ""
+    iconURL: ""
+    url: ""
+
+preferenceEmbed:
+  color: "#2FF200"
+  title: "Tùy Chọn Người Dùng"
+  description: "Bạn sẽ {result}nhận tin nhắn DM **{action}**." 
+  timestamp: true
+  URL: ""
+  image: ""
+  thumbnail: ""
+#  footer:
+#    text: ""
+#    iconURL: ""
+  author:
+    name: ""
+    iconURL: ""
+    url: ""
+
+ticketsEmbed:
+  ephemeral: true
+  color: "#2FF200"
+  title: "Ticket hiện tại của {user}" 
+  description: ""
+  timestamp: true
+  URL: ""
+  image: ""
+  thumbnail: ""
+#  footer:
+#    text: ""
+#    iconURL: ""
+  author:
+    name: ""
+    iconURL: ""
+    url: ""
+  field_openTickets: "Danh Sách Ticket Đang Mở"
+  field_closedTickets: "Danh Sách Ticket Đã Đóng"
+
+preventNewTicketEmbed:
+  color: "#FF0000"
+  title: "Đã có ticket đóng"
+  description: "Ticket {ticket} của bạn vẫn đang ở mục đã đóng, vui lòng mở lại nó." 
+  timestamp: true
+  URL: ""
+  image: ""
+  thumbnail: ""
+#  footer:
+#    text: ""
+#    iconURL: ""
+  author:
+    name: ""
+    iconURL: ""
+    url: ""
+
+# ==============================================
+# DM Embeds Locale
+# ==============================================
+
+deleteDMEmbed:
+  color: "#2FF200"
+  title: "Ticket Đã Xóa"
+  description: "Ticket hỗ trợ của bạn đã bị xóa. Đây là bản lưu trữ và các thông tin khác." 
+  timestamp: false
+  URL: ""
+  image: ""
+#  thumbnail: ""
+  footer:
+    text: ""
+    iconURL: ""
+  author:
+    name: ""
+    iconURL: ""
+    url: ""
+  field_server: "Server"
+  field_ticket: "Ticket"
+  field_category: "Category"
+  field_author: "Người Tạo Ticket"
+  field_deletedBy: "Xóa Bởi"
+  field_claimedBy: "Nhận Bởi"
+  field_creation: "Thời Gian Tạo"
+  field_closedAt: "Đóng Lúc"
+
+ratingDMEmbed:
+  color: "#2FF200"
+  title: "Đánh Giá & Phản Hồi Ticket"
+  description: "Chúng tôi trân trọng phản hồi của bạn! Vui lòng dành chút thời gian để chia sẻ suy nghĩ và đánh giá hệ thống hỗ trợ. Bạn có thể đánh giá từ 1 đến 5 sao bằng menu bên dưới. Cảm ơn bạn!"
+  timestamp: false
+  URL: ""
+  image: ""
+  thumbnail: ""
+#  footer:
+#    text: ""
+#    iconURL: ""
+  author:
+    name: ""
+    iconURL: ""
+    url: ""
+
+logRatingEmbed:
+  color: "#2FF200"
+  title: "Ticket Logs | Phản Hồi"
+  description: ""
+  timestamp: true
+  URL: ""
+  image: ""
+#  thumbnail: ""
+#  footer:
+#    text: ""
+#    iconURL: ""
+  author:
+    name: ""
+    iconURL: ""
+    url: ""
+  field_creator: "• Người Tạo"
+  field_ticket: "• Ticket"
+  field_rating: "• Đánh Giá"
+
+alertDMEmbed:
+  enabled: false
+  color: "#FF0000"
+  title: "Thông Báo Đóng Ticket"
+  description: "Ticket **#{ticketName}** của bạn tại **{server}** sẽ sớm bị đóng nếu không có phản hồi." 
+  timestamp: false
+  URL: ""
+  image: ""
+  thumbnail: ""
+  footer:
+    text: ""
+    iconURL: ""
+  author:
+    name: ""
+    iconURL: ""
+    url: ""
+
+closeDMEmbed:
+  enabled: false
+  color: "#FF0000"
+  title: "Ticket Đã Đóng"
+  description: "Ticket **#{ticketName}** của bạn đã được đóng bởi {user} tại **{server}**." 
+  timestamp: false
+  URL: ""
+  image: ""
+  thumbnail: ""
+  footer:
+    text: ""
+    iconURL: ""
+  author:
+    name: ""
+    iconURL: ""
+    url: ""
+
+reopenDMEmbed:
+  enabled: false
+  color: "#2FF200"
+  title: "Ticket Đã Mở Lại"
+  description: "Ticket **#{ticketName}** của bạn đã được mở lại bởi {user} tại **{server}**." 
+  timestamp: false
+  URL: ""
+  image: ""
+  thumbnail: ""
+  footer:
+    text: ""
+    iconURL: ""
+  author:
+    name: ""
+    iconURL: ""
+    url: ""
+
+dmErrorEmbed:
+  pingUser: false 
+  color: "#FF0000"
+  title: "DM Đã Tắt"
+  description: "Bot không thể nhắn tin riêng cho **{user} ({user.tag})** vì họ đã khóa DM.\nVui lòng bật `Cho phép tin nhắn trực tiếp` ở server này để nhận thông tin từ bot!" 
+  timestamp: true
+  URL: ""
+  image: ""
+#  thumbnail: ""
+#  footer:
+#    text: ""
+#    iconURL: ""
+  author:
+    name: ""
+    iconURL: ""
+    url: ""
+
+# ==============================================
+# Misc Locale
+# ==============================================
+
+errors:
+  not_in_a_ticket: "Bạn không ở trong kênh ticket!" 
+  not_allowed: "Bạn không có quyền sử dụng chức năng này!" 
+  command_error: "Đã có lỗi xảy ra khi thực hiện lệnh này!" 
+
+cooldownEmbed:
+  color: "#FF0000"
+  title: "Từ từ thôi"
+  description: "Bạn phải đợi **{time}** giây trước khi click nút này!" 
+  timestamp: true
+  URL: ""
+  image: ""
+  thumbnail: ""
+#  footer:
+#    text: ""
+#    iconURL: ""
+  author:
+    name: ""
+    iconURL: ""
+    url: ""
+
+commandCooldownEmbed:
+  color: "#FF0000"
+  title: "Hạn Chế Lệnh"
+  description: "Vui lòng đợi, lệnh `{command}` đang trong thời gian chờ.\nBạn có thể dùng lại sau {time}." 
+  timestamp: true
+  URL: ""
+  image: ""
+  thumbnail: ""
+#  footer:
+#    text: ""
+#    iconURL: ""
+  author:
+    name: ""
+    iconURL: ""
+    url: ""
+
+maxOpenTicketsEmbed:
+  color: "#FF0000"
+  title: "Giới Hạn Ticket"
+  description: "Bạn chỉ có thể mở tối đa **{max} ticket(s)** cùng một lúc." 
+  timestamp: true
+  URL: ""
+  image: ""
+  thumbnail: ""
+#  footer:
+#    text: ""
+#    iconURL: ""
+  author:
+    name: ""
+    iconURL: ""
+    url: ""
+
+blacklistedEmbed:
+  color: "#FF0000"
+  title: "Bị Blacklist"
+  description: "Bạn hiện đang bị cấm tạo ticket.\nHết hạn: **{time}**\nLý do: **{reason}**\nLoại: **{type}**" 
+  timestamp: true
+  URL: ""
+  image: ""
+  thumbnail: ""
+#  footer:
+#    text: ""
+#    iconURL: ""
+  author:
+    name: ""
+    iconURL: ""
+    url: ""
+
+categoryNotAllowedEmbed:
+  color: "#FF0000"
+  title: "Không Được Phép"
+  description: "Bạn không được phép tạo ticket trong category này."
+  timestamp: true
+  URL: ""
+  image: ""
+  thumbnail: ""
+#  footer:
+#    text: ""
+#    iconURL: ""
+  author:
+    name: ""
+    iconURL: ""
+    url: ""
+
+# ==============================================
+# Auto Responses Settings
+# ==============================================
+
+autoResponses:
+  enabled: false
+  triggers:
+    - condition: startswith
+      startsWith:
+        - "?qr"
+        - "?stk"
+        - "stk"
+      response: "https://files.catbox.moe/yiaedu.png"
+      separator: ""
+      ignoreMembers: []
+      ignoreRoles: []
+      requiredRoles: []
+
+autoResponsesEmbed:
+  color: "#2FF200"
+  title: "Phản Hồi Tự Động"
+  description: "Hỏi: {question}\n Đáp: {answer}\n\n" 
+  timestamp: true
+  URL: ""
+  image: ""
+  thumbnail: ""
+#  footer:
+#    text: ""
+#    iconURL: ""
+  author:
+    name: ""
+    iconURL: ""
+    url: ""
+
+# ==============================================
+# Logs.txt channel settings
+# ==============================================
+
+logsFileToChannel: false 
+logsFileChannelID: ""

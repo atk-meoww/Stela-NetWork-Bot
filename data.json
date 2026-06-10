@@ -1,0 +1,155 @@
+{
+  "ranks": [
+    {
+      "name": "STELA",
+      "price": "50.000₫",
+      "features": [
+        "Prefix [STELA] trong game",
+        "Quyền /hat, /sit, /kit stela",
+        "Màu chat vàng",
+        "3 homes"
+      ]
+    },
+    {
+      "name": "STELA+",
+      "price": "70.000₫",
+      "features": [
+        "Tất cả quyền của STELA",
+        "Prefix [STELA+] trong game",
+        "Màu chat xanh ngọc",
+        "5 homes",
+        "/kit stela+,stela"
+      ]
+    },
+    {
+      "name": "STELA++",
+      "price": "120.000₫",
+      "features": [
+        "Tất cả quyền của STELA+",
+        "Prefix [STELA++] trong game",
+        "Màu chat đỏ",
+        "7 homes",
+        "/kit stela++,stela+,stela"
+      ],
+      "popular": true
+    },
+    {
+      "name": "SUPERSTELA+",
+      "price": "150.000₫",
+      "features": [
+        "Tất cả quyền của STELA++",
+        "Prefix [SUPERSTELA+] trong game",
+        "Màu chat tím",
+        "/kit SUPERSTELA+,STELA++,STELA"
+      ]
+    },
+    {
+      "name": "SUPERSTELA++",
+      "price": "200.000₫",
+      "features": [
+        "Tất cả quyền của SUPERSTELA+",
+        "Prefix [SUPERSTELA++] trong game",
+        "Màu chat xanh dương",
+        "/kit SUPERSTELA++,SUPERSTELA+,STELA++,STELA"
+      ]
+    },
+    {
+      "name": "KINGSTELA++",
+      "price": "250.000₫",
+      "features": [
+        "Tất cả quyền của SUPERSTELA++",
+        "Prefix [KINGSTELA++] trong game",
+        "Màu chat cầu vồng",
+        "Nhận key hàng tuần",
+        "Được vote đặc quyền server",
+        "/kit KINGSTELA++,SUPERSTELA++,STELA++,STELA"
+      ]
+    },
+    {
+      "name": "Custom Rank",
+      "price": "500.000₫",
+      "features": [
+        "Tất cả quyền của KINGSTELA++",
+        "Custom prefix theo yêu cầu",
+        "Custom màu chat",
+        "Nhận 5 keys mỗi tuần",
+        "Priority support 24/7",
+        "/kit Custom Rank và tất cả các rank trước đó"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "name": "Key Amethyst",
+      "price": "20.000₫",
+      "description": "Mở rương Amethyst với đồ hiếm, Gear Amethyst, Cánh, Mace full enchant."
+    },
+    {
+      "name": "Key Gold",
+      "price": "10.000₫",
+      "description": "Mở rương Gold với vật phẩm giá trị, tools và armor chất lượng cao."
+    },
+    {
+      "name": "Key Prime",
+      "price": "10.000₫",
+      "description": "Mở rương Prime với vật phẩm độc quyền, Gear Prime."
+    },
+    {
+      "name": "Key Crimson",
+      "price": "20.000₫",
+      "description": "Mở rương Crimson với vật phẩm mạnh nhất, netherite gear và boss drops."
+    },
+    {
+      "name": "Quyền FLY",
+      "price": "100.000₫",
+      "description": "Quyền bay (/fly) vĩnh viễn ở tất cả các thế giới (Survival)."
+    }
+  ],
+  "rules": {
+    "mods_cam": [
+      "No FreeCam",
+      "No MiniMap",
+      "No Mod Esp (all mods esp)",
+      "No Auto Totem",
+      "No Auto gaps",
+      "No Name Tags",
+      "Cấm all mods gây ảnh hưởng đến sv và người chơi khác",
+      "Hình phạt: ban 2 ngày"
+    ],
+    "hack": [
+      "Cấm tất cả loại hack",
+      "Hình phạt: ban 5 ngày"
+    ],
+    "server_minecraft": [
+      "Không bug spawn server (ban 2 ngày)",
+      "Dogess (ban 3 ngày)",
+      "Dupe (ban IP 7 ngày)",
+      "Lợi dụng bug server (ban 4 ngày)",
+      "Pearl Trick cấm dưới mọi hình thức (ban 3 ngày)"
+    ],
+    "staff": [
+      "Helper không được hack (ban + demote 5 ngày)",
+      "Helper abuse (ban + demote 5 ngày)",
+      "Helper bao che team (ban 5 ngày + demote)",
+      "Helper lạm quyền (ban + demote 5 ngày)",
+      "Police lạm quyền ban (ban + demote 5 ngày)",
+      "Helper & Police lợi dụng bug server (ban 5 ngày + demote)"
+    ],
+    "discord": [
+      "Không cố ý gây war, nếu war thì vào kênh chuyên dụng",
+      "Còn war thì admin hóng =))"
+    ],
+    "ticket": [
+      "Tạo ticket rồi im lặng (mute 12 giờ)",
+      "Spam ping (mute 12 giờ)",
+      "Không chửi staff (mute 3 giờ)"
+    ],
+    "partner": [
+      "Server phải trên 500 members (không tính bot)",
+      "Không partner với server dính nhiều drama",
+      "Không partner với server bán hack & cheat & tool",
+      "Server Minecraft phải online trung bình 50-80 người",
+      "Không partner với team nữa"
+    ]
+  }
+}
